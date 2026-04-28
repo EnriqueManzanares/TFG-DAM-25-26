@@ -23,6 +23,9 @@ namespace InaManager.Models
         private int _id_responsable;
         private string _urlImagenResponsable;
         private bool debe_cambiar_pass;
+        private int _id_equipo;
+        private decimal _clausula_rescision;
+        private bool _esta_disponible;
 
         // Propiedades con bloque de código tradicional
         public int Id_jugador
@@ -127,6 +130,24 @@ namespace InaManager.Models
             set { _urlImagenResponsable = value; }
         }
 
+        public int Id_equipo
+        {
+            get { return _id_equipo; }
+            set { _id_equipo = value; }
+        }
+
+        public decimal Clausula_rescision
+        {
+            get { return _clausula_rescision; }
+            set { _clausula_rescision = value; }
+        }
+
+        public bool Esta_disponible
+        {
+            get { return _esta_disponible; }
+            set { _esta_disponible = value; }
+        }
+
 
         // --- CONSTRUCTORES ---
 
@@ -138,7 +159,8 @@ namespace InaManager.Models
         // Constructor parametrizado (para cargar desde las bases de datos)
         public JugadorModel(int id, string nombre, string apellido, string apodo, string afinidad,
                        string posicion, int dorsal, bool esTitular, bool estaConvocado,
-                       string urlImagen, int nivel, int idResponsable, string urlImagenResponsable)
+                       string urlImagen, int nivel, int idResponsable, string urlImagenResponsable,
+                       int idEquipo, decimal clausulaRescision, bool estaDisponible)
         {
             this.Id_jugador = id;
             this.Nombre = nombre;
@@ -153,6 +175,9 @@ namespace InaManager.Models
             this.Nivel = nivel;
             this.Id_responsable = idResponsable;
             this.UrlImagenResponsable = urlImagenResponsable;
+            this.Id_equipo = idEquipo;
+            this.Clausula_rescision = clausulaRescision;
+            this.Esta_disponible = estaDisponible;
         }
     }
 }

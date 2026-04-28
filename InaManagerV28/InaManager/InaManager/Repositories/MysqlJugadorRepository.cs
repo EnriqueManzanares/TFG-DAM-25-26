@@ -50,7 +50,10 @@ namespace InaManager.Repositories
                             // ------------------------------------
 
                             Url_imagen = reader["url_imagen"] != DBNull.Value ? reader["url_imagen"].ToString() : "/Images/Players/default.png",
-                            UrlImagenResponsable = reader["foto_mister"] != DBNull.Value ? reader["foto_mister"].ToString() : "/Images/Staff/default_coach.png"
+                            UrlImagenResponsable = reader["foto_mister"] != DBNull.Value ? reader["foto_mister"].ToString() : "/Images/Staff/default_coach.png",
+                            Id_equipo = reader["id_equipo"] != DBNull.Value ? Convert.ToInt32(reader["id_equipo"]) : 0,
+                            Clausula_rescision = reader["clausula_rescision"] != DBNull.Value ? Convert.ToDecimal(reader["clausula_rescision"]) : 0m,
+                            Esta_disponible = reader["esta_disponible"] != DBNull.Value && Convert.ToBoolean(reader["esta_disponible"])
                         };
 
                         jugadorList.Add(jugador);
@@ -120,7 +123,10 @@ namespace InaManager.Repositories
                 Afinidad = reader.IsDBNull(reader.GetOrdinal("Afinidad")) ? string.Empty : reader.GetString("Afinidad"),
 
                 // Importante para que salga la foto en el menú
-                Url_imagen = reader.IsDBNull(reader.GetOrdinal("Url_imagen")) ? null : reader.GetString("Url_imagen")
+                Url_imagen = reader.IsDBNull(reader.GetOrdinal("Url_imagen")) ? null : reader.GetString("Url_imagen"),
+                Id_equipo = reader.IsDBNull(reader.GetOrdinal("id_equipo")) ? 0 : reader.GetInt32("id_equipo"),
+                Clausula_rescision = reader.IsDBNull(reader.GetOrdinal("clausula_rescision")) ? 0m : reader.GetDecimal("clausula_rescision"),
+                Esta_disponible = !reader.IsDBNull(reader.GetOrdinal("esta_disponible")) && reader.GetBoolean("esta_disponible")
             };
         }
 

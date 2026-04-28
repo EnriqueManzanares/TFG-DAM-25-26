@@ -4,10 +4,14 @@ USE InaManager;
 -- ==========================================
 -- 1. LIMPIEZA (Orden inverso a las dependencias)
 -- ==========================================
+DROP TABLE IF EXISTS Fichajes;
+DROP TABLE IF EXISTS Transacciones;
+DROP TABLE IF EXISTS Cuentas_Bancarias;
 DROP TABLE IF EXISTS Partidos_Sponsors;
 DROP TABLE IF EXISTS Entrenos;
 DROP TABLE IF EXISTS Jugador_Tecnicas;
 DROP TABLE IF EXISTS Jugadores;
+DROP TABLE IF EXISTS Equipos;
 DROP TABLE IF EXISTS Empleados;
 DROP TABLE IF EXISTS Formaciones;
 DROP TABLE IF EXISTS Supertecnicas;
@@ -19,11 +23,10 @@ DROP TABLE IF EXISTS Partidos;
 -- 2. CREACIÓN (De independientes a dependientes)
 -- ==========================================
 
--- 2.1 TABLAS MAESTRAS (Sin FK)
+-- 2.1 TABLAS MAESTRAS
 CREATE TABLE Formaciones (
     id_formacion INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(50) NOT NULL UNIQUE,
-    -- Lista completa de posiciones adaptada
     slot_1  ENUM('PR','LI','DFCI','DFC','DFCD','LD','CI','MCDI','MCDC','MCDD','CD','MI','MCI','MCC','MCD','MD','II','MCO','ID','EI','DCI','DC','DCD','ED') NOT NULL,
     slot_2  ENUM('PR','LI','DFCI','DFC','DFCD','LD','CI','MCDI','MCDC','MCDD','CD','MI','MCI','MCC','MCD','MD','II','MCO','ID','EI','DCI','DC','DCD','ED') NOT NULL,
     slot_3  ENUM('PR','LI','DFCI','DFC','DFCD','LD','CI','MCDI','MCDC','MCDD','CD','MI','MCI','MCC','MCD','MD','II','MCO','ID','EI','DCI','DC','DCD','ED') NOT NULL,
@@ -38,8 +41,8 @@ CREATE TABLE Formaciones (
 );
 
 CREATE TABLE Supertecnicas (
-    id_tecnica INT PRIMARY KEY auto_increment, 
-    nombre VARCHAR(100) NOT NULL Unique	,
+    id_tecnica INT PRIMARY KEY AUTO_INCREMENT, 
+    nombre VARCHAR(100) NOT NULL UNIQUE,
     tipo ENUM('Tiro', 'Regate', 'Defensa', 'Parada', 'Talento') NOT NULL,
     afinidad ENUM('Aire', 'Bosque', 'Fuego', 'Montaña', 'Neutro') NOT NULL,
     especial VARCHAR(50) DEFAULT '-', 
@@ -58,8 +61,8 @@ CREATE TABLE Sponsors (
     nombre_empresa VARCHAR(100) NOT NULL,
     sector VARCHAR(50),
     aporte_economico DECIMAL(12, 2) DEFAULT 0.00,
-    fecha_inicio date,
-    fecha_fin date,
+    fecha_inicio DATE,
+    fecha_fin DATE,
     url_logo VARCHAR(255)
 );
 
@@ -72,48 +75,104 @@ CREATE TABLE Partidos (
     goles_rival INT DEFAULT 0
 );
 
--- 2.2 TABLAS CON FK (Nivel 1)
+-- 2.2 TABLA EMPLEADOS
 CREATE TABLE Empleados (
     id_empleado INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(50) NOT NULL,
     apellido VARCHAR(50),
-    email varchar(250),
-    username varchar(100),
-    password varchar(100),
-    telefono int,
+    email VARCHAR(250),
+    username VARCHAR(100),
+    password VARCHAR(100),
+    telefono INT,
     puesto ENUM('Director', 'Manager', 'Entrenador') NOT NULL,
     especialidad VARCHAR(50), 
     años_experiencia INT DEFAULT 0,
     salario DECIMAL(10, 2) DEFAULT 0.00,
-    entrenador_titular bool default false,
+    entrenador_titular BOOLEAN DEFAULT FALSE,
     url_imagen VARCHAR(255),
     id_formacion_activa INT,
     CONSTRAINT fk_empleado_formacion FOREIGN KEY (id_formacion_activa) REFERENCES Formaciones(id_formacion) ON DELETE SET NULL
 );
 
--- 2.3 TABLAS CON FK (Nivel 2)
+-- 2.3 TABLA EQUIPOS (Actualizada: sin ciudad)
+CREATE TABLE Equipos (
+    id_equipo INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_equipo VARCHAR(100) NOT NULL UNIQUE,
+    fk_director INT NOT NULL UNIQUE,
+    url_escudo VARCHAR(255),
+    CONSTRAINT fk_equipo_director FOREIGN KEY (fk_director) REFERENCES Empleados(id_empleado) ON DELETE RESTRICT
+);
+
+-- 2.4 TABLA JUGADORES (Actualizada: id_equipo, clausula, disponibilidad)
 CREATE TABLE Jugadores (
     id_jugador INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(50) NOT NULL,
     apellido VARCHAR(50) NOT NULL,
     apodo VARCHAR(50),
     email VARCHAR(100) UNIQUE,
-    telefono int UNIQUE,
+    telefono INT UNIQUE,
     username VARCHAR(50) UNIQUE, 
     password VARCHAR(255), 
     dorsal INT,
     posicion ENUM('PR','LI','DFCI','DFC','DFCD','LD','CI','MCDI','MCDC','MCDD','CD','MI','MCI','MCC','MCD','MD','II','MCO','ID','EI','DCI','DC','DCD','ED') NOT NULL,
     afinidad ENUM('Aire', 'Bosque', 'Fuego', 'Montaña', 'Neutro'),
-    es_titular Boolean Default false,
+    es_titular BOOLEAN DEFAULT FALSE,
     esta_convocado BOOLEAN DEFAULT FALSE,
     url_imagen VARCHAR(255),
     nivel INT DEFAULT 1,
     id_responsable INT,
+    id_equipo INT,
+    clausula_rescision DECIMAL(20, 2) DEFAULT 0.00,
+    esta_disponible BOOLEAN DEFAULT TRUE,
     debe_cambiar_pass BOOLEAN DEFAULT TRUE,
-    CONSTRAINT fk_jugador_empleado FOREIGN KEY (id_responsable) REFERENCES Empleados(id_empleado) ON DELETE SET NULL
+    CONSTRAINT fk_jugador_empleado FOREIGN KEY (id_responsable) REFERENCES Empleados(id_empleado) ON DELETE SET NULL,
+    CONSTRAINT fk_jugador_equipo FOREIGN KEY (id_equipo) REFERENCES Equipos(id_equipo) ON DELETE SET NULL
 );
 
--- 2.4 TABLAS DE RELACIÓN (Muchos a Muchos)
+-- 2.5 TABLAS ECONÓMICAS
+CREATE TABLE Cuentas_Bancarias (
+    id_cuenta INT AUTO_INCREMENT PRIMARY KEY,
+    iban VARCHAR(34) NOT NULL UNIQUE,
+    id_jugador INT NULL,
+    id_empleado INT NULL,
+    saldo_actual DECIMAL(20, 2) DEFAULT 0.00,
+    moneda VARCHAR(3) DEFAULT 'EUR',
+    CONSTRAINT fk_cuenta_jugador FOREIGN KEY (id_jugador) REFERENCES Jugadores(id_jugador) ON DELETE CASCADE,
+    CONSTRAINT fk_cuenta_empleado FOREIGN KEY (id_empleado) REFERENCES Empleados(id_empleado) ON DELETE CASCADE,
+    CONSTRAINT chk_propietario_unico CHECK ((id_jugador IS NOT NULL AND id_empleado IS NULL) OR (id_jugador IS NULL AND id_empleado IS NOT NULL))
+);
+
+CREATE TABLE Transacciones (
+    id_transaccion INT AUTO_INCREMENT PRIMARY KEY,
+    id_cuenta_origen INT,
+    id_cuenta_destino INT,
+    monto DECIMAL(20, 2) NOT NULL,
+    tipo ENUM('Fichaje', 'Salario', 'Sponsor', 'Premio') NOT NULL,
+    concepto VARCHAR(255),
+    fecha_operacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    id_jugador_relacionado INT,
+    CONSTRAINT fk_t_origen FOREIGN KEY (id_cuenta_origen) REFERENCES Cuentas_Bancarias(id_cuenta),
+    CONSTRAINT fk_t_destino FOREIGN KEY (id_cuenta_destino) REFERENCES Cuentas_Bancarias(id_cuenta),
+    CONSTRAINT fk_t_jugador FOREIGN KEY (id_jugador_relacionado) REFERENCES Jugadores(id_jugador)
+);
+
+CREATE TABLE Fichajes (
+    id_fichaje INT AUTO_INCREMENT PRIMARY KEY,
+    fk_jugador INT NOT NULL,
+    fk_equipo_anterior INT NULL,
+    fk_equipo_destino INT NOT NULL,
+    fk_transaccion INT UNIQUE,
+    precio_final DECIMAL(20, 2),
+    fecha_fichaje DATE NOT NULL,
+    fecha_incorporacion DATE NOT NULL,
+    estado_fichaje ENUM('Pendiente', 'Completado') DEFAULT 'Pendiente',
+    CONSTRAINT fk_f_jugador FOREIGN KEY (fk_jugador) REFERENCES Jugadores(id_jugador),
+    CONSTRAINT fk_f_equipo_ant FOREIGN KEY (fk_equipo_anterior) REFERENCES Equipos(id_equipo),
+    CONSTRAINT fk_f_equipo_dest FOREIGN KEY (fk_equipo_destino) REFERENCES Equipos(id_equipo),
+    CONSTRAINT fk_f_transaccion FOREIGN KEY (fk_transaccion) REFERENCES Transacciones(id_transaccion)
+);
+
+-- 2.6 OTRAS RELACIONES
 CREATE TABLE Jugador_Tecnicas (
     id_jugador INT NOT NULL,
     id_tecnica INT NOT NULL,
@@ -129,7 +188,7 @@ CREATE TABLE Entrenos (
     id_empleado INT,
     fecha DATE NOT NULL,
     comentarios TEXT, 
-    completado boolean Default False,
+    completado BOOLEAN DEFAULT FALSE,
     CONSTRAINT fk_entreno_jugador FOREIGN KEY (id_jugador) REFERENCES Jugadores(id_jugador) ON DELETE CASCADE,
     CONSTRAINT fk_entreno_ejercicio FOREIGN KEY (id_ejercicio) REFERENCES Ejercicios(id_ejercicio) ON DELETE CASCADE,
     CONSTRAINT fk_entreno_empleado FOREIGN KEY (id_empleado) REFERENCES Empleados(id_empleado) ON DELETE SET NULL
@@ -146,6 +205,158 @@ CREATE TABLE Partidos_Sponsors (
 -- ==========================================
 -- 3. PROCESOS ALMACENADOS
 -- ==========================================
+
+-- ==========================================
+-- 1. EQUIPOS (NUEVA)
+-- ==========================================
+
+DROP PROCEDURE IF EXISTS sp_ObtenerTodosEquipos$$
+CREATE PROCEDURE sp_ObtenerTodosEquipos()
+BEGIN
+    SELECT e.*, emp.nombre AS nombre_director, emp.apellido AS apellido_director 
+    FROM Equipos e
+    INNER JOIN Empleados emp ON e.fk_director = emp.id_empleado;
+END$$
+
+DROP PROCEDURE IF EXISTS sp_InsertarEquipo$$
+CREATE PROCEDURE sp_InsertarEquipo(
+    IN p_nombre VARCHAR(100),
+    IN p_fk_director INT,
+    IN p_url_escudo VARCHAR(255)
+)
+BEGIN
+    INSERT INTO Equipos (nombre_equipo, fk_director, url_escudo)
+    VALUES (p_nombre, p_fk_director, p_url_escudo);
+END$$
+
+DROP PROCEDURE IF EXISTS sp_ActualizarEquipo$$
+CREATE PROCEDURE sp_ActualizarEquipo(
+    IN p_nombre VARCHAR(100),
+    IN p_fk_director INT,
+    IN p_url_escudo VARCHAR(255),
+    IN p_id INT
+)
+BEGIN
+    UPDATE Equipos SET
+        nombre_equipo = p_nombre,
+        fk_director = p_fk_director,
+        url_escudo = p_url_escudo
+    WHERE id_equipo = p_id;
+END$$
+
+DROP PROCEDURE IF EXISTS sp_EliminarEquipo$$
+CREATE PROCEDURE sp_EliminarEquipo(IN p_id INT)
+BEGIN
+    DELETE FROM Equipos WHERE id_equipo = p_id;
+END$$
+
+-- ==========================================
+-- 2. CUENTAS BANCARIAS Y TRANSACCIONES (NUEVAS)
+-- ==========================================
+
+DROP PROCEDURE IF EXISTS sp_ObtenerCuentaPorEmpleado$$
+CREATE PROCEDURE sp_ObtenerCuentaPorEmpleado(IN p_id_emp INT)
+BEGIN
+    SELECT * FROM Cuentas_Bancarias WHERE id_empleado = p_id_emp;
+END$$
+
+DROP PROCEDURE IF EXISTS sp_InsertarCuentaBancaria$$
+CREATE PROCEDURE sp_InsertarCuentaBancaria(
+    IN p_iban VARCHAR(34),
+    IN p_id_jugador INT,
+    IN p_id_empleado INT,
+    IN p_saldo DECIMAL(20,2)
+)
+BEGIN
+    INSERT INTO Cuentas_Bancarias (iban, id_jugador, id_empleado, saldo_actual, moneda)
+    VALUES (p_iban, NULLIF(p_id_jugador, 0), NULLIF(p_id_empleado, 0), p_saldo, 'EUR');
+END$$
+
+DROP PROCEDURE IF EXISTS sp_ObtenerTransaccionesJugador$$
+CREATE PROCEDURE sp_ObtenerTransaccionesJugador(IN p_id_jugador INT)
+BEGIN
+    SELECT * FROM Transacciones WHERE id_jugador_relacionado = p_id_jugador ORDER BY fecha_operacion DESC;
+END$$
+
+
+
+-- ==========================================
+-- 4. PROCESO DE FICHAJE (LÓGICA DE NEGOCIO)
+-- ==========================================
+
+DROP PROCEDURE IF EXISTS sp_RealizarFichaje$$
+CREATE PROCEDURE sp_RealizarFichaje(
+    IN p_id_jugador INT,
+    IN p_id_director_comprador INT,
+    IN p_nueva_clausula DECIMAL(20, 2),
+    IN p_fecha_inc DATE
+)
+BEGIN
+    DECLARE v_precio DECIMAL(20,2);
+    DECLARE v_disponible BOOLEAN;
+    DECLARE v_id_vendedor INT;
+    DECLARE v_id_equipo_dest INT;
+    DECLARE v_cuenta_org INT;
+    DECLARE v_cuenta_dest INT;
+    DECLARE v_equipo_ant INT;
+
+    -- Obtener datos actuales del jugador
+    SELECT clausula_rescision, esta_disponible, id_responsable, id_equipo 
+    INTO v_precio, v_disponible, v_id_vendedor, v_equipo_ant
+    FROM Jugadores WHERE id_jugador = p_id_jugador;
+
+    -- Validación
+    IF v_disponible = FALSE THEN
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'El jugador no es transferible.';
+    ELSE
+        -- Obtener IDs necesarios para la transacción
+        SELECT id_equipo INTO v_id_equipo_dest FROM Equipos WHERE fk_director = p_id_director_comprador;
+        SELECT id_cuenta INTO v_cuenta_org FROM Cuentas_Bancarias WHERE id_empleado = p_id_director_comprador;
+        SELECT id_cuenta INTO v_cuenta_dest FROM Cuentas_Bancarias WHERE id_empleado = v_id_vendedor;
+
+        START TRANSACTION;
+            -- 1. Movimiento de dinero
+            UPDATE Cuentas_Bancarias SET saldo_actual = saldo_actual - v_precio WHERE id_cuenta = v_cuenta_org;
+            UPDATE Cuentas_Bancarias SET saldo_actual = saldo_actual + v_precio WHERE id_cuenta = v_cuenta_dest;
+            
+            -- 2. Registrar Transacción
+            INSERT INTO Transacciones (id_cuenta_origen, id_cuenta_destino, monto, tipo, concepto, id_jugador_relacionado)
+            VALUES (v_cuenta_org, v_cuenta_dest, v_precio, 'Fichaje', 'Pago de cláusula', p_id_jugador);
+            
+            SET @last_t = LAST_INSERT_ID();
+
+            -- 3. Registrar en Histórico de Fichajes
+            INSERT INTO Fichajes (fk_jugador, fk_equipo_anterior, fk_equipo_destino, fk_transaccion, precio_final, fecha_fichaje, fecha_incorporacion, estado_fichaje)
+            VALUES (p_id_jugador, v_equipo_ant, v_id_equipo_dest, @last_t, v_precio, CURDATE(), p_fecha_inc, 'Pendiente');
+
+            -- 4. Actualizar Jugador (Si la incorporación es hoy, se podría automatizar con el evento que hablamos)
+            UPDATE Jugadores SET 
+                id_responsable = p_id_director_comprador,
+                id_equipo = v_id_equipo_dest,
+                clausula_rescision = p_nueva_clausula,
+                esta_disponible = FALSE -- Por defecto deja de estar disponible al ser recién fichado
+            WHERE id_jugador = p_id_jugador;
+        COMMIT;
+    END IF;
+END$$
+
+-- ==========================================
+-- 5. HISTÓRICO DE FICHAJES
+-- ==========================================
+
+DROP PROCEDURE IF EXISTS sp_ObtenerHistorialFichajes$$
+CREATE PROCEDURE sp_ObtenerHistorialFichajes()
+BEGIN
+    SELECT f.*, j.nombre, j.apellido, e_ant.nombre_equipo AS equipo_origen, e_dest.nombre_equipo AS equipo_destino
+    FROM Fichajes f
+    INNER JOIN Jugadores j ON f.fk_jugador = j.id_jugador
+    LEFT JOIN Equipos e_ant ON f.fk_equipo_anterior = e_ant.id_equipo
+    INNER JOIN Equipos e_dest ON f.fk_equipo_destino = e_dest.id_equipo
+    ORDER BY f.fecha_fichaje DESC;
+END$$
+
+DELIMITER ;
+
 DELIMITER $$
 DROP PROCEDURE IF EXISTS sp_BorrarSupertecnica$$
 CREATE PROCEDURE sp_BorrarSupertecnica(IN p_id INT)
