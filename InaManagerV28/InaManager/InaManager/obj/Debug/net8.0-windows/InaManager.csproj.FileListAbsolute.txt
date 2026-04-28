@@ -1,0 +1,702 @@
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.exe
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.deps.json
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.runtimeconfig.json
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.dll
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.pdb
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManager\InaManager\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManager\InaManager\obj\Debug\net8.0-windows\View\LoginView.g.cs
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManager\InaManager\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager_MarkupCompile.cache
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager_MarkupCompile.lref
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManager\InaManager\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManager\InaManager\obj\Debug\net8.0-windows\View\LoginView.baml
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.g.resources
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.AssemblyInfoInputs.cache
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.AssemblyInfo.cs
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.csproj.CoreCompileInputs.cache
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.dll
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManager\InaManager\obj\Debug\net8.0-windows\refint\InaManager.dll
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.pdb
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.genruntimeconfig.cache
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManager\InaManager\obj\Debug\net8.0-windows\ref\InaManager.dll
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.sourcelink.json
+D:\Descargas\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.exe
+D:\Descargas\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.deps.json
+D:\Descargas\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.runtimeconfig.json
+D:\Descargas\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.dll
+D:\Descargas\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.pdb
+D:\Descargas\InaManager\InaManager\obj\Debug\net8.0-windows\MainWindow.g.cs
+D:\Descargas\InaManager\InaManager\obj\Debug\net8.0-windows\View\LoginView.g.cs
+D:\Descargas\InaManager\InaManager\obj\Debug\net8.0-windows\App.g.cs
+D:\Descargas\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager_MarkupCompile.cache
+D:\Descargas\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager_MarkupCompile.lref
+D:\Descargas\InaManager\InaManager\obj\Debug\net8.0-windows\MainWindow.baml
+D:\Descargas\InaManager\InaManager\obj\Debug\net8.0-windows\View\LoginView.baml
+D:\Descargas\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.g.resources
+D:\Descargas\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.GeneratedMSBuildEditorConfig.editorconfig
+D:\Descargas\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.AssemblyInfoInputs.cache
+D:\Descargas\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.AssemblyInfo.cs
+D:\Descargas\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.csproj.CoreCompileInputs.cache
+D:\Descargas\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.dll
+D:\Descargas\InaManager\InaManager\obj\Debug\net8.0-windows\refint\InaManager.dll
+D:\Descargas\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.pdb
+D:\Descargas\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.genruntimeconfig.cache
+D:\Descargas\InaManager\InaManager\obj\Debug\net8.0-windows\ref\InaManager.dll
+C:\Users\enrique.manzanares.p\Documents\Versiones proyecto\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.exe
+C:\Users\enrique.manzanares.p\Documents\Versiones proyecto\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.deps.json
+C:\Users\enrique.manzanares.p\Documents\Versiones proyecto\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.runtimeconfig.json
+C:\Users\enrique.manzanares.p\Documents\Versiones proyecto\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.dll
+C:\Users\enrique.manzanares.p\Documents\Versiones proyecto\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.pdb
+C:\Users\enrique.manzanares.p\Documents\Versiones proyecto\InaManager\InaManager\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\enrique.manzanares.p\Documents\Versiones proyecto\InaManager\InaManager\obj\Debug\net8.0-windows\View\LoginView.g.cs
+C:\Users\enrique.manzanares.p\Documents\Versiones proyecto\InaManager\InaManager\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\enrique.manzanares.p\Documents\Versiones proyecto\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager_MarkupCompile.cache
+C:\Users\enrique.manzanares.p\Documents\Versiones proyecto\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager_MarkupCompile.lref
+C:\Users\enrique.manzanares.p\Documents\Versiones proyecto\InaManager\InaManager\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\enrique.manzanares.p\Documents\Versiones proyecto\InaManager\InaManager\obj\Debug\net8.0-windows\View\LoginView.baml
+C:\Users\enrique.manzanares.p\Documents\Versiones proyecto\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.g.resources
+C:\Users\enrique.manzanares.p\Documents\Versiones proyecto\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\enrique.manzanares.p\Documents\Versiones proyecto\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.AssemblyInfoInputs.cache
+C:\Users\enrique.manzanares.p\Documents\Versiones proyecto\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.AssemblyInfo.cs
+C:\Users\enrique.manzanares.p\Documents\Versiones proyecto\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.csproj.CoreCompileInputs.cache
+C:\Users\enrique.manzanares.p\Documents\Versiones proyecto\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.dll
+C:\Users\enrique.manzanares.p\Documents\Versiones proyecto\InaManager\InaManager\obj\Debug\net8.0-windows\refint\InaManager.dll
+C:\Users\enrique.manzanares.p\Documents\Versiones proyecto\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.pdb
+C:\Users\enrique.manzanares.p\Documents\Versiones proyecto\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.genruntimeconfig.cache
+C:\Users\enrique.manzanares.p\Documents\Versiones proyecto\InaManager\InaManager\obj\Debug\net8.0-windows\ref\InaManager.dll
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\V4\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.exe
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\V4\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.deps.json
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\V4\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.runtimeconfig.json
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\V4\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.dll
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\V4\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.pdb
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\V4\InaManager\InaManager\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\V4\InaManager\InaManager\obj\Debug\net8.0-windows\View\LoginView.g.cs
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\V4\InaManager\InaManager\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\V4\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager_MarkupCompile.cache
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\V4\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager_MarkupCompile.lref
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\V4\InaManager\InaManager\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\V4\InaManager\InaManager\obj\Debug\net8.0-windows\View\LoginView.baml
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\V4\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.g.resources
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\V4\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\V4\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.AssemblyInfoInputs.cache
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\V4\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.AssemblyInfo.cs
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\V4\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.csproj.CoreCompileInputs.cache
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\V4\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.sourcelink.json
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\V4\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.dll
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\V4\InaManager\InaManager\obj\Debug\net8.0-windows\refint\InaManager.dll
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\V4\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.pdb
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\V4\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.genruntimeconfig.cache
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\V4\InaManager\InaManager\obj\Debug\net8.0-windows\ref\InaManager.dll
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.csproj.AssemblyReference.cache
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\obj\Debug\net8.0-windows\View\LoginView.g.cs
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager_MarkupCompile.cache
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager_MarkupCompile.lref
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.dll
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\obj\Debug\net8.0-windows\refint\InaManager.dll
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.pdb
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.exe
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.deps.json
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.runtimeconfig.json
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.dll
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.pdb
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\bin\Debug\net8.0-windows\Google.Protobuf.dll
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\bin\Debug\net8.0-windows\ZstdSharp.dll
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\obj\Debug\net8.0-windows\View\LoginView.baml
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.g.resources
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.AssemblyInfoInputs.cache
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.AssemblyInfo.cs
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.csproj.CoreCompileInputs.cache
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.csproj.Up2Date
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.genruntimeconfig.cache
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\obj\Debug\net8.0-windows\ref\InaManager.dll
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\obj\Debug\net8.0-windows\CustomControls\BindablePasswordBox.g.cs
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\obj\Debug\net8.0-windows\CustomControls\BindablePasswordBox.baml
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\obj\Debug\net8.0-windows\Styles\UIColors.baml
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\obj\Debug\net8.0-windows\View\MainView.g.cs
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\obj\Debug\net8.0-windows\View\MainView.baml
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.csproj.AssemblyReference.cache
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\obj\Debug\net8.0-windows\Styles\UIColors.baml
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\obj\Debug\net8.0-windows\CustomControls\BindablePasswordBox.g.cs
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\LoginView.g.cs
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\MainView.g.cs
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager_MarkupCompile.cache
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager_MarkupCompile.lref
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.exe
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.deps.json
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.runtimeconfig.json
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.dll
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.pdb
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\bin\Debug\net8.0-windows\Google.Protobuf.dll
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\bin\Debug\net8.0-windows\ZstdSharp.dll
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\obj\Debug\net8.0-windows\CustomControls\BindablePasswordBox.baml
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\LoginView.baml
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\MainView.baml
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.g.resources
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.AssemblyInfoInputs.cache
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.AssemblyInfo.cs
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.csproj.CoreCompileInputs.cache
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.sourcelink.json
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.csproj.Up2Date
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.dll
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\obj\Debug\net8.0-windows\refint\InaManager.dll
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.pdb
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.genruntimeconfig.cache
+C:\Users\emilio.freire.peris_\Desktop\Interfaces\InaManagers\V8\InaManager\InaManager\obj\Debug\net8.0-windows\ref\InaManager.dll
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.exe
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.deps.json
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.runtimeconfig.json
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.dll
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.pdb
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\bin\Debug\net8.0-windows\Google.Protobuf.dll
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\bin\Debug\net8.0-windows\ZstdSharp.dll
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.csproj.AssemblyReference.cache
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\obj\Debug\net8.0-windows\Styles\UIColors.baml
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EquipoView.baml
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\HomeView.baml
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\obj\Debug\net8.0-windows\CustomControls\BindablePasswordBox.g.cs
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EquipoView.g.cs
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\HomeView.g.cs
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\LoginView.g.cs
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\MainView.g.cs
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager_MarkupCompile.cache
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager_MarkupCompile.lref
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\obj\Debug\net8.0-windows\CustomControls\BindablePasswordBox.baml
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\LoginView.baml
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\MainView.baml
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.g.resources
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.AssemblyInfoInputs.cache
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.AssemblyInfo.cs
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.csproj.CoreCompileInputs.cache
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.csproj.Up2Date
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.dll
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\obj\Debug\net8.0-windows\refint\InaManager.dll
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.pdb
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.genruntimeconfig.cache
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\obj\Debug\net8.0-windows\ref\InaManager.dll
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\obj\Debug\net8.0-windows\App.baml
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\PartidosView.baml
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV11\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\PartidosView.g.cs
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.exe
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.deps.json
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.runtimeconfig.json
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.dll
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.pdb
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\Google.Protobuf.dll
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\ZstdSharp.dll
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.csproj.AssemblyReference.cache
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\Styles\UIColors.baml
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EquipoView.baml
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\HomeView.baml
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\PartidosView.baml
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\App.baml
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\CustomControls\BindablePasswordBox.g.cs
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EquipoView.g.cs
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\HomeView.g.cs
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\LoginView.g.cs
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\MainView.g.cs
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\PartidosView.g.cs
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager_MarkupCompile.cache
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager_MarkupCompile.lref
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\CustomControls\BindablePasswordBox.baml
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\LoginView.baml
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\MainView.baml
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.g.resources
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.AssemblyInfoInputs.cache
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.AssemblyInfo.cs
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.csproj.CoreCompileInputs.cache
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.sourcelink.json
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.csproj.Up2Date
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.dll
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\refint\InaManager.dll
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.pdb
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.genruntimeconfig.cache
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\ref\InaManager.dll
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\SupertecnicasView.g.cs
+C:\Users\emilio.freire.peris_\Downloads\V12\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\SupertecnicasView.baml
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.exe
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.deps.json
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.runtimeconfig.json
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.dll
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.pdb
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\Google.Protobuf.dll
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\ZstdSharp.dll
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.csproj.AssemblyReference.cache
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\Styles\UIColors.baml
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EquipoView.baml
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\HomeView.baml
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\PartidosView.baml
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\SupertecnicasView.baml
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\App.baml
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\CustomControls\BindablePasswordBox.g.cs
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EquipoView.g.cs
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\HomeView.g.cs
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\LoginView.g.cs
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\MainView.g.cs
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\PartidosView.g.cs
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\SupertecnicasView.g.cs
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager_MarkupCompile.cache
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager_MarkupCompile.lref
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\CustomControls\BindablePasswordBox.baml
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\LoginView.baml
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\MainView.baml
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.g.resources
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.AssemblyInfoInputs.cache
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.AssemblyInfo.cs
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.csproj.CoreCompileInputs.cache
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.sourcelink.json
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.csproj.Up2Date
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.dll
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\refint\InaManager.dll
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.pdb
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.genruntimeconfig.cache
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\ref\InaManager.dll
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\SponsorsView.baml
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\SponsorsView.g.cs
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EmpleadosView.baml
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EmpleadosView.g.cs
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\FormacionesView.g.cs
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\FormacionesView.baml
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.csproj.AssemblyReference.cache
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\Styles\UIColors.baml
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EmpleadosView.baml
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EquipoView.baml
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\HomeView.baml
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\PartidosView.baml
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\SponsorsView.baml
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\SupertecnicasView.baml
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\App.baml
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\CustomControls\BindablePasswordBox.g.cs
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EmpleadosView.g.cs
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EquipoView.g.cs
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\FormacionesView.g.cs
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\HomeView.g.cs
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\LoginView.g.cs
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\MainView.g.cs
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\PartidosView.g.cs
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\PlantillaView.g.cs
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\SponsorsView.g.cs
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\SupertecnicasView.g.cs
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager_MarkupCompile.cache
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager_MarkupCompile.lref
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\CustomControls\BindablePasswordBox.baml
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\FormacionesView.baml
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\LoginView.baml
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\MainView.baml
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.dll
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\refint\InaManager.dll
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.pdb
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.exe
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.deps.json
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.runtimeconfig.json
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.dll
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.pdb
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\Google.Protobuf.dll
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\ZstdSharp.dll
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\PlantillaView.baml
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.g.resources
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.AssemblyInfoInputs.cache
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.AssemblyInfo.cs
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.csproj.CoreCompileInputs.cache
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.csproj.Up2Date
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.genruntimeconfig.cache
+C:\Users\Emilio\Desktop\INAMANAGER\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\ref\InaManager.dll
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.exe
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.deps.json
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.runtimeconfig.json
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.dll
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.pdb
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\Google.Protobuf.dll
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\ZstdSharp.dll
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.csproj.AssemblyReference.cache
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\Styles\UIColors.baml
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EmpleadosView.baml
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EquipoView.baml
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\HomeView.baml
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\PartidosView.baml
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\SponsorsView.baml
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\SupertecnicasView.baml
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\App.baml
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\CustomControls\BindablePasswordBox.g.cs
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EmpleadosView.g.cs
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EquipoView.g.cs
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\FormacionesView.g.cs
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\HomeView.g.cs
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\LoginView.g.cs
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\MainView.g.cs
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\PartidosView.g.cs
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\PlantillaView.g.cs
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\SponsorsView.g.cs
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\SupertecnicasView.g.cs
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager_MarkupCompile.cache
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager_MarkupCompile.lref
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\CustomControls\BindablePasswordBox.baml
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\FormacionesView.baml
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\LoginView.baml
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\MainView.baml
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\PlantillaView.baml
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.g.resources
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.AssemblyInfoInputs.cache
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.AssemblyInfo.cs
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.csproj.CoreCompileInputs.cache
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.sourcelink.json
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.csproj.Up2Date
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.dll
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\refint\InaManager.dll
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.pdb
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.genruntimeconfig.cache
+C:\Users\emilio.freire.peris_\Desktop\INAMANAGER 2\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\ref\InaManager.dll
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.exe
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.deps.json
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.runtimeconfig.json
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.dll
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.pdb
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\Google.Protobuf.dll
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\ZstdSharp.dll
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.csproj.AssemblyReference.cache
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\Styles\UIColors.baml
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EmpleadosView.baml
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EquipoView.baml
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\HomeView.baml
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\PartidosView.baml
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\SponsorsView.baml
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\SupertecnicasView.baml
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\App.baml
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\CustomControls\BindablePasswordBox.g.cs
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EmpleadosView.g.cs
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EquipoView.g.cs
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\FormacionesView.g.cs
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\HomeView.g.cs
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\LoginView.g.cs
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\MainView.g.cs
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\PartidosView.g.cs
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\PlantillaView.g.cs
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\SponsorsView.g.cs
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\SupertecnicasView.g.cs
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager_MarkupCompile.cache
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager_MarkupCompile.lref
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\CustomControls\BindablePasswordBox.baml
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\FormacionesView.baml
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\LoginView.baml
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\MainView.baml
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\PlantillaView.baml
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.g.resources
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.AssemblyInfoInputs.cache
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.AssemblyInfo.cs
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.csproj.CoreCompileInputs.cache
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.csproj.Up2Date
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.dll
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\refint\InaManager.dll
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.pdb
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.genruntimeconfig.cache
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\ref\InaManager.dll
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EjerciciosView.baml
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EjerciciosView.g.cs
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\Audio\MusicaMenu.mp3
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\Audio\SonidoJober.mp3
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\Audio\SonidoSeleccionar.mp3
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager_Content.g.cs
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.csproj.AssemblyReference.cache
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\Styles\UIColors.baml
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EjerciciosView.baml
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EmpleadosView.baml
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EquipoView.baml
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\HomeView.baml
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\SponsorsView.baml
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\SupertecnicasView.baml
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\App.baml
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\CustomControls\BindablePasswordBox.g.cs
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EjerciciosView.g.cs
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EmpleadosView.g.cs
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EquipoView.g.cs
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\FormacionesView.g.cs
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\HomeView.g.cs
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\LoginView.g.cs
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\MainView.g.cs
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\PartidosView.g.cs
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\PlantillaView.g.cs
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\SponsorsView.g.cs
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\SupertecnicasView.g.cs
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager_Content.g.cs
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager_MarkupCompile.cache
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager_MarkupCompile.lref
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.dll
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\refint\InaManager.dll
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.pdb
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\Audio\MusicaMenu.mp3
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\Audio\SonidoJober.mp3
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\Audio\SonidoSeleccionar.mp3
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.exe
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.deps.json
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.runtimeconfig.json
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.dll
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.pdb
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\Google.Protobuf.dll
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\ZstdSharp.dll
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\CustomControls\BindablePasswordBox.baml
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\FormacionesView.baml
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\LoginView.baml
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\MainView.baml
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\PartidosView.baml
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\PlantillaView.baml
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.g.resources
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.AssemblyInfoInputs.cache
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.AssemblyInfo.cs
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.csproj.CoreCompileInputs.cache
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.csproj.Up2Date
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.genruntimeconfig.cache
+C:\Users\Emilio\Desktop\INAMANAGE DEFINITIVO - copia\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\ref\InaManager.dll
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\Audio\MusicaMenu.mp3
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\Audio\SonidoJober.mp3
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\Audio\SonidoSeleccionar.mp3
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.exe
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.deps.json
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.runtimeconfig.json
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.dll
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.pdb
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\Google.Protobuf.dll
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\ZstdSharp.dll
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.csproj.AssemblyReference.cache
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\Styles\UIColors.baml
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EjerciciosView.baml
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EmpleadosView.baml
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EquipoView.baml
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\HomeView.baml
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\SponsorsView.baml
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\SupertecnicasView.baml
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\App.baml
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\CustomControls\BindablePasswordBox.g.cs
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EjerciciosView.g.cs
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EmpleadosView.g.cs
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EquipoView.g.cs
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\FormacionesView.g.cs
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\HomeView.g.cs
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\LoginView.g.cs
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\MainView.g.cs
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\PartidosView.g.cs
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\PlantillaView.g.cs
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\SponsorsView.g.cs
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\SupertecnicasView.g.cs
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager_Content.g.cs
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager_MarkupCompile.cache
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager_MarkupCompile.lref
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\CustomControls\BindablePasswordBox.baml
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\FormacionesView.baml
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\LoginView.baml
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\MainView.baml
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\PartidosView.baml
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\PlantillaView.baml
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.g.resources
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.AssemblyInfoInputs.cache
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.AssemblyInfo.cs
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.csproj.CoreCompileInputs.cache
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.csproj.Up2Date
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.dll
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\refint\InaManager.dll
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.pdb
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.genruntimeconfig.cache
+C:\Users\linkm\Documents\Proyecto WPF\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\ref\InaManager.dll
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\Audio\MusicaMenu.mp3
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\Audio\SonidoJober.mp3
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\Audio\SonidoSeleccionar.mp3
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.exe
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.deps.json
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.runtimeconfig.json
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.dll
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\InaManager.pdb
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\Google.Protobuf.dll
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\ZstdSharp.dll
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.csproj.AssemblyReference.cache
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\Styles\UIColors.baml
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EjerciciosView.baml
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EmpleadosView.baml
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EquipoView.baml
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\HomeView.baml
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\SponsorsView.baml
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\SupertecnicasView.baml
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\App.baml
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\CustomControls\BindablePasswordBox.g.cs
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EjerciciosView.g.cs
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EmpleadosView.g.cs
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\EquipoView.g.cs
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\FormacionesView.g.cs
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\HomeView.g.cs
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\LoginView.g.cs
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\MainView.g.cs
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\PartidosView.g.cs
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\PlantillaView.g.cs
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\SponsorsView.g.cs
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\SupertecnicasView.g.cs
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager_Content.g.cs
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager_MarkupCompile.cache
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager_MarkupCompile.lref
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\CustomControls\BindablePasswordBox.baml
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\FormacionesView.baml
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\LoginView.baml
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\MainView.baml
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\PartidosView.baml
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\View\PlantillaView.baml
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.g.resources
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.AssemblyInfoInputs.cache
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.AssemblyInfo.cs
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.csproj.CoreCompileInputs.cache
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.csproj.Up2Date
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.dll
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\refint\InaManager.dll
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.pdb
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\InaManager.genruntimeconfig.cache
+C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\ref\InaManager.dll

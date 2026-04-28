@@ -1,0 +1,491 @@
+﻿<UserControl x:Class="InaManager.View.EquipoView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="700" d:DesignWidth="1000"
+             Background="Transparent">
+
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolToVis" />
+
+        <Style TargetType="DataGridColumnHeader">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        </Style>
+
+        <Style TargetType="DataGridCell">
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="DataGridCell">
+                        <Border Padding="{TemplateBinding Padding}" Background="Transparent">
+                            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsSelected" Value="True">
+                    <Setter Property="Background" Value="#40FFFFFF"/>
+                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="BorderBrush" Value="Transparent"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style TargetType="DataGridRow">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#20FFFFFF"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="Background" Value="#30000000"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="#80FFFFFF"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="CaretBrush" Value="White"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+
+        <Style x:Key="EstiloComboBoxGlass" TargetType="ComboBox">
+            <Setter Property="Background" Value="#40000000"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="#60FFFFFF"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="8,3"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ComboBox">
+                        <Grid>
+                            <ToggleButton x:Name="ToggleButton" 
+                                          Background="{TemplateBinding Background}" 
+                                          BorderBrush="{TemplateBinding BorderBrush}" 
+                                          BorderThickness="{TemplateBinding BorderThickness}"
+                                          IsChecked="{Binding IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}"
+                                          Focusable="false" ClickMode="Press">
+                                <ToggleButton.Template>
+                                    <ControlTemplate TargetType="ToggleButton">
+                                        <Border x:Name="Border" CornerRadius="5" Background="{TemplateBinding Background}" 
+                                                BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                                            <Path x:Name="Arrow" Fill="White" HorizontalAlignment="Right" VerticalAlignment="Center" 
+                                                  Margin="0,0,10,0" Data="M 0 0 L 4 4 L 8 0 Z"/>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="Border" Property="Background" Value="#60FFFFFF"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </ToggleButton.Template>
+                            </ToggleButton>
+
+                            <ContentPresenter x:Name="ContentSite" IsHitTestVisible="False" 
+                                              Content="{TemplateBinding SelectionBoxItem}"
+                                              ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}"
+                                              ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}"
+                                              Margin="10,3,30,3" VerticalAlignment="Center"/>
+
+                            <TextBox x:Name="PART_EditableTextBox" 
+                                     Style="{x:Null}" 
+                                     HorizontalAlignment="Left" 
+                                     VerticalAlignment="Center" 
+                                     Margin="10,3,30,3" 
+                                     Focusable="True" 
+                                     Background="Transparent" 
+                                     Foreground="White" 
+                                     BorderThickness="0" 
+                                     Visibility="Hidden"
+                                     IsReadOnly="{TemplateBinding IsReadOnly}"
+                                     CaretBrush="White"/>
+
+                            <Popup x:Name="Popup" Placement="Bottom" IsOpen="{TemplateBinding IsDropDownOpen}" AllowsTransparency="True" Focusable="False" PopupAnimation="Slide">
+                                <Border x:Name="DropDownBorder" Background="#EE151515" BorderBrush="#40FFFFFF" BorderThickness="1" CornerRadius="0,0,8,8" 
+                                        MinWidth="{TemplateBinding ActualWidth}" MaxHeight="300">
+                                    <ScrollViewer Margin="4" SnapsToDevicePixels="True">
+                                        <StackPanel IsItemsHost="True" KeyboardNavigation.DirectionalNavigation="Contained" />
+                                    </ScrollViewer>
+                                </Border>
+                            </Popup>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsEditable" Value="True">
+                                <Setter TargetName="ContentSite" Property="Visibility" Value="Hidden"/>
+                                <Setter TargetName="PART_EditableTextBox" Property="Visibility" Value="Visible"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="ComboBoxItem">
+            <Setter Property="Padding" Value="10,8"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ComboBoxItem">
+                        <Border x:Name="gd" Background="{TemplateBinding Background}" Padding="{TemplateBinding Padding}">
+                            <ContentPresenter />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="gd" Property="Background" Value="#40FFFFFF"/>
+                            </Trigger>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter TargetName="gd" Property="Background" Value="#FFD700"/>
+                                <Setter Property="Foreground" Value="Black"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid Visibility="{Binding IsAlertVisible, Converter={StaticResource BoolToVis}}" Panel.ZIndex="100">
+            <Border Background="#CC000000"/>
+            <Border Width="400" Height="200" Background="#2A2A2A" CornerRadius="15" BorderBrush="{Binding AlertColor}" BorderThickness="2" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="20">
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="20" ShadowDepth="5" Opacity="0.8"/>
+                </Border.Effect>
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,15">
+                        <TextBlock Text="⚠" FontSize="24" Foreground="{Binding AlertColor}" Margin="0,0,10,0" VerticalAlignment="Center"/>
+                        <TextBlock Text="{Binding AlertTitle}" FontSize="20" FontWeight="Bold" Foreground="White" VerticalAlignment="Center"/>
+                    </StackPanel>
+
+                    <TextBlock Text="{Binding AlertMessage}" Foreground="#DDDDDD" FontSize="14" 
+                               TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,25" LineHeight="20"/>
+
+                    <Button Command="{Binding CloseAlertCommand}"
+                            Content="ENTENDIDO" Width="120" Height="35"
+                            Background="{Binding AlertColor}" Foreground="White" FontWeight="Bold"
+                            BorderThickness="0" Cursor="Hand" HorizontalAlignment="Center">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="17"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </StackPanel>
+            </Border>
+        </Grid>
+
+        <Grid Visibility="{Binding IsListVisible}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" Margin="0,0,0,20">
+                <TextBlock Text="PLANTILLA ROYAL ACADEMY" FontSize="24" Foreground="White" FontWeight="Bold" FontFamily="Montserrat" VerticalAlignment="Center">
+                    <TextBlock.Effect>
+                        <DropShadowEffect Color="Black" ShadowDepth="2" Opacity="0.5"/>
+                    </TextBlock.Effect>
+                </TextBlock>
+
+                <Button HorizontalAlignment="Right" VerticalAlignment="Center"
+                        Command="{Binding NuevoJugadorCommand}"
+                        Content="+ FICHAR JUGADOR"
+                        Background="#FFD700" Foreground="Black" FontWeight="Bold" 
+                        Padding="15,5" BorderThickness="0" Cursor="Hand">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+            </Grid>
+
+            <Border Grid.Row="1" CornerRadius="15" Background="#15000000" BorderBrush="#30FFFFFF" BorderThickness="1">
+                <DataGrid ItemsSource="{Binding Jugadores}" AutoGenerateColumns="False" IsReadOnly="True"
+                          HeadersVisibility="Column" Background="Transparent" BorderThickness="0"
+                          GridLinesVisibility="Horizontal" HorizontalGridLinesBrush="#20FFFFFF"
+                          VerticalGridLinesBrush="Transparent" RowBackground="Transparent" RowHeight="65">
+
+                    <DataGrid.Columns>
+                        <DataGridTemplateColumn Header="JUGADOR" Width="80">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Border Width="50" Height="50" CornerRadius="25" BorderBrush="White" BorderThickness="1">
+                                        <Border.Background>
+                                            <ImageBrush ImageSource="{Binding Url_imagen}" Stretch="UniformToFill"/>
+                                        </Border.Background>
+                                    </Border>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+
+                        <DataGridTextColumn Header="NOMBRE" Binding="{Binding Nombre}" Width="*"/>
+                        <DataGridTextColumn Header="APODO" Binding="{Binding Apodo}" Width="*"/>
+
+                        <DataGridTextColumn Header="POS" Binding="{Binding Posicion}" Width="60">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="Foreground" Value="#FFD700"/>
+                                    <Setter Property="FontWeight" Value="Bold"/>
+                                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+
+                        <DataGridTextColumn Header="AFINIDAD" Binding="{Binding Afinidad}" Width="80"/>
+
+                        <DataGridTemplateColumn Header="MISTER" Width="70">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Border Width="40" Height="40" CornerRadius="20" BorderBrush="#80FFFFFF" BorderThickness="1" ToolTip="Responsable Técnico">
+                                        <Border.Background>
+                                            <ImageBrush ImageSource="{Binding UrlImagenResponsable}" Stretch="UniformToFill"/>
+                                        </Border.Background>
+                                    </Border>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+
+                        <DataGridTemplateColumn Header="ACCIÓN" Width="100">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                        <Button Content="EDITAR" 
+                                                Command="{Binding DataContext.ShowDetailsCommand, RelativeSource={RelativeSource AncestorType=UserControl}}" 
+                                                CommandParameter="{Binding}"
+                                                Background="#40FFFFFF" Foreground="White" BorderThickness="0" 
+                                                Padding="8,2" Cursor="Hand" FontWeight="Bold" FontSize="10" Margin="0,0,5,0">
+                                            <Button.Resources>
+                                                <Style TargetType="Border">
+                                                    <Setter Property="CornerRadius" Value="5"/>
+                                                </Style>
+                                            </Button.Resources>
+                                        </Button>
+
+                                        <Button Command="{Binding DataContext.DeleteJugadorCommand, RelativeSource={RelativeSource AncestorType=UserControl}}" 
+                                                CommandParameter="{Binding}" 
+                                                Width="24" Height="24" Background="#E53935" Foreground="White" BorderThickness="0" Cursor="Hand" ToolTip="Eliminar Jugador">
+                                            <Button.Resources>
+                                                <Style TargetType="Border">
+                                                    <Setter Property="CornerRadius" Value="12"/>
+                                                </Style>
+                                            </Button.Resources>
+                                            <Path Data="M0,0 L8,8 M8,0 L0,8" Stretch="Uniform" Stroke="White" StrokeThickness="2" Width="8" Height="8" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                        </Button>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Border>
+        </Grid>
+
+        <Grid Visibility="{Binding IsDetailVisible}" Background="#E6101010">
+            <Button HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20"
+                    Command="{Binding BackToListCommand}"
+                    Content="🡠 VOLVER A LA LISTA" Background="Transparent" Foreground="White" BorderThickness="0" FontSize="14" FontWeight="Bold" Cursor="Hand"
+                    Panel.ZIndex="10"/>
+
+            <ScrollViewer VerticalScrollBarVisibility="Hidden" Margin="0,60,0,0">
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Width="850" Margin="0,0,0,50">
+
+                    <Grid Margin="0,0,0,30">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="0" Width="140" Height="140" CornerRadius="70" BorderBrush="#FFD700" BorderThickness="3" Margin="0,0,30,0">
+                            <Border.Effect>
+                                <DropShadowEffect Color="#FFD700" ShadowDepth="0" BlurRadius="20" Opacity="0.6"/>
+                            </Border.Effect>
+                            <Border.Background>
+                                <ImageBrush ImageSource="{Binding SelectedJugador.Url_imagen}" Stretch="UniformToFill"/>
+                            </Border.Background>
+                        </Border>
+
+                        <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                            <TextBlock Text="{Binding SelectedJugador.Apodo}" Foreground="White" FontSize="40" FontWeight="Bold" FontFamily="Montserrat"/>
+                            <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                                <TextBlock Text="{Binding SelectedJugador.Posicion}" Foreground="#FFD700" FontSize="22" FontWeight="SemiBold" Margin="0,0,15,0"/>
+                                <TextBlock Text="|" Foreground="Gray" FontSize="22" Margin="0,0,15,0"/>
+                                <TextBlock Text="{Binding SelectedJugador.Afinidad}" Foreground="#AAAAAA" FontSize="22"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Grid>
+
+                    <Border Background="#15FFFFFF" CornerRadius="10" Padding="25" Margin="0,0,0,30" BorderBrush="#20FFFFFF" BorderThickness="1">
+                        <StackPanel>
+                            <TextBlock Text="FICHA TÉCNICA" Foreground="#AAAAAA" FontSize="14" FontWeight="Bold" Margin="0,0,0,15"/>
+
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="20"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="20"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="15"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="15"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="15"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+
+                                <StackPanel Grid.Row="0" Grid.Column="0">
+                                    <TextBlock Text="Nombre Real" Foreground="White" Opacity="0.6" FontSize="11"/>
+                                    <TextBox Text="{Binding SelectedJugador.Nombre, UpdateSourceTrigger=PropertyChanged}"/>
+                                </StackPanel>
+                                <StackPanel Grid.Row="0" Grid.Column="2">
+                                    <TextBlock Text="Apellido" Foreground="White" Opacity="0.6" FontSize="11"/>
+                                    <TextBox Text="{Binding SelectedJugador.Apellido, UpdateSourceTrigger=PropertyChanged}"/>
+                                </StackPanel>
+                                <StackPanel Grid.Row="0" Grid.Column="4">
+                                    <TextBlock Text="Dorsal" Foreground="White" Opacity="0.6" FontSize="11"/>
+                                    <TextBox Text="{Binding SelectedJugador.Dorsal, UpdateSourceTrigger=PropertyChanged}"/>
+                                </StackPanel>
+
+                                <StackPanel Grid.Row="2" Grid.Column="0">
+                                    <TextBlock Text="Posición Táctica" Foreground="White" Opacity="0.6" FontSize="11"/>
+                                    <ComboBox ItemsSource="{Binding ListaPosiciones}" SelectedItem="{Binding SelectedJugador.Posicion}" Style="{StaticResource EstiloComboBoxGlass}" Height="35"/>
+                                </StackPanel>
+                                <StackPanel Grid.Row="2" Grid.Column="2">
+                                    <TextBlock Text="Elemento / Afinidad" Foreground="White" Opacity="0.6" FontSize="11"/>
+                                    <ComboBox ItemsSource="{Binding ListaAfinidades}" SelectedItem="{Binding SelectedJugador.Afinidad}" Style="{StaticResource EstiloComboBoxGlass}" Height="35"/>
+                                </StackPanel>
+                                <StackPanel Grid.Row="2" Grid.Column="4">
+                                    <TextBlock Text="Apodo" Foreground="White" Opacity="0.6" FontSize="11"/>
+                                    <TextBox Text="{Binding SelectedJugador.Apodo, UpdateSourceTrigger=PropertyChanged}"/>
+                                </StackPanel>
+
+                                <StackPanel Grid.Row="4" Grid.Column="0" VerticalAlignment="Center">
+                                    <CheckBox Content="Es Titular" IsChecked="{Binding SelectedJugador.Es_titular, UpdateSourceTrigger=PropertyChanged}" Foreground="White" FontWeight="SemiBold" Cursor="Hand" ToolTip="Marca si es jugador titular."/>
+                                </StackPanel>
+                                <StackPanel Grid.Row="4" Grid.Column="2" VerticalAlignment="Center">
+                                    <CheckBox Content="Está Convocado" IsChecked="{Binding SelectedJugador.Esta_convocado, UpdateSourceTrigger=PropertyChanged}" Foreground="White" FontWeight="SemiBold" Cursor="Hand" ToolTip="Marca si ha sido convocado para el próximo partido."/>
+                                </StackPanel>
+
+                                <StackPanel Grid.Row="6" Grid.Column="0" Visibility="{Binding IsNewPlayerMode, Converter={StaticResource BoolToVis}}">
+                                    <TextBlock Text="Usuario (Login)" Foreground="#FFD700" Opacity="0.8" FontSize="11" FontWeight="Bold"/>
+                                    <TextBox Text="{Binding SelectedJugador.Username, UpdateSourceTrigger=PropertyChanged}"/>
+                                </StackPanel>
+                                <StackPanel Grid.Row="6" Grid.Column="2" Visibility="{Binding IsNewPlayerMode, Converter={StaticResource BoolToVis}}">
+                                    <TextBlock Text="Contraseña Inicial" Foreground="#FFD700" Opacity="0.8" FontSize="11" FontWeight="Bold"/>
+                                    <TextBox Text="{Binding SelectedJugador.Password, UpdateSourceTrigger=PropertyChanged}"/>
+                                </StackPanel>
+
+                                <Button Grid.Row="6" Grid.Column="4" Command="{Binding SaveChangesCommand}" Content="GUARDAR FICHA" 
+                                        Background="#2E7D32" Foreground="White" FontWeight="Bold" Height="35" BorderThickness="0" Cursor="Hand" VerticalAlignment="Bottom">
+                                    <Button.Resources>
+                                        <Style TargetType="Border">
+                                            <Setter Property="CornerRadius" Value="4"/>
+                                        </Style>
+                                    </Button.Resources>
+                                </Button>
+                            </Grid>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Background="#25000000" CornerRadius="10" Padding="25" BorderBrush="#80FFD700" BorderThickness="1">
+                        <StackPanel>
+                            <Grid Margin="0,0,0,15">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+
+                                <StackPanel VerticalAlignment="Center">
+                                    <TextBlock Text="SUPERTÉCNICAS" Foreground="#FFD700" FontSize="18" FontWeight="Bold"/>
+                                    <TextBlock Text="Habilidades especiales asignadas a este jugador" Foreground="Gray" FontSize="12"/>
+                                </StackPanel>
+
+                                <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Bottom">
+                                    <TextBlock Text="Aprender:" Foreground="White" VerticalAlignment="Center" Margin="0,0,10,0" FontWeight="SemiBold"/>
+
+                                    <ComboBox Width="220" Height="35" 
+                                              ItemsSource="{Binding CatalogoTecnicas}" 
+                                              SelectedItem="{Binding TecnicaParaAprender}"
+                                              IsEditable="True"
+                                              IsTextSearchEnabled="False"
+                                              Style="{StaticResource EstiloComboBoxGlass}"
+                                              Text="{Binding TextoBusqueda, UpdateSourceTrigger=PropertyChanged}"
+                                              DisplayMemberPath="Nombre_SuperTecnica"
+                                              ToolTip="Escribe para buscar...">
+                                        <ComboBox.ItemsPanel>
+                                            <ItemsPanelTemplate>
+                                                <VirtualizingStackPanel />
+                                            </ItemsPanelTemplate>
+                                        </ComboBox.ItemsPanel>
+                                    </ComboBox>
+
+                                    <Button Command="{Binding AprenderTecnicaCommand}" Content="+" Width="35" Height="35" Margin="10,0,0,0"
+                                            Background="#FFD700" Foreground="Black" FontWeight="Bold" BorderThickness="0" FontSize="16" Cursor="Hand">
+                                        <Button.Resources>
+                                            <Style TargetType="Border">
+                                                <Setter Property="CornerRadius" Value="5"/>
+                                            </Style>
+                                        </Button.Resources>
+                                    </Button>
+                                </StackPanel>
+                            </Grid>
+
+                            <DataGrid ItemsSource="{Binding TecnicasJugador}" AutoGenerateColumns="False" IsReadOnly="True"
+                                      HeadersVisibility="Column" Background="#10FFFFFF" BorderThickness="0"
+                                      GridLinesVisibility="Horizontal" HorizontalGridLinesBrush="#20FFFFFF"
+                                      VerticalGridLinesBrush="Transparent"
+                                      RowBackground="Transparent" RowHeight="45" MaxHeight="250">
+
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="NOMBRE TÉCNICA" Binding="{Binding Nombre_SuperTecnica}" Width="*" FontWeight="SemiBold"/>
+                                    <DataGridTextColumn Header="TIPO" Binding="{Binding Tipo_SuperTecnica}" Width="100"/>
+                                    <DataGridTextColumn Header="POTENCIA" Binding="{Binding Potencia}" Width="80">
+                                        <DataGridTextColumn.ElementStyle>
+                                            <Style TargetType="TextBlock">
+                                                <Setter Property="HorizontalAlignment" Value="Center"/>
+                                                <Setter Property="Foreground" Value="#FFD700"/>
+                                            </Style>
+                                        </DataGridTextColumn.ElementStyle>
+                                    </DataGridTextColumn>
+                                    <DataGridTextColumn Header="AFINIDAD" Binding="{Binding Afinidad_SuperTecnica}" Width="100"/>
+                                    <DataGridTemplateColumn Header="ACCIONES" Width="90">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <Button Content="OLVIDAR" 
+                                                        Command="{Binding DataContext.RetirarTecnicaCommand, RelativeSource={RelativeSource AncestorType=UserControl}}" 
+                                                        CommandParameter="{Binding}"
+                                                        Background="#B71C1C" Foreground="White" FontSize="10" FontWeight="Bold" 
+                                                        Padding="0" Height="24" Width="70" BorderThickness="0" Cursor="Hand">
+                                                    <Button.Resources>
+                                                        <Style TargetType="Border">
+                                                            <Setter Property="CornerRadius" Value="4"/>
+                                                        </Style>
+                                                    </Button.Resources>
+                                                </Button>
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+</UserControl>

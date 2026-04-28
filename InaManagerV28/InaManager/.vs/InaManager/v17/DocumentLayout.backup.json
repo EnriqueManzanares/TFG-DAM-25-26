@@ -1,0 +1,209 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Emilio\\Desktop\\InamangerUltimo\\InaManagerV26\\InaManagerV12\\V8\\InaManager\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\emilio\\desktop\\inamangerultimo\\inamanagerv26\\inamanagerv12\\v8\\inamanager\\inamanager\\view\\ejerciciosview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\view\\ejerciciosview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\emilio\\desktop\\inamangerultimo\\inamanagerv26\\inamanagerv12\\v8\\inamanager\\inamanager\\view\\supertecnicasview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\view\\supertecnicasview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\emilio\\desktop\\inamangerultimo\\inamanagerv26\\inamanagerv12\\v8\\inamanager\\inamanager\\view\\plantillaview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\view\\plantillaview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\emilio\\desktop\\inamangerultimo\\inamanagerv26\\inamanagerv12\\v8\\inamanager\\inamanager\\view\\plantillaview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\view\\plantillaview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\emilio\\desktop\\inamangerultimo\\inamanagerv26\\inamanagerv12\\v8\\inamanager\\inamanager\\viewmodel\\plantillaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\viewmodel\\plantillaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\emilio\\desktop\\inamangerultimo\\inamanagerv26\\inamanagerv12\\v8\\inamanager\\inamanager\\viewmodel\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\viewmodel\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\emilio\\desktop\\inamangerultimo\\inamanagerv26\\inamanagerv12\\v8\\inamanager\\inamanager\\repositories\\mysqlrepositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\repositories\\mysqlrepositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\emilio\\desktop\\inamangerultimo\\inamanagerv26\\inamanagerv12\\v8\\inamanager\\inamanager\\repositories\\mysqlentrenorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\repositories\\mysqlentrenorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\emilio\\desktop\\inamangerultimo\\inamanagerv26\\inamanagerv12\\v8\\inamanager\\inamanager\\repositories\\mysqlpartidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\repositories\\mysqlpartidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\emilio\\desktop\\inamangerultimo\\inamanagerv26\\inamanagerv12\\v8\\inamanager\\inamanager\\view\\partidosview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\view\\partidosview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\emilio\\desktop\\inamangerultimo\\inamanagerv26\\inamanagerv12\\v8\\inamanager\\inamanager\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\emilio\\desktop\\inamangerultimo\\inamanagerv26\\inamanagerv12\\v8\\inamanager\\inamanager\\viewmodel\\partidosviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\viewmodel\\partidosviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EjerciciosView.xaml",
+              "DocumentMoniker": "C:\\Users\\Emilio\\Desktop\\InamangerUltimo\\InaManagerV26\\InaManagerV12\\V8\\InaManager\\InaManager\\View\\EjerciciosView.xaml",
+              "RelativeDocumentMoniker": "InaManager\\View\\EjerciciosView.xaml",
+              "ToolTip": "C:\\Users\\Emilio\\Desktop\\InamangerUltimo\\InaManagerV26\\InaManagerV12\\V8\\InaManager\\InaManager\\View\\EjerciciosView.xaml",
+              "RelativeToolTip": "InaManager\\View\\EjerciciosView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-23T19:58:24.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SupertecnicasView.xaml",
+              "DocumentMoniker": "C:\\Users\\Emilio\\Desktop\\InamangerUltimo\\InaManagerV26\\InaManagerV12\\V8\\InaManager\\InaManager\\View\\SupertecnicasView.xaml",
+              "RelativeDocumentMoniker": "InaManager\\View\\SupertecnicasView.xaml",
+              "ToolTip": "C:\\Users\\Emilio\\Desktop\\InamangerUltimo\\InaManagerV26\\InaManagerV12\\V8\\InaManager\\InaManager\\View\\SupertecnicasView.xaml",
+              "RelativeToolTip": "InaManager\\View\\SupertecnicasView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-04T23:17:49.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ViewModelBase.cs",
+              "DocumentMoniker": "C:\\Users\\Emilio\\Desktop\\InamangerUltimo\\InaManagerV26\\InaManagerV12\\V8\\InaManager\\InaManager\\ViewModel\\ViewModelBase.cs",
+              "RelativeDocumentMoniker": "InaManager\\ViewModel\\ViewModelBase.cs",
+              "ToolTip": "C:\\Users\\Emilio\\Desktop\\InamangerUltimo\\InaManagerV26\\InaManagerV12\\V8\\InaManager\\InaManager\\ViewModel\\ViewModelBase.cs",
+              "RelativeToolTip": "InaManager\\ViewModel\\ViewModelBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-04T23:08:36.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlantillaViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Emilio\\Desktop\\InamangerUltimo\\InaManagerV26\\InaManagerV12\\V8\\InaManager\\InaManager\\ViewModel\\PlantillaViewModel.cs",
+              "RelativeDocumentMoniker": "InaManager\\ViewModel\\PlantillaViewModel.cs",
+              "ToolTip": "C:\\Users\\Emilio\\Desktop\\InamangerUltimo\\InaManagerV26\\InaManagerV12\\V8\\InaManager\\InaManager\\ViewModel\\PlantillaViewModel.cs",
+              "RelativeToolTip": "InaManager\\ViewModel\\PlantillaViewModel.cs",
+              "ViewState": "AgIAABUBAAAAAAAAAAAowC8BAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-04T22:45:36.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlantillaView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Emilio\\Desktop\\InamangerUltimo\\InaManagerV26\\InaManagerV12\\V8\\InaManager\\InaManager\\View\\PlantillaView.xaml.cs",
+              "RelativeDocumentMoniker": "InaManager\\View\\PlantillaView.xaml.cs",
+              "ToolTip": "C:\\Users\\Emilio\\Desktop\\InamangerUltimo\\InaManagerV26\\InaManagerV12\\V8\\InaManager\\InaManager\\View\\PlantillaView.xaml.cs",
+              "RelativeToolTip": "InaManager\\View\\PlantillaView.xaml.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAcwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-04T22:43:24.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlantillaView.xaml",
+              "DocumentMoniker": "C:\\Users\\Emilio\\Desktop\\InamangerUltimo\\InaManagerV26\\InaManagerV12\\V8\\InaManager\\InaManager\\View\\PlantillaView.xaml",
+              "RelativeDocumentMoniker": "InaManager\\View\\PlantillaView.xaml",
+              "ToolTip": "C:\\Users\\Emilio\\Desktop\\InamangerUltimo\\InaManagerV26\\InaManagerV12\\V8\\InaManager\\InaManager\\View\\PlantillaView.xaml",
+              "RelativeToolTip": "InaManager\\View\\PlantillaView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-04T22:43:10.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MysqlRepositoryBase.cs",
+              "DocumentMoniker": "C:\\Users\\Emilio\\Desktop\\InamangerUltimo\\InaManagerV26\\InaManagerV12\\V8\\InaManager\\InaManager\\Repositories\\MysqlRepositoryBase.cs",
+              "RelativeDocumentMoniker": "InaManager\\Repositories\\MysqlRepositoryBase.cs",
+              "ToolTip": "C:\\Users\\Emilio\\Desktop\\InamangerUltimo\\InaManagerV26\\InaManagerV12\\V8\\InaManager\\InaManager\\Repositories\\MysqlRepositoryBase.cs",
+              "RelativeToolTip": "InaManager\\Repositories\\MysqlRepositoryBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-04T22:30:58.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Emilio\\Desktop\\InamangerUltimo\\InaManagerV26\\InaManagerV12\\V8\\InaManager\\InaManager\\App.xaml",
+              "RelativeDocumentMoniker": "InaManager\\App.xaml",
+              "ToolTip": "C:\\Users\\Emilio\\Desktop\\InamangerUltimo\\InaManagerV26\\InaManagerV12\\V8\\InaManager\\InaManager\\App.xaml",
+              "RelativeToolTip": "InaManager\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-01T00:43:22.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PartidosView.xaml",
+              "DocumentMoniker": "C:\\Users\\Emilio\\Desktop\\InamangerUltimo\\InaManagerV26\\InaManagerV12\\V8\\InaManager\\InaManager\\View\\PartidosView.xaml",
+              "RelativeDocumentMoniker": "InaManager\\View\\PartidosView.xaml",
+              "ToolTip": "C:\\Users\\Emilio\\Desktop\\InamangerUltimo\\InaManagerV26\\InaManagerV12\\V8\\InaManager\\InaManager\\View\\PartidosView.xaml",
+              "RelativeToolTip": "InaManager\\View\\PartidosView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-28T23:01:25.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PartidosViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Emilio\\Desktop\\InamangerUltimo\\InaManagerV26\\InaManagerV12\\V8\\InaManager\\InaManager\\ViewModel\\PartidosViewModel.cs",
+              "RelativeDocumentMoniker": "InaManager\\ViewModel\\PartidosViewModel.cs",
+              "ToolTip": "C:\\Users\\Emilio\\Desktop\\InamangerUltimo\\InaManagerV26\\InaManagerV12\\V8\\InaManager\\InaManager\\ViewModel\\PartidosViewModel.cs",
+              "RelativeToolTip": "InaManager\\ViewModel\\PartidosViewModel.cs",
+              "ViewState": "AgIAAPwAAAAAAAAAAAAAABQBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-28T22:56:52.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MysqlEntrenoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Emilio\\Desktop\\InamangerUltimo\\InaManagerV26\\InaManagerV12\\V8\\InaManager\\InaManager\\Repositories\\MysqlEntrenoRepository.cs",
+              "RelativeDocumentMoniker": "InaManager\\Repositories\\MysqlEntrenoRepository.cs",
+              "ToolTip": "C:\\Users\\Emilio\\Desktop\\InamangerUltimo\\InaManagerV26\\InaManagerV12\\V8\\InaManager\\InaManager\\Repositories\\MysqlEntrenoRepository.cs",
+              "RelativeToolTip": "InaManager\\Repositories\\MysqlEntrenoRepository.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAuwKIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-28T23:01:02.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MysqlPartidoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Emilio\\Desktop\\InamangerUltimo\\InaManagerV26\\InaManagerV12\\V8\\InaManager\\InaManager\\Repositories\\MysqlPartidoRepository.cs",
+              "RelativeDocumentMoniker": "InaManager\\Repositories\\MysqlPartidoRepository.cs",
+              "ToolTip": "C:\\Users\\Emilio\\Desktop\\InamangerUltimo\\InaManagerV26\\InaManagerV12\\V8\\InaManager\\InaManager\\Repositories\\MysqlPartidoRepository.cs",
+              "RelativeToolTip": "InaManager\\Repositories\\MysqlPartidoRepository.cs",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAAAI4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-28T22:56:25.777Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

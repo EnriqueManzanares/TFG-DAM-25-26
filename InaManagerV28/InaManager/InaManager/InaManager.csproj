@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UseWPF>true</UseWPF>
+		<Platforms>AnyCPU;x64</Platforms>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Resource Include="Images\**\*.*" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Audio\MusicaMenu.mp3" />
+	  <None Remove="Audio\SonidoJober.mp3" />
+	  <None Remove="Audio\SonidoSeleccionar.mp3" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Include="Audio\MusicaMenu.mp3">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="Audio\SonidoJober.mp3">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="Audio\SonidoSeleccionar.mp3">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="MySql.Data" Version="9.6.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Images\Players\" />
+	</ItemGroup>
+
+</Project>

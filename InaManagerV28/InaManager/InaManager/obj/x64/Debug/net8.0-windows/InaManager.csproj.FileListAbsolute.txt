@@ -1,0 +1,7 @@
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\obj\x64\Debug\net8.0-windows\InaManager.csproj.AssemblyReference.cache
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\obj\x64\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\obj\x64\Debug\net8.0-windows\View\LoginView.g.cs
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\obj\x64\Debug\net8.0-windows\App.g.cs
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\obj\x64\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\obj\x64\Debug\net8.0-windows\InaManager_MarkupCompile.cache
+C:\Users\Emilio\Downloads\InaManagerV7\InaManager\InaManager\obj\x64\Debug\net8.0-windows\InaManager_MarkupCompile.lref

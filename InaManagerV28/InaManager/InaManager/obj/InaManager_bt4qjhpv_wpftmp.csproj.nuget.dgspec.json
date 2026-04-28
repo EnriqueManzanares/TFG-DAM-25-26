@@ -1,0 +1,78 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\linkm\\Documents\\Proyecto WPF\\InaManagerV26\\InaManagerV12\\V8\\InaManager\\InaManager\\InaManager.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\linkm\\Documents\\Proyecto WPF\\InaManagerV26\\InaManagerV12\\V8\\InaManager\\InaManager\\InaManager.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\linkm\\Documents\\Proyecto WPF\\InaManagerV26\\InaManagerV12\\V8\\InaManager\\InaManager\\InaManager.csproj",
+        "projectName": "InaManager",
+        "projectPath": "C:\\Users\\linkm\\Documents\\Proyecto WPF\\InaManagerV26\\InaManagerV12\\V8\\InaManager\\InaManager\\InaManager.csproj",
+        "packagesPath": "C:\\Users\\linkm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\linkm\\Documents\\Proyecto WPF\\InaManagerV26\\InaManagerV12\\V8\\InaManager\\InaManager\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\linkm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[9.6.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
