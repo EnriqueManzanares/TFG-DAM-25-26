@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "L/G7J2jWRbY=",
+  "dgSpecHash": "OkoGuEsMAYk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Emilio\\Desktop\\InamangerUltimo\\InaManagerV26\\InaManagerV12\\V8\\InaManager\\InaManager\\InaManager.csproj",
+  "projectFilePath": "C:\\Users\\Emilio\\Desktop\\INAMANAGER TFG\\TFG-DAM-25-26\\InaManagerV28\\InaManager\\InaManager\\InaManager.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Emilio\\.nuget\\packages\\bouncycastle.cryptography\\2.6.2\\bouncycastle.cryptography.2.6.2.nupkg.sha512",
     "C:\\Users\\Emilio\\.nuget\\packages\\google.protobuf\\3.32.0\\google.protobuf.3.32.0.nupkg.sha512",

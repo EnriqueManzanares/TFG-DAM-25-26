@@ -1,4 +1,4 @@
-﻿using System.Windows;
+using System.Windows;
 using System.Windows.Input;
 using System.Windows.Media;
 
@@ -53,6 +53,14 @@ namespace InaManager.View
         private void btnCerrar_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
+        }
+
+        // Botón Volver al Hub de aplicaciones
+        private void btnVolverHub_Click(object sender, RoutedEventArgs e)
+        {
+            var hub = new AppHubView();
+            hub.Show();
+            this.Close();
         }
     }
 }

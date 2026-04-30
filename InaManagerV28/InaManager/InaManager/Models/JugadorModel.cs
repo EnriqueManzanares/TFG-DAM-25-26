@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace InaManager.Models
 {
@@ -26,6 +26,7 @@ namespace InaManager.Models
         private int _id_equipo;
         private decimal _clausula_rescision;
         private bool _esta_disponible;
+        private decimal _sueldo;
 
         // Propiedades con bloque de código tradicional
         public int Id_jugador
@@ -148,6 +149,12 @@ namespace InaManager.Models
             set { _esta_disponible = value; }
         }
 
+        public decimal Sueldo
+        {
+            get { return _sueldo; }
+            set { _sueldo = value; }
+        }
+
 
         // --- CONSTRUCTORES ---
 
@@ -160,7 +167,7 @@ namespace InaManager.Models
         public JugadorModel(int id, string nombre, string apellido, string apodo, string afinidad,
                        string posicion, int dorsal, bool esTitular, bool estaConvocado,
                        string urlImagen, int nivel, int idResponsable, string urlImagenResponsable,
-                       int idEquipo, decimal clausulaRescision, bool estaDisponible)
+                       int idEquipo, decimal clausulaRescision, bool estaDisponible, decimal sueldo)
         {
             this.Id_jugador = id;
             this.Nombre = nombre;
@@ -178,6 +185,7 @@ namespace InaManager.Models
             this.Id_equipo = idEquipo;
             this.Clausula_rescision = clausulaRescision;
             this.Esta_disponible = estaDisponible;
+            this.Sueldo = sueldo;
         }
     }
 }

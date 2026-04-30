@@ -1,4 +1,4 @@
-﻿using InaManager.Models;
+using InaManager.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -166,8 +166,8 @@ namespace InaManager.ViewModel
         private void AbrirVentanaPrincipal()
         {
             IsViewVisible = false;
-            var mainView = new MainView();
-            mainView.Show();
+            var hubView = new AppHubView();
+            hubView.Show();
         }
 
         private void ExecuteRecoverPassCommand(string username, string mail)

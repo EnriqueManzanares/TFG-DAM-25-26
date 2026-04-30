@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\obj\Debug\net8.0-windows\
+C:\Users\Emilio\Desktop\INAMANAGER TFG\TFG-DAM-25-26\InaManagerV28\InaManager\InaManager\obj\Debug\net8.0-windows\
 InaManager
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-C:\Users\Emilio\Desktop\InamangerUltimo\InaManagerV26\InaManagerV12\V8\InaManager\InaManager\App.xaml
-13-1037253434
+C:\Users\Emilio\Desktop\INAMANAGER TFG\TFG-DAM-25-26\InaManagerV28\InaManager\InaManager\App.xaml
+15-501607241
 31512713536
-63-1096204659
+72710558226
 2061038720735
-CustomControls\BindablePasswordBox.xaml;Styles\UIColors.xaml;View\EjerciciosView.xaml;View\EmpleadosView.xaml;View\EquipoView.xaml;View\FormacionesView.xaml;View\HomeView.xaml;View\LoginView.xaml;View\MainView.xaml;View\PartidosView.xaml;View\PlantillaView.xaml;View\SponsorsView.xaml;View\SupertecnicasView.xaml;
+CustomControls\BindablePasswordBox.xaml;Styles\UIColors.xaml;View\AppHubView.xaml;View\ContratosView.xaml;View\EjerciciosView.xaml;View\EmpleadosView.xaml;View\EquipoView.xaml;View\FormacionesView.xaml;View\HomeView.xaml;View\LoginView.xaml;View\MainView.xaml;View\PartidosView.xaml;View\PlantillaView.xaml;View\SponsorsView.xaml;View\SupertecnicasView.xaml;
 
 False
 

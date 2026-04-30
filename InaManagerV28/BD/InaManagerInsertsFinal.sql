@@ -2,6 +2,12 @@
 -- Limpiamos la tabla antes de la inserción masiva para evitar duplicados si ya existían IDs
 DELETE FROM Supertecnicas where id_tecnica > 0;
 DELETE FROM Formaciones where id_formacion > 0;
+DELETE FROM Mercado where id_anuncio > 0;
+DELETE FROM Jugadores where id_jugador > 0;
+DELETE FROM Equipos where id_equipo > 0;
+DELETE FROM Empleados where id_empleado > 0;
+DELETE FROM Sponsors where id_sponsor > 0;
+DELETE FROM Partidos where id_partido > 0;
 
 
 -- Inserción masiva de datos adaptada (ID, Nombre, Tipo, Afinidad, Especial, Potencia)
@@ -457,38 +463,44 @@ VALUES
 (3, 'Travis', 'Percival', 'coach.royal@academy.com', 'ROYAL', 'RoyalPass', 655443322, 'Entrenador', 'Físico', 10, 5000.00, '/Images/Staff/percival_travis.png', 1 , false);
 
 -- ==========================================
--- 3. JUGADORES (Titulares y Banquillo)
+-- 3. EQUIPOS
+-- ==========================================
+INSERT INTO Equipos (id_equipo, nombre_equipo, fk_director, url_escudo) 
+VALUES (1, 'Royal Academy', 99, '/Images/Equipos/royal_academy.png');
+
+-- ==========================================
+-- 4. JUGADORES (Titulares y Banquillo)
 -- ==========================================
 
 
 -- 3. Insertamos la Plantilla Completa de la Royal Academy (16 Jugadores)
-INSERT INTO Jugadores (id_jugador, nombre, apellido, apodo, email, telefono, username, password, dorsal, posicion, afinidad, url_imagen, id_responsable) VALUES
+INSERT INTO Jugadores (id_jugador, nombre, apellido, apodo, email, telefono, username, password, dorsal, posicion, afinidad, url_imagen, id_responsable, id_equipo, es_titular, esta_convocado) VALUES
 -- --- TITULARES (4-4-2 Diamante con tu nomenclatura) ---
 -- Portero
-(1, 'Joseph', 'King', 'King', 'joseph.king@royalacademy.jp', 600000001, 'jking', 'royal', 1, 'PR', 'Fuego', 'Images/Players/joseph_king.png', 3),
+(1, 'Joseph', 'King', 'King', 'joseph.king@royalacademy.jp', 600000001, 'jking', 'royal', 1, 'PR', 'Fuego', 'Images/Players/joseph_king.png', 3, 1, true, true),
 
 -- Defensas
-(2, 'Peter', 'Drent', 'Drent', 'peter.drent@royalacademy.jp', 600000002, 'pdrent', 'royal', 2, 'LI', 'Bosque', 'Images/Players/peter_drent.png', 99),
-(3, 'Ben', 'Simmons', 'Simmons', 'ben.simmons@royalacademy.jp', 600000003, 'bsimmons', 'royal', 3, 'DFCI', 'Montaña', 'Images/Players/ben_simmons.png', 99),
-(4, 'Alan', 'Master', 'Master', 'alan.master@royalacademy.jp', 600000004, 'amaster', 'royal', 4, 'DFCD', 'Fuego', 'Images/Players/alan_master.png', 99),
-(5, 'Gus', 'Martin', 'Martin', 'gus.martin@royalacademy.jp', 600000005, 'gmartin', 'royal', 5, 'LD', 'Fuego', 'Images/Players/gus_martin.png', 99),
+(2, 'Peter', 'Drent', 'Drent', 'peter.drent@royalacademy.jp', 600000002, 'pdrent', 'royal', 2, 'LI', 'Bosque', 'Images/Players/peter_drent.png', 99, 1, true, true),
+(3, 'Ben', 'Simmons', 'Simmons', 'ben.simmons@royalacademy.jp', 600000003, 'bsimmons', 'royal', 3, 'DFCI', 'Montaña', 'Images/Players/ben_simmons.png', 99, 1, true, true),
+(4, 'Alan', 'Master', 'Master', 'alan.master@royalacademy.jp', 600000004, 'amaster', 'royal', 4, 'DFCD', 'Fuego', 'Images/Players/alan_master.png', 99, 1, true, true),
+(5, 'Gus', 'Martin', 'Martin', 'gus.martin@royalacademy.jp', 600000005, 'gmartin', 'royal', 5, 'LD', 'Fuego', 'Images/Players/gus_martin.png', 99, 1, true, true),
 
 -- Centrocampistas (Rombo: MCDC abajo, MCI/MCD a los lados, MCO arriba)
-(7, 'John', 'Bloom', 'Bloom', 'john.bloom@royalacademy.jp', 600000007, 'jbloom', 'royal', 7, 'MCDC', 'Bosque', 'Images/Players/john_bloom.png', 99),
-(8, 'Steve', 'Grimm', 'Grimm', 'steve.grimm@royalacademy.jp', 600000008, 'sgrimm', 'royal', 8, 'MCI', 'Aire', 'Images/Players/steve_grimm.png', 99),
-(6, 'Herman', 'Waldon', 'Waldon', 'herman.waldon@royalacademy.jp', 600000006, 'hwaldon', 'royal', 6, 'MCDC', 'Aire', 'Images/Players/herman_waldon.png', 99),
-(10, 'Jude', 'Sharp', 'Jude', 'jude.sharp@royalacademy.jp', 600000010, 'jsharp', 'royal', 10, 'MCO', 'Aire', 'Images/Players/jude_sharp.png', 99),
+(7, 'John', 'Bloom', 'Bloom', 'john.bloom@royalacademy.jp', 600000007, 'jbloom', 'royal', 7, 'MCDC', 'Bosque', 'Images/Players/john_bloom.png', 99, 1, true, true),
+(8, 'Steve', 'Grimm', 'Grimm', 'steve.grimm@royalacademy.jp', 600000008, 'sgrimm', 'royal', 8, 'MCI', 'Aire', 'Images/Players/steve_grimm.png', 99, 1, true, true),
+(6, 'Herman', 'Waldon', 'Waldon', 'herman.waldon@royalacademy.jp', 600000006, 'hwaldon', 'royal', 6, 'MCDC', 'Aire', 'Images/Players/herman_waldon.png', 99, 1, true, true),
+(10, 'Jude', 'Sharp', 'Jude', 'jude.sharp@royalacademy.jp', 600000010, 'jsharp', 'royal', 10, 'MCO', 'Aire', 'Images/Players/jude_sharp.png', 99, 1, true, true),
 
 -- Delanteros
-(9, 'Daniel', 'Hatch', 'Hatch', 'daniel.hatch@royalacademy.jp', 600000009, 'dhatch', 'royal', 9, 'DCI', 'Montaña', 'Images/Players/daniel_hatch.png', 99),
-(11, 'David', 'Samford', 'Samford', 'david.samford@royalacademy.jp', 600000011, 'dsamford', 'royal', 11, 'DCD', 'Bosque', 'Images/Players/david_samford.png', 99),
+(9, 'Daniel', 'Hatch', 'Hatch', 'daniel.hatch@royalacademy.jp', 600000009, 'dhatch', 'royal', 9, 'DCI', 'Montaña', 'Images/Players/daniel_hatch.png', 99, 1, true, true),
+(11, 'David', 'Samford', 'Samford', 'david.samford@royalacademy.jp', 600000011, 'dsamford', 'royal', 11, 'DCD', 'Bosque', 'Images/Players/david_samford.png', 99, 1, true, true),
 
 -- --- BANQUILLO (SUPLENTES) ---
-(12, 'Bob', 'Carlton', 'Carlton', 'bob.carlton@royalacademy.jp', 600000012, 'bcarlton', 'royal', 12, 'PR', 'Fuego', 'Images/Players/bob_carlton.png', 99),
-(13, 'Jim', 'Lawrenson', 'Lawrenson', 'jim.lawrenson@royalacademy.jp', 600000013, 'jlawrenson', 'royal', 13, 'DFC', 'Aire', 'Images/Players/jim_lawrenson.png', 99),
-(14, 'Barry', 'Pots', 'Pots', 'barry.pots@royalacademy.jp', 600000014, 'bpots', 'royal', 14, 'DFC', 'Bosque', 'Images/Players/barry_pots.png', 99),
-(15, 'Caleb', 'Stonewall', 'Caleb', 'caleb.stonewall@royalacademy.jp', 600000015, 'cstonewall', 'royal', 19, 'MCC', 'Fuego', 'Images/Players/caleb_stonewall.png', 99),
-(16, 'Derek', 'Swing', 'Swing', 'derek.swing@royalacademy.jp', 600000016, 'dswing', 'royal', 16, 'DC', 'Bosque', 'Images/Players/derek_swing.png', 99);
+(12, 'Bob', 'Carlton', 'Carlton', 'bob.carlton@royalacademy.jp', 600000012, 'bcarlton', 'royal', 12, 'PR', 'Fuego', 'Images/Players/bob_carlton.png', 99, 1, false, true),
+(13, 'Jim', 'Lawrenson', 'Lawrenson', 'jim.lawrenson@royalacademy.jp', 600000013, 'jlawrenson', 'royal', 13, 'DFC', 'Aire', 'Images/Players/jim_lawrenson.png', 99, 1, false, true),
+(14, 'Barry', 'Pots', 'Pots', 'barry.pots@royalacademy.jp', 600000014, 'bpots', 'royal', 14, 'DFC', 'Bosque', 'Images/Players/barry_pots.png', 99, 1, false, true),
+(15, 'Caleb', 'Stonewall', 'Caleb', 'caleb.stonewall@royalacademy.jp', 600000015, 'cstonewall', 'royal', 19, 'MCC', 'Fuego', 'Images/Players/caleb_stonewall.png', 99, 1, false, true),
+(16, 'Derek', 'Swing', 'Swing', 'derek.swing@royalacademy.jp', 600000016, 'dswing', 'royal', 16, 'DC', 'Bosque', 'Images/Players/derek_swing.png', 99, 1, false, true);
 
 -- =======================================================
 -- PORTEROS
@@ -643,3 +655,9 @@ VALUES (
 INSERT INTO Partidos (rival, fecha, competicion) VALUES ('Raimon', CURDATE(), 'Fútbol Frontier');
 INSERT INTO Partidos_Sponsors (id_partido, id_sponsor) VALUES (1, 1);
 
+-- ==========================================
+-- 6. MERCADO DE FICHAJES
+-- ==========================================
+INSERT INTO Mercado (id_jugador, id_equipo, precio, fecha_fin, estado) VALUES 
+(12, 1, 5000000.00, DATE_ADD(CURDATE(), INTERVAL 7 DAY), 'disponible'),
+(14, 1, 3500000.00, DATE_ADD(CURDATE(), INTERVAL 5 DAY), 'disponible');

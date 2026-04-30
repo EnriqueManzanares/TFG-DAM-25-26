@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Net;
@@ -53,7 +53,8 @@ namespace InaManager.Repositories
                             UrlImagenResponsable = reader["foto_mister"] != DBNull.Value ? reader["foto_mister"].ToString() : "/Images/Staff/default_coach.png",
                             Id_equipo = reader["id_equipo"] != DBNull.Value ? Convert.ToInt32(reader["id_equipo"]) : 0,
                             Clausula_rescision = reader["clausula_rescision"] != DBNull.Value ? Convert.ToDecimal(reader["clausula_rescision"]) : 0m,
-                            Esta_disponible = reader["esta_disponible"] != DBNull.Value && Convert.ToBoolean(reader["esta_disponible"])
+                            Esta_disponible = reader["esta_disponible"] != DBNull.Value && Convert.ToBoolean(reader["esta_disponible"]),
+                            Sueldo = reader["sueldo"] != DBNull.Value ? Convert.ToDecimal(reader["sueldo"]) : 0m
                         };
 
                         jugadorList.Add(jugador);
@@ -126,7 +127,8 @@ namespace InaManager.Repositories
                 Url_imagen = reader.IsDBNull(reader.GetOrdinal("Url_imagen")) ? null : reader.GetString("Url_imagen"),
                 Id_equipo = reader.IsDBNull(reader.GetOrdinal("id_equipo")) ? 0 : reader.GetInt32("id_equipo"),
                 Clausula_rescision = reader.IsDBNull(reader.GetOrdinal("clausula_rescision")) ? 0m : reader.GetDecimal("clausula_rescision"),
-                Esta_disponible = !reader.IsDBNull(reader.GetOrdinal("esta_disponible")) && reader.GetBoolean("esta_disponible")
+                Esta_disponible = !reader.IsDBNull(reader.GetOrdinal("esta_disponible")) && reader.GetBoolean("esta_disponible"),
+                Sueldo = reader.IsDBNull(reader.GetOrdinal("sueldo")) ? 0m : reader.GetDecimal("sueldo")
             };
         }
 
@@ -149,6 +151,9 @@ namespace InaManager.Repositories
                 command.Parameters.Add("@p_afinidad", MySqlDbType.VarChar).Value = jugador.Afinidad;
                 command.Parameters.Add("@p_titular", MySqlDbType.Bit).Value = jugador.Es_titular; 
                 command.Parameters.Add("@p_convocado", MySqlDbType.Bit).Value = jugador.Esta_convocado; 
+                command.Parameters.Add("@p_sueldo", MySqlDbType.Decimal).Value = jugador.Sueldo; 
+                command.Parameters.Add("@p_clausula", MySqlDbType.Decimal).Value = jugador.Clausula_rescision;
+                command.Parameters.Add("@p_disponible", MySqlDbType.Bit).Value = jugador.Esta_disponible;
                 command.Parameters.Add("@p_id", MySqlDbType.Int32).Value = jugador.Id_jugador;
 
                 command.ExecuteNonQuery();
@@ -176,6 +181,7 @@ namespace InaManager.Repositories
                 command.Parameters.Add("@p_posicion", MySqlDbType.VarChar).Value = jugador.Posicion;
                 command.Parameters.Add("@p_afinidad", MySqlDbType.VarChar).Value = jugador.Afinidad;
                 command.Parameters.Add("@p_url", MySqlDbType.VarChar).Value = jugador.Url_imagen ?? "/Images/Players/default.png";
+                command.Parameters.Add("@p_sueldo", MySqlDbType.Decimal).Value = jugador.Sueldo;
 
                 command.ExecuteNonQuery();
             }

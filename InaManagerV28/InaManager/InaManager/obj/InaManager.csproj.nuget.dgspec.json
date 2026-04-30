@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Emilio\\Desktop\\InamangerUltimo\\InaManagerV26\\InaManagerV12\\V8\\InaManager\\InaManager\\InaManager.csproj": {}
+    "C:\\Users\\Emilio\\Desktop\\INAMANAGER TFG\\TFG-DAM-25-26\\InaManagerV28\\InaManager\\InaManager\\InaManager.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Emilio\\Desktop\\InamangerUltimo\\InaManagerV26\\InaManagerV12\\V8\\InaManager\\InaManager\\InaManager.csproj": {
+    "C:\\Users\\Emilio\\Desktop\\INAMANAGER TFG\\TFG-DAM-25-26\\InaManagerV28\\InaManager\\InaManager\\InaManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Emilio\\Desktop\\InamangerUltimo\\InaManagerV26\\InaManagerV12\\V8\\InaManager\\InaManager\\InaManager.csproj",
+        "projectUniqueName": "C:\\Users\\Emilio\\Desktop\\INAMANAGER TFG\\TFG-DAM-25-26\\InaManagerV28\\InaManager\\InaManager\\InaManager.csproj",
         "projectName": "InaManager",
-        "projectPath": "C:\\Users\\Emilio\\Desktop\\InamangerUltimo\\InaManagerV26\\InaManagerV12\\V8\\InaManager\\InaManager\\InaManager.csproj",
+        "projectPath": "C:\\Users\\Emilio\\Desktop\\INAMANAGER TFG\\TFG-DAM-25-26\\InaManagerV28\\InaManager\\InaManager\\InaManager.csproj",
         "packagesPath": "C:\\Users\\Emilio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Emilio\\Desktop\\InamangerUltimo\\InaManagerV26\\InaManagerV12\\V8\\InaManager\\InaManager\\obj\\",
+        "outputPath": "C:\\Users\\Emilio\\Desktop\\INAMANAGER TFG\\TFG-DAM-25-26\\InaManagerV28\\InaManager\\InaManager\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Emilio\\AppData\\Roaming\\NuGet\\NuGet.Config",

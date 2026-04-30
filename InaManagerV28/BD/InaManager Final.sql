@@ -4,6 +4,7 @@ USE InaManager;
 -- ==========================================
 -- 1. LIMPIEZA (Orden inverso a las dependencias)
 -- ==========================================
+DROP TABLE IF EXISTS Mercado;
 DROP TABLE IF EXISTS Fichajes;
 DROP TABLE IF EXISTS Transacciones;
 DROP TABLE IF EXISTS Cuentas_Bancarias;
@@ -125,11 +126,24 @@ CREATE TABLE Jugadores (
     clausula_rescision DECIMAL(20, 2) DEFAULT 0.00,
     esta_disponible BOOLEAN DEFAULT TRUE,
     debe_cambiar_pass BOOLEAN DEFAULT TRUE,
+    sueldo DECIMAL(10, 2) DEFAULT 0.00,
     CONSTRAINT fk_jugador_empleado FOREIGN KEY (id_responsable) REFERENCES Empleados(id_empleado) ON DELETE SET NULL,
     CONSTRAINT fk_jugador_equipo FOREIGN KEY (id_equipo) REFERENCES Equipos(id_equipo) ON DELETE SET NULL
 );
 
--- 2.5 TABLAS ECONÓMICAS
+-- 2.5 MERCADO DE FICHAJES
+CREATE TABLE Mercado (
+    id_anuncio INT AUTO_INCREMENT PRIMARY KEY,
+    id_jugador INT NOT NULL,
+    id_equipo INT NOT NULL,
+    precio DECIMAL(20, 2) NOT NULL,
+    fecha_fin DATE NOT NULL,
+    estado ENUM('disponible', 'acabado', 'comprado') DEFAULT 'disponible',
+    CONSTRAINT fk_mercado_jugador FOREIGN KEY (id_jugador) REFERENCES Jugadores(id_jugador) ON DELETE CASCADE,
+    CONSTRAINT fk_mercado_equipo FOREIGN KEY (id_equipo) REFERENCES Equipos(id_equipo) ON DELETE CASCADE
+);
+
+-- 2.6 TABLAS ECONÓMICAS
 CREATE TABLE Cuentas_Bancarias (
     id_cuenta INT AUTO_INCREMENT PRIMARY KEY,
     iban VARCHAR(34) NOT NULL UNIQUE,
@@ -205,6 +219,8 @@ CREATE TABLE Partidos_Sponsors (
 -- ==========================================
 -- 3. PROCESOS ALMACENADOS
 -- ==========================================
+
+DELIMITER $$
 
 -- ==========================================
 -- 1. EQUIPOS (NUEVA)
@@ -354,19 +370,12 @@ BEGIN
     INNER JOIN Equipos e_dest ON f.fk_equipo_destino = e_dest.id_equipo
     ORDER BY f.fecha_fichaje DESC;
 END$$
-
-DELIMITER ;
-
-DELIMITER $$
 DROP PROCEDURE IF EXISTS sp_BorrarSupertecnica$$
 CREATE PROCEDURE sp_BorrarSupertecnica(IN p_id INT)
 BEGIN
     DELETE FROM Jugador_Tecnicas WHERE id_tecnica = p_id;
     DELETE FROM Supertecnicas WHERE id_tecnica = p_id;
 END$$
-DELIMITER ;
-
-DELIMITER $$
 
 -- 1. OBTENER FORMACIONES (Con datos del Entrenador asociado)
 DROP PROCEDURE IF EXISTS sp_ObtenerFormaciones$$
@@ -421,9 +430,6 @@ BEGIN
     DELETE FROM Formaciones WHERE id_formacion = p_id;
 END$$
 
-DELIMITER ;
-
-DELIMITER $$
 
 DROP PROCEDURE IF EXISTS sp_AsignarFormacionActiva$$
 CREATE PROCEDURE sp_AsignarFormacionActiva(
@@ -436,11 +442,7 @@ BEGIN
     WHERE username = p_username;
 END$$
 
-DELIMITER ;
-
 -- EQUIPO:
-
-DELIMITER $$
 
 -- 1. INTERCAMBIAR DOS JUGADORES (Swap completo)
 DROP PROCEDURE IF EXISTS sp_IntercambiarJugadores$$
@@ -501,13 +503,9 @@ BEGIN
     WHERE id_jugador = p_id;
 END$$
 
-DELIMITER ;
-
 -- ==========================================
 -- 4. NUEVOS PROCESOS ALMACENADOS (Repositorios)
 -- ==========================================
-
-DELIMITER $$
 
 -- ==========================================
 -- EMPLEADOS
@@ -679,11 +677,12 @@ CREATE PROCEDURE sp_InsertarJugador(
     IN p_afinidad VARCHAR(20),
     IN p_username VARCHAR(50),
     IN p_password VARCHAR(255),
-    IN p_url VARCHAR(255)
+    IN p_url VARCHAR(255),
+    IN p_sueldo DECIMAL(10,2)
 )
 BEGIN
-    INSERT INTO Jugadores (nombre, apellido, apodo, email, dorsal, posicion, afinidad, username, password, url_imagen)
-    VALUES (p_nombre, p_apellido, p_apodo, p_email, p_dorsal, p_posicion, p_afinidad, p_username, p_password, p_url);
+    INSERT INTO Jugadores (nombre, apellido, apodo, email, dorsal, posicion, afinidad, username, password, url_imagen, sueldo)
+    VALUES (p_nombre, p_apellido, p_apodo, p_email, p_dorsal, p_posicion, p_afinidad, p_username, p_password, p_url, p_sueldo);
 END$$
 
 DROP PROCEDURE IF EXISTS sp_ActualizarJugador$$
@@ -697,13 +696,17 @@ CREATE PROCEDURE sp_ActualizarJugador(
     IN p_afinidad VARCHAR(20),
     IN p_titular BOOLEAN,
     IN p_convocado BOOLEAN,
+    IN p_sueldo DECIMAL(10,2),
+    IN p_clausula DECIMAL(20,2),
+    IN p_disponible BOOLEAN,
     IN p_id INT
 )
 BEGIN
     UPDATE Jugadores SET
         nombre = p_nombre, apellido = p_apellido, apodo = p_apodo,
         email = p_email, dorsal = p_dorsal, posicion = p_posicion,
-        afinidad = p_afinidad, es_titular = p_titular, esta_convocado = p_convocado
+        afinidad = p_afinidad, es_titular = p_titular, esta_convocado = p_convocado,
+        sueldo = p_sueldo, clausula_rescision = p_clausula, esta_disponible = p_disponible
     WHERE id_jugador = p_id;
 END$$
 
@@ -781,8 +784,6 @@ END$$
 -- ==========================================
 
 DROP PROCEDURE IF EXISTS sp_ObtenerEntrenosAgenda$$
-
-DELIMITER $$
 CREATE PROCEDURE sp_ObtenerEntrenosAgenda(IN p_id_jugador INT)
 BEGIN
     SELECT 
@@ -799,7 +800,6 @@ BEGIN
     WHERE (p_id_jugador IS NULL OR e.id_jugador = p_id_jugador)
     ORDER BY e.fecha ASC;
 END$$
-DELIMITER ;$$
 
 DROP PROCEDURE IF EXISTS sp_ObtenerSelectorJugadores$$
 CREATE PROCEDURE sp_ObtenerSelectorJugadores()

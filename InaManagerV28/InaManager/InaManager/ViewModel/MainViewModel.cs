@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Threading;
 using System.Windows;
 using System.Windows.Input;
@@ -61,6 +61,7 @@ namespace InaManager.ViewModel
         public ICommand ShowFormacionesViewCommand { get; }
         public ICommand ShowEjerciciosViewCommand { get; }
         public ICommand ShowPerfilViewCommand { get; }
+        public ICommand ShowContratosViewCommand { get; }
 
         public MainViewModel()
         {
@@ -78,6 +79,7 @@ namespace InaManager.ViewModel
             ShowFormacionesViewCommand = new ViewModelCommand(ExecuteShowFormacionesView);
             ShowEjerciciosViewCommand = new ViewModelCommand(ExecuteShowEjerciciosView);
             ShowPerfilViewCommand = new ViewModelCommand(ExecuteShowPerfilView);
+            ShowContratosViewCommand = new ViewModelCommand(ExecuteShowContratosView);
 
             // Carga inicial
             ExecuteShowHomeView(null);
@@ -94,6 +96,7 @@ namespace InaManager.ViewModel
         private void ExecuteShowEmpleadosView(object obj) => CurrentChildView = new EmpleadosViewModel();
         private void ExecuteShowFormacionesView(object obj) => CurrentChildView = new FormacionesViewModel();
         private void ExecuteShowEjerciciosView(object obj) => CurrentChildView = new EjerciciosViewModel();
+        private void ExecuteShowContratosView(object obj) => CurrentChildView = new ContratosViewModel();
 
         // --- LÓGICA DE PERFIL ---
         private void ExecuteShowPerfilView(object obj)
