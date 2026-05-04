@@ -7,7 +7,7 @@ public abstract class RepositoryBase
     public RepositoryBase()
     {
        
-        _connectionString = "Server=localhost;Port=3306;Database=inamanager;Uid=root;Pwd=toor;";
+        _connectionString = "Server=localhost;Port=3306;Database=inamanager;Uid=root;Pwd=root;";
     }
 
     protected MySqlConnection GetConnection()
