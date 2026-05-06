@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InaManager")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a36f46e10984ea56383a4a5a32227da118c06d5f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+882f795dc304a23b0cdfe47b337a6420ee1d96f8")]
 [assembly: System.Reflection.AssemblyProductAttribute("InaManager")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InaManager")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

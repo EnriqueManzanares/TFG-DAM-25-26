@@ -52,7 +52,7 @@ namespace InaManager.View {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/InaManager;component/view/sponsorsview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/InaManager;V1.0.0.0;component/view/sponsorsview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\View\SponsorsView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

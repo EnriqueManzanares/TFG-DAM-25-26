@@ -116,10 +116,9 @@
               "RelativeDocumentMoniker": "InaManager\\ViewModel\\TransferenciaBancariaViewModel.cs",
               "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\ViewModel\\TransferenciaBancariaViewModel.cs",
               "RelativeToolTip": "InaManager\\ViewModel\\TransferenciaBancariaViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMBAAAAAAAAAIBZwAgBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T14:57:18.47Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-04T14:57:18.47Z"
             },
             {
               "$type": "Document",
@@ -131,8 +130,7 @@
               "RelativeToolTip": "InaManager\\View\\TransferenciaBancariaView.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T14:57:02.464Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-04T14:57:02.464Z"
             },
             {
               "$type": "Document",
@@ -155,8 +153,7 @@
               "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\View\\BancoView.xaml",
               "RelativeToolTip": "InaManager\\View\\BancoView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-04T14:02:18.899Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-04T14:02:18.899Z"
             },
             {
               "$type": "Document",
@@ -168,8 +165,7 @@
               "RelativeToolTip": "InaManager\\ViewModel\\BancoViewModel.cs",
               "ViewState": "AgIAAFwAAAAAAAAAAEBVwGAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T14:01:50.298Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-04T14:01:50.298Z"
             },
             {
               "$type": "Document",
@@ -181,8 +177,7 @@
               "RelativeToolTip": "InaManager\\Models\\BancoModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T14:01:35.199Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-04T14:01:35.199Z"
             },
             {
               "$type": "Document",
@@ -193,8 +188,7 @@
               "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\View\\AppHubView.xaml",
               "RelativeToolTip": "InaManager\\View\\AppHubView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-04T13:36:34.316Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-04T13:36:34.316Z"
             },
             {
               "$type": "Document",
@@ -206,8 +200,7 @@
               "RelativeToolTip": "InaManager\\View\\BancoView.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T14:02:36.128Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-04T14:02:36.128Z"
             },
             {
               "$type": "Document",
@@ -219,8 +212,7 @@
               "RelativeToolTip": "InaManager\\Repositories\\MysqlBancoRepository.cs",
               "ViewState": "AgIAAPkAAAAAAAAAAABRwPwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T14:35:56.455Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-04T14:35:56.455Z"
             },
             {
               "$type": "Document",
@@ -232,8 +224,7 @@
               "RelativeToolTip": "InaManager\\Repositories\\IBancoRepository.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAEBUwA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T14:37:28.013Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-04T14:37:28.013Z"
             },
             {
               "$type": "Document",
@@ -245,8 +236,7 @@
               "RelativeToolTip": "InaManager\\View\\AppHubView.xaml.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAMBdwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T13:44:07.341Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-04T13:44:07.341Z"
             },
             {
               "$type": "Document",
@@ -258,8 +248,7 @@
               "RelativeToolTip": "InaManager\\ViewModel\\AppHubViewModel.cs",
               "ViewState": "AgIAAGEAAAAAAAAAAEBVwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T14:02:52.646Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-04T14:02:52.646Z"
             },
             {
               "$type": "Document",
@@ -271,8 +260,7 @@
               "RelativeToolTip": "InaManager\\Repositories\\MysqlRepositoryBase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T10:33:13.718Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-04T10:33:13.718Z"
             },
             {
               "$type": "Document",
@@ -296,8 +284,7 @@
               "RelativeToolTip": "InaManager\\Helpers\\MapeoPosiciones.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T10:24:02.749Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-04T10:24:02.749Z"
             },
             {
               "$type": "Document",
@@ -308,8 +295,7 @@
               "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\View\\PartidosView.xaml",
               "RelativeToolTip": "InaManager\\View\\PartidosView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-04T22:08:33.623Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-04T22:08:33.623Z"
             },
             {
               "$type": "Document",
