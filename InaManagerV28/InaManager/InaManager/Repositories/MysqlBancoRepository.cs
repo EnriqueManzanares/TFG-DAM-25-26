@@ -59,6 +59,53 @@ namespace InaManager.Repositories
             return bancoModel;
         }
 
+        public BancoModel ObtenerCuentaPorUsuario(int idUsuario, bool esJugador, string nombrePersona)
+        {
+            var bancoModel = new BancoModel();
+            
+            try
+            {
+                using (var connection = GetConnection())
+                using (var command = new MySqlCommand("sp_ObtenerCuentaPorUsuario", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("p_id_usuario", idUsuario);
+                    command.Parameters.AddWithValue("p_es_jugador", esJugador);
+                    
+                    connection.Open();
+                    using (var reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            string iban = reader["iban"].ToString();
+                            bancoModel.IBAN = iban;
+                            bancoModel.Saldo = Convert.ToDecimal(reader["saldo_actual"]);
+                            bancoModel.NombrePropietario = nombrePersona;
+                            bancoModel.NumeroCuenta = iban.Length >= 7 ? iban.Substring(iban.Length - 7) : iban;
+                            bancoModel.TipoCuenta = "Cuenta Corriente";
+                        }
+                        else
+                        {
+                            bancoModel.NombrePropietario = nombrePersona;
+                            bancoModel.IBAN = "N/A";
+                            bancoModel.Saldo = 0m;
+                            bancoModel.NumeroCuenta = "N/A";
+                            bancoModel.TipoCuenta = "Cuenta Corriente";
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Error en ObtenerCuentaPorUsuario: {ex.Message}");
+                bancoModel.NombrePropietario = "Error al cargar";
+                bancoModel.IBAN = "Error";
+                bancoModel.Saldo = 0m;
+            }
+
+            return bancoModel;
+        }
+
         public bool ActualizarSaldo(int idEmpleado, decimal nuevoSaldo)
         {
             try
@@ -122,6 +169,42 @@ namespace InaManager.Repositories
                 System.Diagnostics.Debug.WriteLine($"Error en ObtenerTransacciones: {ex.Message}");
             }
 
+            return transacciones;
+        }
+
+        public List<TransaccionModel> ObtenerHistorialTransaccionesUsuario(int idUsuario, bool esJugador)
+        {
+            var transacciones = new List<TransaccionModel>();
+            try
+            {
+                using (var connection = GetConnection())
+                using (var command = new MySqlCommand("sp_ObtenerHistorialTransaccionesUsuario", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("p_id_usuario", idUsuario);
+                    command.Parameters.AddWithValue("p_es_jugador", esJugador);
+                    
+                    connection.Open();
+                    using (var reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            var transaccion = new TransaccionModel
+                            {
+                                Monto = Convert.ToDecimal(reader["monto_final"]),
+                                Tipo = reader["tipo"].ToString(),
+                                Concepto = reader["concepto"].ToString(),
+                                Fecha_operacion = Convert.ToDateTime(reader["fecha_operacion"])
+                            };
+                            transacciones.Add(transaccion);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Error en ObtenerHistorialTransaccionesUsuario: {ex.Message}");
+            }
             return transacciones;
         }
 

@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Emilio\\Desktop\\INAMANAGER TFG\\TFG-DAM-25-26\\InaManagerV28\\InaManager\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\emilio\\desktop\\inamanager tfg\\tfg-dam-25-26\\inamanagerv28\\inamanager\\inamanager\\view\\transferenciabancariaview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\view\\transferenciabancariaview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\emilio\\desktop\\inamanager tfg\\tfg-dam-25-26\\inamanagerv28\\inamanager\\inamanager\\viewmodel\\contratosviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\viewmodel\\contratosviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\emilio\\desktop\\inamanager tfg\\tfg-dam-25-26\\inamanagerv28\\inamanager\\inamanager\\view\\contratosview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\view\\contratosview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\emilio\\desktop\\inamanager tfg\\tfg-dam-25-26\\inamanagerv28\\inamanager\\inamanager\\repositories\\mysqlrepositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\repositories\\mysqlrepositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\emilio\\desktop\\inamanager tfg\\tfg-dam-25-26\\inamanagerv28\\inamanager\\inamanager\\view\\ejerciciosview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -29,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\emilio\\desktop\\inamanager tfg\\tfg-dam-25-26\\inamanagerv28\\inamanager\\inamanager\\viewmodel\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\viewmodel\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\emilio\\desktop\\inamanager tfg\\tfg-dam-25-26\\inamanagerv28\\inamanager\\inamanager\\repositories\\mysqlrepositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\repositories\\mysqlrepositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\emilio\\desktop\\inamanager tfg\\tfg-dam-25-26\\inamanagerv28\\inamanager\\inamanager\\repositories\\mysqlentrenorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,30 +75,52 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "TransferenciaBancariaView.xaml",
+              "DocumentMoniker": "C:\\Users\\Emilio\\Desktop\\INAMANAGER TFG\\TFG-DAM-25-26\\InaManagerV28\\InaManager\\InaManager\\View\\TransferenciaBancariaView.xaml",
+              "RelativeDocumentMoniker": "InaManager\\View\\TransferenciaBancariaView.xaml",
+              "ToolTip": "C:\\Users\\Emilio\\Desktop\\INAMANAGER TFG\\TFG-DAM-25-26\\InaManagerV28\\InaManager\\InaManager\\View\\TransferenciaBancariaView.xaml",
+              "RelativeToolTip": "InaManager\\View\\TransferenciaBancariaView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-06T15:31:39.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ContratosViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Emilio\\Desktop\\INAMANAGER TFG\\TFG-DAM-25-26\\InaManagerV28\\InaManager\\InaManager\\ViewModel\\ContratosViewModel.cs",
+              "RelativeDocumentMoniker": "InaManager\\ViewModel\\ContratosViewModel.cs",
+              "ToolTip": "C:\\Users\\Emilio\\Desktop\\INAMANAGER TFG\\TFG-DAM-25-26\\InaManagerV28\\InaManager\\InaManager\\ViewModel\\ContratosViewModel.cs",
+              "RelativeToolTip": "InaManager\\ViewModel\\ContratosViewModel.cs",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAtwIgAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-06T12:13:13.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ContratosView.xaml",
               "DocumentMoniker": "C:\\Users\\Emilio\\Desktop\\INAMANAGER TFG\\TFG-DAM-25-26\\InaManagerV28\\InaManager\\InaManager\\View\\ContratosView.xaml",
               "RelativeDocumentMoniker": "InaManager\\View\\ContratosView.xaml",
               "ToolTip": "C:\\Users\\Emilio\\Desktop\\INAMANAGER TFG\\TFG-DAM-25-26\\InaManagerV28\\InaManager\\InaManager\\View\\ContratosView.xaml",
               "RelativeToolTip": "InaManager\\View\\ContratosView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-30T11:03:52.602Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-30T11:03:52.602Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "EjerciciosView.xaml",
               "DocumentMoniker": "C:\\Users\\Emilio\\Desktop\\INAMANAGER TFG\\TFG-DAM-25-26\\InaManagerV28\\InaManager\\InaManager\\View\\EjerciciosView.xaml",
               "RelativeDocumentMoniker": "InaManager\\View\\EjerciciosView.xaml",
               "ToolTip": "C:\\Users\\Emilio\\Desktop\\INAMANAGER TFG\\TFG-DAM-25-26\\InaManagerV28\\InaManager\\InaManager\\View\\EjerciciosView.xaml",
               "RelativeToolTip": "InaManager\\View\\EjerciciosView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-23T19:58:24.019Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-23T19:58:24.019Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "SupertecnicasView.xaml",
               "DocumentMoniker": "C:\\Users\\Emilio\\Desktop\\INAMANAGER TFG\\TFG-DAM-25-26\\InaManagerV28\\InaManager\\InaManager\\View\\SupertecnicasView.xaml",
               "RelativeDocumentMoniker": "InaManager\\View\\SupertecnicasView.xaml",
@@ -101,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "ViewModelBase.cs",
               "DocumentMoniker": "C:\\Users\\Emilio\\Desktop\\INAMANAGER TFG\\TFG-DAM-25-26\\InaManagerV28\\InaManager\\InaManager\\ViewModel\\ViewModelBase.cs",
               "RelativeDocumentMoniker": "InaManager\\ViewModel\\ViewModelBase.cs",
@@ -113,7 +143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "PlantillaViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Emilio\\Desktop\\INAMANAGER TFG\\TFG-DAM-25-26\\InaManagerV28\\InaManager\\InaManager\\ViewModel\\PlantillaViewModel.cs",
               "RelativeDocumentMoniker": "InaManager\\ViewModel\\PlantillaViewModel.cs",
@@ -125,7 +155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "PlantillaView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Emilio\\Desktop\\INAMANAGER TFG\\TFG-DAM-25-26\\InaManagerV28\\InaManager\\InaManager\\View\\PlantillaView.xaml.cs",
               "RelativeDocumentMoniker": "InaManager\\View\\PlantillaView.xaml.cs",
@@ -137,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "PlantillaView.xaml",
               "DocumentMoniker": "C:\\Users\\Emilio\\Desktop\\INAMANAGER TFG\\TFG-DAM-25-26\\InaManagerV28\\InaManager\\InaManager\\View\\PlantillaView.xaml",
               "RelativeDocumentMoniker": "InaManager\\View\\PlantillaView.xaml",
@@ -148,19 +178,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "MysqlRepositoryBase.cs",
               "DocumentMoniker": "C:\\Users\\Emilio\\Desktop\\INAMANAGER TFG\\TFG-DAM-25-26\\InaManagerV28\\InaManager\\InaManager\\Repositories\\MysqlRepositoryBase.cs",
               "RelativeDocumentMoniker": "InaManager\\Repositories\\MysqlRepositoryBase.cs",
               "ToolTip": "C:\\Users\\Emilio\\Desktop\\INAMANAGER TFG\\TFG-DAM-25-26\\InaManagerV28\\InaManager\\InaManager\\Repositories\\MysqlRepositoryBase.cs",
               "RelativeToolTip": "InaManager\\Repositories\\MysqlRepositoryBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-04T22:30:58.948Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\Emilio\\Desktop\\INAMANAGER TFG\\TFG-DAM-25-26\\InaManagerV28\\InaManager\\InaManager\\App.xaml",
               "RelativeDocumentMoniker": "InaManager\\App.xaml",
@@ -172,7 +202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "PartidosView.xaml",
               "DocumentMoniker": "C:\\Users\\Emilio\\Desktop\\INAMANAGER TFG\\TFG-DAM-25-26\\InaManagerV28\\InaManager\\InaManager\\View\\PartidosView.xaml",
               "RelativeDocumentMoniker": "InaManager\\View\\PartidosView.xaml",
@@ -183,7 +213,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "PartidosViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Emilio\\Desktop\\INAMANAGER TFG\\TFG-DAM-25-26\\InaManagerV28\\InaManager\\InaManager\\ViewModel\\PartidosViewModel.cs",
               "RelativeDocumentMoniker": "InaManager\\ViewModel\\PartidosViewModel.cs",
@@ -195,7 +225,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "MysqlEntrenoRepository.cs",
               "DocumentMoniker": "C:\\Users\\Emilio\\Desktop\\INAMANAGER TFG\\TFG-DAM-25-26\\InaManagerV28\\InaManager\\InaManager\\Repositories\\MysqlEntrenoRepository.cs",
               "RelativeDocumentMoniker": "InaManager\\Repositories\\MysqlEntrenoRepository.cs",
@@ -207,7 +237,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "MysqlPartidoRepository.cs",
               "DocumentMoniker": "C:\\Users\\Emilio\\Desktop\\INAMANAGER TFG\\TFG-DAM-25-26\\InaManagerV28\\InaManager\\InaManager\\Repositories\\MysqlPartidoRepository.cs",
               "RelativeDocumentMoniker": "InaManager\\Repositories\\MysqlPartidoRepository.cs",

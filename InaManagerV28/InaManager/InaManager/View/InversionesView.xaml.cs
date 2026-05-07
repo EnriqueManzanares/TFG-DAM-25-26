@@ -2,9 +2,9 @@ using System.Windows.Controls;
 
 namespace InaManager.View
 {
-    public partial class TransferenciaBancariaView : UserControl
+    public partial class InversionesView : UserControl
     {
-        public TransferenciaBancariaView()
+        public InversionesView()
         {
             InitializeComponent();
         }

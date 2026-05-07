@@ -3,6 +3,11 @@
 DELETE FROM Supertecnicas where id_tecnica > 0;
 DELETE FROM Formaciones where id_formacion > 0;
 DELETE FROM Mercado where id_anuncio > 0;
+DELETE FROM Fichajes where id_fichaje > 0;
+DELETE FROM Inversiones where id_inversion > 0;
+DELETE FROM Activos_Inversion where id_activo > 0;
+DELETE FROM Transacciones where id_transaccion > 0;
+DELETE FROM Cuentas_Bancarias where id_cuenta > 0;
 DELETE FROM Jugadores where id_jugador > 0;
 DELETE FROM Equipos where id_equipo > 0;
 DELETE FROM Empleados where id_empleado > 0;
@@ -661,3 +666,33 @@ INSERT INTO Partidos_Sponsors (id_partido, id_sponsor) VALUES (1, 1);
 INSERT INTO Mercado (id_jugador, id_equipo, precio, fecha_fin, estado) VALUES 
 (12, 1, 5000000.00, DATE_ADD(CURDATE(), INTERVAL 7 DAY), 'disponible'),
 (14, 1, 3500000.00, DATE_ADD(CURDATE(), INTERVAL 5 DAY), 'disponible');
+
+-- ==========================================
+-- 7. CUENTAS BANCARIAS
+-- ==========================================
+INSERT INTO Cuentas_Bancarias (id_cuenta, iban, id_jugador, id_empleado, saldo_actual) VALUES
+(1, 'ES9900000000000000000099', NULL, 99, 500000.00), -- Ray Dark
+(2, 'ES1000000000000000000010', 10, NULL, 15000.00),  -- Jude Sharp
+(3, 'ES1100000000000000000011', 11, NULL, 5000.00);   -- David Samford
+
+-- ==========================================
+-- 8. TRANSACCIONES
+-- ==========================================
+INSERT INTO Transacciones (id_cuenta_origen, id_cuenta_destino, monto, tipo, concepto, id_jugador_relacionado) VALUES
+-- Ray Dark paga a Jude Sharp un "incentivo"
+(1, 2, 5000.00, 'Premio', 'Incentivo por rendimiento superior', 10),
+-- Jude Sharp devuelve algo (o una multa que le pone Dark)
+(2, 1, 1000.00, 'Premio', 'Devolución de gastos no justificados', 10),
+-- David Samford recibe su sueldo (de la cuenta de Dark Corp / Dark)
+(1, 3, 2500.00, 'Salario', 'Pago de salario mensual', 11),
+-- Ray Dark recibe una inyección de capital (Sponsor)
+(NULL, 1, 100000.00, 'Sponsor', 'Inyección de capital Dark Corp', NULL);
+
+-- ==========================================
+-- 9. ACTIVOS DE INVERSIÓN
+-- ==========================================
+INSERT INTO Activos_Inversion (nombre, simbolo, precio_base, volatilidad, icono_emoji, descripcion) VALUES
+('INAcoin',              'INA', 45000.00, 0.2000, '🪙', 'Criptomoneda oficial del ecosistema INA. Alta volatilidad y altas recompensas.'),
+('Oro',                  'ORO',  1850.00, 0.0500, '🥇', 'Oro en onzas troy. Activo refugio clásico con baja volatilidad.'),
+('Plata',                'PLT',    23.50, 0.0800, '🥈', 'Plata en onzas. Metal industrial y de inversión con volatilidad media.'),
+('Acciones Royal Academy','RYA',   120.00, 0.1200, '📈', 'Acciones del club de fútbol Royal Academy. Suben con cada victoria.');

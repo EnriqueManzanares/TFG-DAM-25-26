@@ -17,29 +17,24 @@ namespace InaManager.ViewModel
         private bool _mostrarErrorIban;
         private bool _mostrarErrorMonto;
         private bool _mostrarMensaje;
+        private bool _transferenciaExitosa;
         private decimal _saldoActual;
+
+        /// <summary>
+        /// Callback que el padre (BancoViewModel) asigna para volver a Mi Cuenta al cancelar o confirmar.
+        /// </summary>
+        public Action OnCerrar { get; set; }
 
         public string IbanDestinatario
         {
             get => _ibanDestinatario;
-            set
-            {
-                _ibanDestinatario = value;
-                OnPropertyChanged(nameof(IbanDestinatario));
-                ValidarIban();
-            }
+            set { _ibanDestinatario = value; OnPropertyChanged(nameof(IbanDestinatario)); ValidarIban(); }
         }
 
         public string Monto
         {
             get => _monto;
-            set
-            {
-                _monto = value;
-                OnPropertyChanged(nameof(Monto));
-                OnPropertyChanged(nameof(SaldoDespues));
-                ValidarMonto();
-            }
+            set { _monto = value; OnPropertyChanged(nameof(Monto)); OnPropertyChanged(nameof(SaldoDespues)); ValidarMonto(); }
         }
 
         public string Concepto
@@ -84,6 +79,12 @@ namespace InaManager.ViewModel
             set { _mostrarMensaje = value; OnPropertyChanged(nameof(MostrarMensaje)); }
         }
 
+        public bool TransferenciaExitosa
+        {
+            get => _transferenciaExitosa;
+            set { _transferenciaExitosa = value; OnPropertyChanged(nameof(TransferenciaExitosa)); }
+        }
+
         public decimal SaldoActual
         {
             get => _saldoActual;
@@ -94,10 +95,7 @@ namespace InaManager.ViewModel
         {
             get
             {
-                if (decimal.TryParse(_monto, out var montoDecimal))
-                {
-                    return SaldoActual - montoDecimal;
-                }
+                if (decimal.TryParse(_monto, out var m)) return SaldoActual - m;
                 return SaldoActual;
             }
         }
@@ -110,11 +108,10 @@ namespace InaManager.ViewModel
             _bancoRepository = new MysqlBancoRepository();
             ConfirmarTransferenciaCommand = new ViewModelCommand(ExecuteConfirmarTransferencia);
             CancelarCommand = new ViewModelCommand(ExecuteCancelar);
-
             CargarSaldoActual();
         }
 
-        private void CargarSaldoActual()
+        public void CargarSaldoActual()
         {
             try
             {
@@ -132,17 +129,22 @@ namespace InaManager.ViewModel
             }
         }
 
+        private void Resetear()
+        {
+            IbanDestinatario = string.Empty;
+            Monto = string.Empty;
+            Concepto = string.Empty;
+            MostrarMensaje = false;
+            MostrarErrorIban = false;
+            MostrarErrorMonto = false;
+            TransferenciaExitosa = false;
+        }
+
         private void ValidarIban()
         {
             MostrarErrorIban = false;
             ErrorIban = string.Empty;
-
-            if (string.IsNullOrWhiteSpace(IbanDestinatario))
-            {
-                return;
-            }
-
-            // Validación básica de IBAN español
+            if (string.IsNullOrWhiteSpace(IbanDestinatario)) return;
             if (IbanDestinatario.Length != 24 || !IbanDestinatario.StartsWith("ES"))
             {
                 MostrarErrorIban = true;
@@ -154,43 +156,30 @@ namespace InaManager.ViewModel
         {
             MostrarErrorMonto = false;
             ErrorMonto = string.Empty;
-
-            if (string.IsNullOrWhiteSpace(Monto))
-            {
-                return;
-            }
-
+            if (string.IsNullOrWhiteSpace(Monto)) return;
             if (!decimal.TryParse(Monto, out var montoDecimal))
             {
-                MostrarErrorMonto = true;
-                ErrorMonto = "Monto inválido. Usa formato numérico";
-                return;
+                MostrarErrorMonto = true; ErrorMonto = "Monto inválido. Usa formato numérico"; return;
             }
-
             if (montoDecimal <= 0)
             {
-                MostrarErrorMonto = true;
-                ErrorMonto = "El monto debe ser mayor a 0";
-                return;
+                MostrarErrorMonto = true; ErrorMonto = "El monto debe ser mayor a 0"; return;
             }
-
             if (montoDecimal > SaldoActual)
             {
-                MostrarErrorMonto = true;
-                ErrorMonto = "Saldo insuficiente para esta transferencia";
-                return;
+                MostrarErrorMonto = true; ErrorMonto = "Saldo insuficiente para esta transferencia";
             }
         }
 
         private void ExecuteConfirmarTransferencia(object obj)
         {
-            // Validar todos los campos
             ValidarIban();
             ValidarMonto();
 
             if (MostrarErrorIban || MostrarErrorMonto)
             {
                 MostrarMensaje = true;
+                TransferenciaExitosa = false;
                 Mensaje = "Por favor, corrija los errores antes de continuar";
                 return;
             }
@@ -198,67 +187,47 @@ namespace InaManager.ViewModel
             try
             {
                 int idEmpleado = UserSession.IdUsuario;
-                if (idEmpleado <= 0)
-                {
-                    throw new Exception("Usuario no autenticado");
-                }
+                if (idEmpleado <= 0) throw new Exception("Usuario no autenticado");
+                if (!decimal.TryParse(Monto, out var montoDecimal)) throw new Exception("Monto inválido");
 
-                if (!decimal.TryParse(Monto, out var montoDecimal))
-                {
-                    throw new Exception("Monto inválido");
-                }
+                bool exito = _bancoRepository.RealizarTransferencia(idEmpleado, IbanDestinatario, montoDecimal, Concepto ?? "Transferencia");
 
-                // Realizar la transferencia
-                bool exitoTransferencia = _bancoRepository.RealizarTransferencia(
-                    idEmpleado,
-                    IbanDestinatario,
-                    montoDecimal,
-                    Concepto ?? "Transferencia"
-                );
-
-                if (exitoTransferencia)
+                if (exito)
                 {
                     MostrarMensaje = true;
+                    TransferenciaExitosa = true;
                     Mensaje = "✓ Transferencia realizada exitosamente";
-                    
-                    // Cerrar la ventana después de 2 segundos
-                    System.Windows.Application.Current.Dispatcher.BeginInvoke(
-                        new Action(() =>
+
+                    // Volver a Mi Cuenta tras 1.5 segundos y refrescar
+                    System.Threading.Tasks.Task.Delay(1500).ContinueWith(_ =>
+                    {
+                        System.Windows.Application.Current.Dispatcher.Invoke(() =>
                         {
-                            foreach (System.Windows.Window window in System.Windows.Application.Current.Windows)
-                            {
-                                if (window.GetType().Name == "TransferenciaBancariaView")
-                                {
-                                    window.Close();
-                                    break;
-                                }
-                            }
-                        }), 
-                        System.Windows.Threading.DispatcherPriority.Normal);
+                            Resetear();
+                            CargarSaldoActual();
+                            OnCerrar?.Invoke();
+                        });
+                    });
                 }
                 else
                 {
                     MostrarMensaje = true;
+                    TransferenciaExitosa = false;
                     Mensaje = "✗ Error al realizar la transferencia. Intenta nuevamente";
                 }
             }
             catch (Exception ex)
             {
                 MostrarMensaje = true;
+                TransferenciaExitosa = false;
                 Mensaje = $"✗ Error: {ex.Message}";
             }
         }
 
         private void ExecuteCancelar(object obj)
         {
-            foreach (System.Windows.Window w in System.Windows.Application.Current.Windows)
-            {
-                if (w.GetType().Name == "TransferenciaBancariaView")
-                {
-                    w.Close();
-                    break;
-                }
-            }
+            Resetear();
+            OnCerrar?.Invoke();
         }
     }
 }

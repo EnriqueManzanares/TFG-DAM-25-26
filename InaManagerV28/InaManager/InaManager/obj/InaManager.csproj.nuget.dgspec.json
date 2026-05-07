@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\InaManager.csproj": {}
+    "C:\\Users\\Emilio\\Desktop\\INAMANAGER TFG\\TFG-DAM-25-26\\InaManagerV28\\InaManager\\InaManager\\InaManager.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\InaManager.csproj": {
+    "C:\\Users\\Emilio\\Desktop\\INAMANAGER TFG\\TFG-DAM-25-26\\InaManagerV28\\InaManager\\InaManager\\InaManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\InaManager.csproj",
+        "projectUniqueName": "C:\\Users\\Emilio\\Desktop\\INAMANAGER TFG\\TFG-DAM-25-26\\InaManagerV28\\InaManager\\InaManager\\InaManager.csproj",
         "projectName": "InaManager",
-        "projectPath": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\InaManager.csproj",
-        "packagesPath": "C:\\Users\\Practicas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\obj\\",
+        "projectPath": "C:\\Users\\Emilio\\Desktop\\INAMANAGER TFG\\TFG-DAM-25-26\\InaManagerV28\\InaManager\\InaManager\\InaManager.csproj",
+        "packagesPath": "C:\\Users\\Emilio\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Emilio\\Desktop\\INAMANAGER TFG\\TFG-DAM-25-26\\InaManagerV28\\InaManager\\InaManager\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Practicas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Emilio\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,12 +22,10 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0-windows": {
-            "framework": "net8.0-windows7.0",
+          "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {}
           }
@@ -42,11 +40,10 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
-        "net8.0-windows": {
-          "framework": "net8.0-windows7.0",
+        "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "dependencies": {
             "MySql.Data": {
@@ -73,7 +70,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

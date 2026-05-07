@@ -842,3 +842,9 @@ C:\Users\Practicas\Documents\TFG.2\InaManagerV28\InaManager\InaManager\obj\Debug
 C:\Users\Practicas\Documents\TFG.2\InaManagerV28\InaManager\InaManager\obj\Debug\net8.0-windows\View\BancoView.baml
 C:\Users\Practicas\Documents\TFG.2\InaManagerV28\InaManager\InaManager\obj\Debug\net8.0-windows\View\TransferenciaBancariaView.g.cs
 C:\Users\Practicas\Documents\TFG.2\InaManagerV28\InaManager\InaManager\obj\Debug\net8.0-windows\View\TransferenciaBancariaView.baml
+C:\Users\Emilio\Desktop\INAMANAGER TFG\TFG-DAM-25-26\InaManagerV28\InaManager\InaManager\obj\Debug\net8.0-windows\View\BancoView.g.cs
+C:\Users\Emilio\Desktop\INAMANAGER TFG\TFG-DAM-25-26\InaManagerV28\InaManager\InaManager\obj\Debug\net8.0-windows\View\TransferenciaBancariaView.g.cs
+C:\Users\Emilio\Desktop\INAMANAGER TFG\TFG-DAM-25-26\InaManagerV28\InaManager\InaManager\obj\Debug\net8.0-windows\View\BancoView.baml
+C:\Users\Emilio\Desktop\INAMANAGER TFG\TFG-DAM-25-26\InaManagerV28\InaManager\InaManager\obj\Debug\net8.0-windows\View\TransferenciaBancariaView.baml
+C:\Users\Emilio\Desktop\INAMANAGER TFG\TFG-DAM-25-26\InaManagerV28\InaManager\InaManager\obj\Debug\net8.0-windows\View\InversionesView.baml
+C:\Users\Emilio\Desktop\INAMANAGER TFG\TFG-DAM-25-26\InaManagerV28\InaManager\InaManager\obj\Debug\net8.0-windows\View\InversionesView.g.cs

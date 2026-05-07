@@ -13,6 +13,7 @@
         ResizeMode="CanResizeWithGrip"
         AllowsTransparency="True"
         Background="Transparent"
+        Icon="/Images/logoInaManager.png"
         MouseDown="Window_MouseDown">
 
     <Window.DataContext>

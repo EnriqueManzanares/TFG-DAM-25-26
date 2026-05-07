@@ -11,6 +11,7 @@
         WindowStartupLocation="CenterScreen"
         AllowsTransparency="True"
         Background="Transparent"
+        Icon="/Images/logoInaManager.png"
         MouseDown="Window_MouseDown">
 
     <Window.DataContext>
@@ -19,29 +20,6 @@
 
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="BoolToVis"/>
-        
-        <!-- POPUP MENÚ DE CERRAR SESIÓN -->
-        <Popup x:Key="WindowsMenuPopup" x:Shared="False" StaysOpen="False" AllowsTransparency="True" Placement="Top" PopupAnimation="Fade">
-            <Border Background="#1F1F1F" BorderBrush="#404040" BorderThickness="1" CornerRadius="4" Padding="0" Margin="0,0,0,-50">
-                <Button Click="MenuItem_CerrarSesion" Background="Transparent" BorderThickness="0" Cursor="Hand">
-                    <Button.Template>
-                        <ControlTemplate TargetType="Button">
-                            <Border x:Name="MenuItemBorder" Background="Transparent" Padding="15,10">
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock Text="🚪" FontSize="14" Margin="0,0,8,0" VerticalAlignment="Center"/>
-                                    <TextBlock Text="Cerrar sesión" FontFamily="Montserrat" VerticalAlignment="Center" Foreground="White" FontSize="12"/>
-                                </StackPanel>
-                            </Border>
-                            <ControlTemplate.Triggers>
-                                <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter TargetName="MenuItemBorder" Property="Background" Value="#2F2F2F"/>
-                                </Trigger>
-                            </ControlTemplate.Triggers>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>
-            </Border>
-        </Popup>
     </Window.Resources>
 
     <!-- Fondo con imagen -->
@@ -249,6 +227,29 @@
                             </ControlTemplate>
                         </Button.Template>
                     </Button>
+
+                    <!-- POPUP MENÚ DE CERRAR SESIÓN -->
+                    <Popup x:Name="WindowsMenuPopup" StaysOpen="False" AllowsTransparency="True" Placement="Top" PlacementTarget="{Binding ElementName=WindowsButton}" PopupAnimation="Fade">
+                        <Border Background="#1F1F1F" BorderBrush="#404040" BorderThickness="1" CornerRadius="4" Padding="0" Margin="0,0,0,5">
+                            <Button Click="MenuItem_CerrarSesion" Background="Transparent" BorderThickness="0" Cursor="Hand">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border x:Name="MenuItemBorder" Background="Transparent" Padding="15,10">
+                                            <StackPanel Orientation="Horizontal">
+                                                <TextBlock Text="🚪" FontSize="14" Margin="0,0,8,0" VerticalAlignment="Center"/>
+                                                <TextBlock Text="Cerrar sesión" FontFamily="Montserrat" VerticalAlignment="Center" Foreground="White" FontSize="12"/>
+                                            </StackPanel>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="MenuItemBorder" Property="Background" Value="#2F2F2F"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+                        </Border>
+                    </Popup>
 
                     <!-- SEPARADOR -->
                     <Border Width="1" Background="#262626" Margin="0,5"/>

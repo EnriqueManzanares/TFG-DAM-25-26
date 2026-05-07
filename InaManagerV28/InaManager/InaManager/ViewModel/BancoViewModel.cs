@@ -1,3 +1,4 @@
+using System.Collections.ObjectModel;
 using System.Windows.Input;
 using InaManager.Models;
 using InaManager.Repositories;
@@ -8,25 +9,82 @@ namespace InaManager.ViewModel
     {
         private BancoModel _bancoDatos;
         private readonly IBancoRepository _bancoRepository;
+        private string _activeTab = "MiCuenta";
 
+        // ── Datos bancarios ──────────────────────────────────────────────
         public BancoModel BancoDatos
         {
             get => _bancoDatos;
             set { _bancoDatos = value; OnPropertyChanged(nameof(BancoDatos)); }
         }
 
-        public string NombreUsuario => UserSession.UsuarioActual?.DisplayName ?? "Usuario";
+        private ObservableCollection<TransaccionModel> _historialTransacciones;
+        public ObservableCollection<TransaccionModel> HistorialTransacciones
+        {
+            get => _historialTransacciones;
+            set { _historialTransacciones = value; OnPropertyChanged(nameof(HistorialTransacciones)); }
+        }
 
-        public ICommand VolverAlHubCommand { get; }
-        public ICommand TransferirDineroCommand { get; }
+        private bool _hasHistorial;
+        public bool HasHistorial
+        {
+            get => _hasHistorial;
+            set { _hasHistorial = value; OnPropertyChanged(nameof(HasHistorial)); }
+        }
+
+        // ── Sub-ViewModels ────────────────────────────────────────────────
+        public TransferenciaBancariaViewModel TransferenciaVM { get; }
+        public InversionesViewModel InversionesVM { get; }
+
+        // ── Tab activa ───────────────────────────────────────────────────
+        public string ActiveTab
+        {
+            get => _activeTab;
+            set
+            {
+                _activeTab = value;
+                OnPropertyChanged(nameof(ActiveTab));
+                OnPropertyChanged(nameof(IsTabMiCuenta));
+                OnPropertyChanged(nameof(IsTabTransaccion));
+                OnPropertyChanged(nameof(IsTabInvertir));
+                OnPropertyChanged(nameof(IsTabHistorial));
+            }
+        }
+
+        public bool IsTabMiCuenta   => ActiveTab == "MiCuenta";
+        public bool IsTabTransaccion => ActiveTab == "Transaccion";
+        public bool IsTabInvertir   => ActiveTab == "Invertir";
+        public bool IsTabHistorial  => ActiveTab == "Historial";
+
+        // ── Comandos ─────────────────────────────────────────────────────
+        public ICommand VolverAlHubCommand     { get; }
+        public ICommand TabMiCuentaCommand     { get; }
+        public ICommand TabTransaccionCommand  { get; }
+        public ICommand TabInvertirCommand     { get; }
+        public ICommand TabHistorialCommand    { get; }
 
         public BancoViewModel()
         {
             _bancoRepository = new MysqlBancoRepository();
-            VolverAlHubCommand = new ViewModelCommand(ExecuteVolverAlHub);
-            TransferirDineroCommand = new ViewModelCommand(ExecuteTransferirDinero);
-            
-            // Cargar datos del banco desde la base de datos
+
+            VolverAlHubCommand    = new ViewModelCommand(ExecuteVolverAlHub);
+            TabMiCuentaCommand    = new ViewModelCommand(_ => ActiveTab = "MiCuenta");
+            TabTransaccionCommand = new ViewModelCommand(_ => { ActiveTab = "Transaccion"; TransferenciaVM.CargarSaldoActual(); });
+            TabInvertirCommand    = new ViewModelCommand(_ => { ActiveTab = "Invertir"; InversionesVM.CargarDatos(); });
+            TabHistorialCommand   = new ViewModelCommand(_ => ActiveTab = "Historial");
+
+            // Crear TransferenciaVM y enlazar callback de vuelta
+            TransferenciaVM = new TransferenciaBancariaViewModel
+            {
+                OnCerrar = () => { ActiveTab = "MiCuenta"; CargarDatosDelBanco(); }
+            };
+
+            // Crear InversionesVM y refrescar saldo tras compra/venta
+            InversionesVM = new InversionesViewModel
+            {
+                OnInversionRealizada = () => CargarDatosDelBanco()
+            };
+
             CargarDatosDelBanco();
         }
 
@@ -34,62 +92,39 @@ namespace InaManager.ViewModel
         {
             try
             {
-                // Obtener el ID del usuario actual de la sesión
-                int idEmpleado = UserSession.IdUsuario;
-                
-                if (idEmpleado > 0)
+                int id = UserSession.IdUsuario;
+                bool esJugador = UserSession.Rol == "Jugador";
+                string nombrePersona = UserSession.UsuarioActual?.DisplayName ?? "Usuario Desconocido";
+
+                if (id > 0)
                 {
-                    // Cargar datos de la base de datos
-                    BancoDatos = _bancoRepository.ObtenerCuentaPorEmpleado(idEmpleado);
+                    BancoDatos = _bancoRepository.ObtenerCuentaPorUsuario(id, esJugador, nombrePersona);
+                    var historial = _bancoRepository.ObtenerHistorialTransaccionesUsuario(id, esJugador);
+                    HistorialTransacciones = new ObservableCollection<TransaccionModel>(historial);
+                    HasHistorial = HistorialTransacciones.Count > 0;
                 }
                 else
                 {
-                    // Si no hay usuario en sesión, mostrar datos vacíos
-                    BancoDatos = new BancoModel
-                    {
-                        NombrePropietario = "Usuario Desconocido",
-                        IBAN = "N/A",
-                        Saldo = 0m,
-                        NumeroCuenta = "N/A",
-                        TipoCuenta = "Cuenta Corriente"
-                    };
+                    BancoDatos = new BancoModel { NombrePropietario = "Usuario Desconocido", IBAN = "N/A", Saldo = 0m, NumeroCuenta = "N/A", TipoCuenta = "Cuenta Corriente" };
+                    HistorialTransacciones = new ObservableCollection<TransaccionModel>();
+                    HasHistorial = false;
                 }
             }
             catch
             {
-                // Si hay error, mostrar datos por defecto
-                BancoDatos = new BancoModel
-                {
-                    NombrePropietario = "Error al cargar datos",
-                    IBAN = "Error",
-                    Saldo = 0m,
-                    NumeroCuenta = "Error",
-                    TipoCuenta = "Cuenta Corriente"
-                };
+                BancoDatos = new BancoModel { NombrePropietario = "Error al cargar", IBAN = "Error", Saldo = 0m, NumeroCuenta = "Error", TipoCuenta = "Cuenta Corriente" };
+                HistorialTransacciones = new ObservableCollection<TransaccionModel>();
+                HasHistorial = false;
             }
-        }
-
-        private void ExecuteTransferirDinero(object obj)
-        {
-            // Abrir ventana de transferencia
-            var transferenciaView = new View.TransferenciaBancariaView();
-            transferenciaView.Show();
         }
 
         private void ExecuteVolverAlHub(object obj)
         {
-            // Abrimos el Hub nuevamente
             var hubView = new View.AppHubView();
             hubView.Show();
-
-            // Cerramos la ventana actual del Banco
             foreach (System.Windows.Window w in System.Windows.Application.Current.Windows)
             {
-                if (w.GetType().Name == "BancoView")
-                {
-                    w.Close();
-                    break;
-                }
+                if (w.GetType().Name == "BancoView") { w.Close(); break; }
             }
         }
     }

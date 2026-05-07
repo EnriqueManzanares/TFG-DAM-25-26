@@ -7,13 +7,9 @@ namespace InaManager.View
 {
     public partial class AppHubView : Window
     {
-        private Popup _windowsMenuPopup;
-
         public AppHubView()
         {
             InitializeComponent();
-            // Crear instancia del Popup desde resources
-            _windowsMenuPopup = this.Resources["WindowsMenuPopup"] as Popup;
         }
 
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
@@ -43,10 +39,9 @@ namespace InaManager.View
 
         private void WindowsButton_Click(object sender, RoutedEventArgs e)
         {
-            if (_windowsMenuPopup != null)
+            if (WindowsMenuPopup != null)
             {
-                _windowsMenuPopup.PlacementTarget = sender as UIElement;
-                _windowsMenuPopup.IsOpen = !_windowsMenuPopup.IsOpen;
+                WindowsMenuPopup.IsOpen = !WindowsMenuPopup.IsOpen;
             }
         }
     }

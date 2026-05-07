@@ -1,20 +1,20 @@
 ﻿InaManager
-1.0.0.0
+
 
 winexe
 C#
 .cs
-C:\Users\Practicas\Documents\TFG.2\InaManagerV28\InaManager\InaManager\obj\Debug\net8.0-windows\
+C:\Users\Emilio\Desktop\INAMANAGER TFG\TFG-DAM-25-26\InaManagerV28\InaManager\InaManager\obj\Debug\net8.0-windows\
 InaManager
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-C:\Users\Practicas\Documents\TFG.2\InaManagerV28\InaManager\InaManager\App.xaml
-17851016676
+C:\Users\Emilio\Desktop\INAMANAGER TFG\TFG-DAM-25-26\InaManagerV28\InaManager\InaManager\App.xaml
+1827568163
 31512713536
-81668911204
-2061436763435
-CustomControls\BindablePasswordBox.xaml;Styles\UIColors.xaml;View\AppHubView.xaml;View\BancoView.xaml;View\ContratosView.xaml;View\EjerciciosView.xaml;View\EmpleadosView.xaml;View\EquipoView.xaml;View\FormacionesView.xaml;View\HomeView.xaml;View\LoginView.xaml;View\MainView.xaml;View\PartidosView.xaml;View\PlantillaView.xaml;View\SponsorsView.xaml;View\SupertecnicasView.xaml;View\TransferenciaBancariaView.xaml;
+85-1991129355
+2061038720735
+CustomControls\BindablePasswordBox.xaml;Styles\UIColors.xaml;View\AppHubView.xaml;View\BancoView.xaml;View\ContratosView.xaml;View\EjerciciosView.xaml;View\EmpleadosView.xaml;View\EquipoView.xaml;View\FormacionesView.xaml;View\HomeView.xaml;View\InversionesView.xaml;View\LoginView.xaml;View\MainView.xaml;View\PartidosView.xaml;View\PlantillaView.xaml;View\SponsorsView.xaml;View\SupertecnicasView.xaml;View\TransferenciaBancariaView.xaml;
 
-True
+False
 

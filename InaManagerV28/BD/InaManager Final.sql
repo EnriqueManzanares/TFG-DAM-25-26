@@ -4,6 +4,8 @@ USE InaManager;
 -- ==========================================
 -- 1. LIMPIEZA (Orden inverso a las dependencias)
 -- ==========================================
+DROP TABLE IF EXISTS Inversiones;
+DROP TABLE IF EXISTS Activos_Inversion;
 DROP TABLE IF EXISTS Mercado;
 DROP TABLE IF EXISTS Fichajes;
 DROP TABLE IF EXISTS Transacciones;
@@ -161,7 +163,7 @@ CREATE TABLE Transacciones (
     id_cuenta_origen INT,
     id_cuenta_destino INT,
     monto DECIMAL(20, 2) NOT NULL,
-    tipo ENUM('Fichaje', 'Salario', 'Sponsor', 'Premio') NOT NULL,
+    tipo ENUM('Fichaje', 'Salario', 'Sponsor', 'Premio', 'Inversion') NOT NULL,
     concepto VARCHAR(255),
     fecha_operacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     id_jugador_relacionado INT,
@@ -186,7 +188,30 @@ CREATE TABLE Fichajes (
     CONSTRAINT fk_f_transaccion FOREIGN KEY (fk_transaccion) REFERENCES Transacciones(id_transaccion)
 );
 
--- 2.6 OTRAS RELACIONES
+-- 2.7 INVERSIONES
+CREATE TABLE Activos_Inversion (
+    id_activo INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(50) NOT NULL,
+    simbolo VARCHAR(10) NOT NULL UNIQUE,
+    precio_base DECIMAL(20,2) NOT NULL,
+    volatilidad DECIMAL(5,4) NOT NULL DEFAULT 0.1000,
+    icono_emoji VARCHAR(10) DEFAULT '📊',
+    descripcion TEXT
+);
+
+CREATE TABLE Inversiones (
+    id_inversion INT AUTO_INCREMENT PRIMARY KEY,
+    id_cuenta INT NOT NULL,
+    id_activo INT NOT NULL,
+    cantidad DECIMAL(20,8) NOT NULL,
+    precio_compra DECIMAL(20,2) NOT NULL,
+    fecha_compra TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    CONSTRAINT fk_inv_cuenta FOREIGN KEY (id_cuenta) REFERENCES Cuentas_Bancarias(id_cuenta) ON DELETE CASCADE,
+    CONSTRAINT fk_inv_activo FOREIGN KEY (id_activo) REFERENCES Activos_Inversion(id_activo) ON DELETE CASCADE,
+    UNIQUE KEY uq_cuenta_activo (id_cuenta, id_activo)
+);
+
+-- 2.8 OTRAS RELACIONES
 CREATE TABLE Jugador_Tecnicas (
     id_jugador INT NOT NULL,
     id_tecnica INT NOT NULL,
@@ -292,6 +317,43 @@ DROP PROCEDURE IF EXISTS sp_ObtenerTransaccionesJugador$$
 CREATE PROCEDURE sp_ObtenerTransaccionesJugador(IN p_id_jugador INT)
 BEGIN
     SELECT * FROM Transacciones WHERE id_jugador_relacionado = p_id_jugador ORDER BY fecha_operacion DESC;
+END$$
+
+DROP PROCEDURE IF EXISTS sp_ObtenerCuentaPorUsuario$$
+CREATE PROCEDURE sp_ObtenerCuentaPorUsuario(IN p_id_usuario INT, IN p_es_jugador BOOLEAN)
+BEGIN
+    IF p_es_jugador = TRUE THEN
+        SELECT * FROM Cuentas_Bancarias WHERE id_jugador = p_id_usuario LIMIT 1;
+    ELSE
+        SELECT * FROM Cuentas_Bancarias WHERE id_empleado = p_id_usuario LIMIT 1;
+    END IF;
+END$$
+
+DROP PROCEDURE IF EXISTS sp_ObtenerHistorialTransaccionesUsuario$$
+CREATE PROCEDURE sp_ObtenerHistorialTransaccionesUsuario(
+    IN p_id_usuario INT,
+    IN p_es_jugador BOOLEAN
+)
+BEGIN
+    DECLARE v_id_cuenta INT;
+    
+    IF p_es_jugador = TRUE THEN
+        SELECT id_cuenta INTO v_id_cuenta FROM Cuentas_Bancarias WHERE id_jugador = p_id_usuario LIMIT 1;
+    ELSE
+        SELECT id_cuenta INTO v_id_cuenta FROM Cuentas_Bancarias WHERE id_empleado = p_id_usuario LIMIT 1;
+    END IF;
+    
+    SELECT 
+        CASE 
+            WHEN t.id_cuenta_origen = v_id_cuenta THEN -t.monto
+            ELSE t.monto
+        END AS monto_final,
+        t.tipo,
+        t.concepto,
+        t.fecha_operacion
+    FROM Transacciones t
+    WHERE t.id_cuenta_origen = v_id_cuenta OR t.id_cuenta_destino = v_id_cuenta
+    ORDER BY t.fecha_operacion DESC;
 END$$
 
 
@@ -1033,6 +1095,116 @@ BEGIN
         nombre = p_nombre, apellido = p_apellido, apodo = p_apodo,
         email = p_email, dorsal = p_dorsal, posicion = p_posicion, afinidad = p_afinidad
     WHERE id_jugador = p_id;
+END$$
+
+-- ==========================================
+-- INVERSIONES
+-- ==========================================
+
+DROP PROCEDURE IF EXISTS sp_ObtenerActivos$$
+CREATE PROCEDURE sp_ObtenerActivos()
+BEGIN
+    SELECT * FROM Activos_Inversion ORDER BY nombre;
+END$$
+
+DROP PROCEDURE IF EXISTS sp_ObtenerCarteraUsuario$$
+CREATE PROCEDURE sp_ObtenerCarteraUsuario(IN p_id_usuario INT, IN p_es_jugador BOOLEAN)
+BEGIN
+    DECLARE v_id_cuenta INT;
+    IF p_es_jugador = TRUE THEN
+        SELECT id_cuenta INTO v_id_cuenta FROM Cuentas_Bancarias WHERE id_jugador = p_id_usuario LIMIT 1;
+    ELSE
+        SELECT id_cuenta INTO v_id_cuenta FROM Cuentas_Bancarias WHERE id_empleado = p_id_usuario LIMIT 1;
+    END IF;
+    SELECT
+        inv.id_inversion, inv.id_cuenta, inv.id_activo,
+        inv.cantidad, inv.precio_compra, inv.fecha_compra,
+        act.nombre AS nombre_activo, act.simbolo AS simbolo_activo,
+        act.precio_base, act.volatilidad, act.icono_emoji
+    FROM Inversiones inv
+    INNER JOIN Activos_Inversion act ON inv.id_activo = act.id_activo
+    WHERE inv.id_cuenta = v_id_cuenta
+    ORDER BY inv.fecha_compra DESC;
+END$$
+
+DROP PROCEDURE IF EXISTS sp_ComprarActivo$$
+CREATE PROCEDURE sp_ComprarActivo(
+    IN p_id_usuario INT,
+    IN p_es_jugador BOOLEAN,
+    IN p_id_activo INT,
+    IN p_cantidad DECIMAL(20,8),
+    IN p_precio_compra DECIMAL(20,2),
+    IN p_costo_total DECIMAL(20,2)
+)
+BEGIN
+    DECLARE v_id_cuenta INT;
+    DECLARE v_saldo DECIMAL(20,2);
+    DECLARE v_nombre_activo VARCHAR(50);
+    IF p_es_jugador = TRUE THEN
+        SELECT id_cuenta INTO v_id_cuenta FROM Cuentas_Bancarias WHERE id_jugador = p_id_usuario LIMIT 1;
+    ELSE
+        SELECT id_cuenta INTO v_id_cuenta FROM Cuentas_Bancarias WHERE id_empleado = p_id_usuario LIMIT 1;
+    END IF;
+    SELECT saldo_actual INTO v_saldo FROM Cuentas_Bancarias WHERE id_cuenta = v_id_cuenta;
+    SELECT nombre INTO v_nombre_activo FROM Activos_Inversion WHERE id_activo = p_id_activo;
+    IF v_saldo < p_costo_total THEN
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Saldo insuficiente para la inversión.';
+    ELSE
+        START TRANSACTION;
+            UPDATE Cuentas_Bancarias SET saldo_actual = saldo_actual - p_costo_total WHERE id_cuenta = v_id_cuenta;
+            INSERT INTO Inversiones (id_cuenta, id_activo, cantidad, precio_compra)
+            VALUES (v_id_cuenta, p_id_activo, p_cantidad, p_precio_compra)
+            ON DUPLICATE KEY UPDATE
+                precio_compra = ROUND((Inversiones.precio_compra * Inversiones.cantidad + p_precio_compra * p_cantidad) / (Inversiones.cantidad + p_cantidad), 2),
+                cantidad      = Inversiones.cantidad + p_cantidad;
+            INSERT INTO Transacciones (id_cuenta_origen, monto, tipo, concepto)
+            VALUES (v_id_cuenta, p_costo_total, 'Inversion', CONCAT('Compra de ', v_nombre_activo));
+        COMMIT;
+    END IF;
+END$$
+
+DROP PROCEDURE IF EXISTS sp_VenderActivoParcial$$
+CREATE PROCEDURE sp_VenderActivoParcial(
+    IN p_id_usuario    INT,
+    IN p_es_jugador    BOOLEAN,
+    IN p_id_activo     INT,
+    IN p_cantidad_vender DECIMAL(20,8),
+    IN p_precio_venta  DECIMAL(20,2)
+)
+BEGIN
+    DECLARE v_id_cuenta      INT;
+    DECLARE v_cantidad_actual DECIMAL(20,8);
+    DECLARE v_valor_total     DECIMAL(20,2);
+    DECLARE v_nombre_activo   VARCHAR(50);
+
+    IF p_es_jugador = TRUE THEN
+        SELECT id_cuenta INTO v_id_cuenta FROM Cuentas_Bancarias WHERE id_jugador  = p_id_usuario LIMIT 1;
+    ELSE
+        SELECT id_cuenta INTO v_id_cuenta FROM Cuentas_Bancarias WHERE id_empleado = p_id_usuario LIMIT 1;
+    END IF;
+
+    SELECT cantidad INTO v_cantidad_actual
+    FROM Inversiones WHERE id_cuenta = v_id_cuenta AND id_activo = p_id_activo;
+
+    SELECT nombre INTO v_nombre_activo FROM Activos_Inversion WHERE id_activo = p_id_activo;
+
+    IF v_cantidad_actual IS NULL OR v_cantidad_actual < p_cantidad_vender THEN
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'No tienes suficientes unidades para vender.';
+    ELSE
+        SET v_valor_total = ROUND(p_cantidad_vender * p_precio_venta, 2);
+        START TRANSACTION;
+            UPDATE Cuentas_Bancarias SET saldo_actual = saldo_actual + v_valor_total WHERE id_cuenta = v_id_cuenta;
+            IF v_cantidad_actual = p_cantidad_vender THEN
+                DELETE FROM Inversiones WHERE id_cuenta = v_id_cuenta AND id_activo = p_id_activo;
+            ELSE
+                UPDATE Inversiones SET cantidad = cantidad - p_cantidad_vender
+                WHERE id_cuenta = v_id_cuenta AND id_activo = p_id_activo;
+            END IF;
+            INSERT INTO Transacciones (id_cuenta_destino, monto, tipo, concepto)
+            VALUES (v_id_cuenta, v_valor_total, 'Inversion',
+                CONCAT('Venta de ', p_cantidad_vender, ' ', v_nombre_activo));
+        COMMIT;
+    END IF;
 END$$
 
 DELIMITER ;

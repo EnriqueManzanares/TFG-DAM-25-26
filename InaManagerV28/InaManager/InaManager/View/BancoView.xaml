@@ -1,16 +1,15 @@
 <Window x:Class="InaManager.View.BancoView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:vm="clr-namespace:InaManager.ViewModel"
-        mc:Ignorable="d" 
+        xmlns:local="clr-namespace:InaManager.View"
+        mc:Ignorable="d"
         Title="Banco - INA Ecosystem" Height="700" Width="1200"
-        WindowStyle="None"
-        ResizeMode="CanResizeWithGrip"
+        WindowStyle="None" ResizeMode="CanResizeWithGrip"
         WindowStartupLocation="CenterScreen"
-        AllowsTransparency="True"
-        Background="Transparent"
+        AllowsTransparency="True" Background="Transparent"
         MouseDown="Window_MouseDown">
 
     <Window.DataContext>
@@ -19,177 +18,469 @@
 
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="BoolToVis"/>
-        <Color x:Key="winBackColor1">#042e04</Color>
-        <Color x:Key="winBackColor2">#684007</Color>
-        <Color x:Key="winBackColor3">#6c0b0b</Color>
-        <Color x:Key="winBorderColor1">#042e04</Color>
-        <Color x:Key="winBorderColor2">#684007</Color>
-        <Color x:Key="winBorderColor3">#6c0b0b</Color>
+
+        <Color x:Key="BG1">#061a06</Color>
+        <Color x:Key="BG2">#1a0d02</Color>
+        <Color x:Key="Border1">#0a3a0a</Color>
+        <Color x:Key="Border2">#7a4a08</Color>
+
+        <!-- Estilo base del botón de pestaña -->
+        <Style x:Key="TabButtonBase" TargetType="Button">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="FontFamily" Value="Montserrat"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Padding" Value="28,14"/>
+        </Style>
     </Window.Resources>
 
-    <Border CornerRadius="20" BorderThickness="5">
+    <Border CornerRadius="18" BorderThickness="1.5">
         <Border.BorderBrush>
             <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                <GradientStop Color="{StaticResource winBorderColor1}" Offset="0"/>
-                <GradientStop Color="{StaticResource winBorderColor2}" Offset="0.5"/>
-                <GradientStop Color="{StaticResource winBorderColor3}" Offset="1"/>
+                <GradientStop Color="{StaticResource Border1}" Offset="0"/>
+                <GradientStop Color="{StaticResource Border2}" Offset="1"/>
             </LinearGradientBrush>
         </Border.BorderBrush>
-
         <Border.Background>
             <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
-                <GradientStop Color="{StaticResource winBackColor1}" Offset="0"/>
-                <GradientStop Color="{StaticResource winBackColor2}" Offset="1"/>
+                <GradientStop Color="{StaticResource BG1}" Offset="0"/>
+                <GradientStop Color="{StaticResource BG2}" Offset="1"/>
             </LinearGradientBrush>
         </Border.Background>
 
         <Grid>
             <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <!-- Header -->
+                <RowDefinition Height="Auto"/>
+                <!-- Tab bar -->
                 <RowDefinition Height="*"/>
+                <!-- Content -->
+                <RowDefinition Height="Auto"/>
+                <!-- Footer -->
             </Grid.RowDefinitions>
 
-            <!-- CONTENIDO PRINCIPAL -->
-            <Grid Margin="20">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="Auto"/>
-                </Grid.RowDefinitions>
-
-                <!-- BARRA SUPERIOR -->
-                <Border Grid.Row="0" BorderThickness="0,0,0,1" BorderBrush="#30FFFFFF" Padding="20,0,20,15">
-                    <Grid>
-                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-                            <TextBlock Text="🏦 BANCO" FontSize="18" FontWeight="Bold" Foreground="#1E6EBF" 
-                                       FontFamily="Montserrat" VerticalAlignment="Center"/>
-                            <TextBlock Text="Gestión de Finanzas" FontSize="12" Foreground="#AAAAAA" 
-                                       FontFamily="Montserrat" VerticalAlignment="Center" Margin="20,0,0,0"/>
+            <!-- ═══════════════════════════════════════════════════════ -->
+            <!-- HEADER                                                   -->
+            <!-- ═══════════════════════════════════════════════════════ -->
+            <Border Grid.Row="0" Padding="30,18,30,18"
+                    BorderThickness="0,0,0,1" BorderBrush="#20FFFFFF">
+                <Grid>
+                    <!-- Logo + Nombre -->
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <Border Width="38" Height="38" CornerRadius="10"
+                                Background="#1E6EBF" Margin="0,0,12,0">
+                            <Border.Effect>
+                                <DropShadowEffect Color="#1E6EBF" BlurRadius="12" ShadowDepth="0" Opacity="0.5"/>
+                            </Border.Effect>
+                            <TextBlock Text="🏦" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <StackPanel VerticalAlignment="Center">
+                            <TextBlock Text="INA BANCO" FontSize="15" FontWeight="Bold"
+                                       Foreground="White" FontFamily="Montserrat"/>
+                            <TextBlock Text="Gestión Financiera" FontSize="10"
+                                       Foreground="#666666" FontFamily="Montserrat"/>
                         </StackPanel>
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
-                            <Button Command="{Binding VolverAlHubCommand}" Background="Transparent" BorderThickness="0" Cursor="Hand" Padding="10">
-                                <Button.Template>
-                                    <ControlTemplate TargetType="Button">
-                                        <Border x:Name="BtnBorder" Background="Transparent" Padding="10">
-                                            <TextBlock Text="← Volver" FontSize="12" Foreground="#AAAAAA" 
-                                                       FontFamily="Montserrat" VerticalAlignment="Center"/>
-                                        </Border>
-                                        <ControlTemplate.Triggers>
-                                            <Trigger Property="IsMouseOver" Value="True">
-                                                <Setter TargetName="BtnBorder" Property="Background" Value="#20FFFFFF"/>
-                                            </Trigger>
-                                        </ControlTemplate.Triggers>
-                                    </ControlTemplate>
-                                </Button.Template>
-                            </Button>
-                        </StackPanel>
-                    </Grid>
-                </Border>
-
-                <!-- CONTENIDO CENTRAL -->
-                <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,40,0,0">
-
-                    <!-- SALDO PRINCIPAL -->
-                    <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,0,0,40">
-                        <TextBlock Text="Saldo Disponible" FontSize="14" Foreground="#AAAAAA" 
-                                   FontFamily="Montserrat" HorizontalAlignment="Center"/>
-                        <TextBlock Text="{Binding BancoDatos.Saldo, StringFormat=C2}" 
-                                   FontSize="56" FontWeight="Bold" Foreground="#1E6EBF" 
-                                   FontFamily="Montserrat" HorizontalAlignment="Center" Margin="0,15,0,0">
-                            <TextBlock.Effect>
-                                <DropShadowEffect Color="Black" ShadowDepth="3" BlurRadius="10" Opacity="0.5"/>
-                            </TextBlock.Effect>
-                        </TextBlock>
                     </StackPanel>
 
-                    <!-- TARJETA CON DATOS -->
-                    <Border Padding="40" Margin="0,20,0,0"
-                            Background="#15FFFFFF" BorderBrush="#30FFFFFF" BorderThickness="1.5" CornerRadius="15"
-                            MaxWidth="500">
-                        <Border.Effect>
-                            <DropShadowEffect Color="Black" BlurRadius="15" ShadowDepth="3" Opacity="0.4"/>
-                        </Border.Effect>
-                        <StackPanel>
-                            <!-- NOMBRE -->
-                            <StackPanel Margin="0,0,0,25">
-                                <TextBlock Text="Propietario" FontSize="11" Foreground="#AAAAAA" 
-                                           FontFamily="Montserrat" FontWeight="SemiBold"/>
-                                <TextBlock Text="{Binding BancoDatos.NombrePropietario}" 
-                                           FontSize="18" Foreground="White" FontFamily="Montserrat" FontWeight="Bold" Margin="0,8,0,0"/>
-                            </StackPanel>
+                    <!-- Nombre usuario + Botón volver -->
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+                        <TextBlock Text="{Binding BancoDatos.NombrePropietario}"
+                                   FontSize="12" Foreground="#AAAAAA" FontFamily="Montserrat"
+                                   VerticalAlignment="Center" Margin="0,0,20,0"/>
+                        <Button Command="{Binding VolverAlHubCommand}" Cursor="Hand">
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border x:Name="Bd" Background="#10FFFFFF" CornerRadius="8"
+                                            BorderBrush="#25FFFFFF" BorderThickness="1" Padding="14,7">
+                                        <TextBlock Text="← Volver al Hub" FontSize="11"
+                                                   Foreground="#AAAAAA" FontFamily="Montserrat" FontWeight="SemiBold"/>
+                                    </Border>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter TargetName="Bd" Property="Background" Value="#20FFFFFF"/>
+                                            <Setter TargetName="Bd" Property="BorderBrush" Value="#40FFFFFF"/>
+                                        </Trigger>
+                                    </ControlTemplate.Triggers>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                    </StackPanel>
+                </Grid>
+            </Border>
 
-                            <!-- TIPO DE CUENTA -->
-                            <StackPanel Margin="0,0,0,25">
-                                <TextBlock Text="Tipo de Cuenta" FontSize="11" Foreground="#AAAAAA" 
-                                           FontFamily="Montserrat" FontWeight="SemiBold"/>
-                                <TextBlock Text="{Binding BancoDatos.TipoCuenta}" 
-                                           FontSize="14" Foreground="White" FontFamily="Montserrat" Margin="0,8,0,0"/>
-                            </StackPanel>
+            <!-- ═══════════════════════════════════════════════════════ -->
+            <!-- TAB BAR                                                  -->
+            <!-- ═══════════════════════════════════════════════════════ -->
+            <Border Grid.Row="1" BorderThickness="0,0,0,1" BorderBrush="#15FFFFFF" Padding="20,0">
+                <StackPanel Orientation="Horizontal">
 
-                            <!-- NÚMERO DE CUENTA -->
-                            <StackPanel Margin="0,0,0,25">
-                                <TextBlock Text="Número de Cuenta" FontSize="11" Foreground="#AAAAAA" 
-                                           FontFamily="Montserrat" FontWeight="SemiBold"/>
-                                <TextBlock Text="{Binding BancoDatos.NumeroCuenta}" 
-                                           FontSize="14" Foreground="#1E6EBF" FontFamily="Courier New" FontWeight="Bold" Margin="0,8,0,0"/>
-                            </StackPanel>
-
-                            <!-- IBAN -->
-                            <StackPanel Margin="0,0,0,30">
-                                <TextBlock Text="IBAN" FontSize="11" Foreground="#AAAAAA" 
-                                           FontFamily="Montserrat" FontWeight="SemiBold"/>
-                                <TextBlock Text="{Binding BancoDatos.IBAN}" 
-                                           FontSize="14" Foreground="#1E6EBF" FontFamily="Courier New" FontWeight="Bold" Margin="0,8,0,0"/>
-                            </StackPanel>
-
-                            <!-- BOTÓN DE TRANSFERENCIA -->
-                            <Button Command="{Binding TransferirDineroCommand}" 
-                                    Background="#1E6EBF" Foreground="White" 
-                                    Padding="15,12" FontSize="13" FontWeight="Bold" 
-                                    Cursor="Hand"
-                                    BorderThickness="0" FontFamily="Montserrat">
-                                <Button.Template>
-                                    <ControlTemplate TargetType="Button">
-                                        <Border x:Name="BtnBorder" Background="{TemplateBinding Background}" 
-                                                CornerRadius="8" Padding="15,12">
-                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                        </Border>
-                                        <ControlTemplate.Triggers>
-                                            <Trigger Property="IsMouseOver" Value="True">
-                                                <Setter TargetName="BtnBorder" Property="Background" Value="#155A9E"/>
-                                                <Setter TargetName="BtnBorder" Property="Effect">
-                                                    <Setter.Value>
-                                                        <DropShadowEffect Color="#1E6EBF" ShadowDepth="2" BlurRadius="8" Opacity="0.6"/>
-                                                    </Setter.Value>
-                                                </Setter>
-                                            </Trigger>
-                                        </ControlTemplate.Triggers>
-                                    </ControlTemplate>
-                                </Button.Template>
-                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                                    <TextBlock Text="💸 " FontSize="14" Margin="0,0,8,0"/>
-                                    <TextBlock Text="Transferir Dinero"/>
+                    <!-- TAB: Mi Cuenta -->
+                    <Button Command="{Binding TabMiCuentaCommand}" Style="{StaticResource TabButtonBase}">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <StackPanel>
+                                    <Border x:Name="BtnBg" Background="Transparent" Padding="24,14">
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock x:Name="Ico" Text="👤 " FontSize="13"/>
+                                            <TextBlock x:Name="Lbl" Text="Mi Cuenta" FontSize="13"
+                                                       FontFamily="Montserrat" FontWeight="SemiBold"
+                                                       Foreground="#60FFFFFF"/>
+                                        </StackPanel>
+                                    </Border>
+                                    <Border x:Name="Underline" Height="2.5" CornerRadius="2"
+                                            Background="#1E6EBF" Visibility="Collapsed"/>
                                 </StackPanel>
-                            </Button>
-                        </StackPanel>
-                    </Border>
+                                <ControlTemplate.Triggers>
+                                    <DataTrigger Binding="{Binding IsTabMiCuenta}" Value="True">
+                                        <Setter TargetName="Lbl" Property="Foreground" Value="White"/>
+                                        <Setter TargetName="Underline" Property="Visibility" Value="Visible"/>
+                                    </DataTrigger>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter TargetName="BtnBg" Property="Background" Value="#10FFFFFF"/>
+                                        <Setter TargetName="Lbl" Property="Foreground" Value="#CCFFFFFF"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+
+                    <!-- TAB: Realizar Transacción -->
+                    <Button Command="{Binding TabTransaccionCommand}" Style="{StaticResource TabButtonBase}">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <StackPanel>
+                                    <Border x:Name="BtnBg" Background="Transparent" Padding="24,14">
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock x:Name="Ico" Text="💸 " FontSize="13"/>
+                                            <TextBlock x:Name="Lbl" Text="Realizar Transacción" FontSize="13"
+                                                       FontFamily="Montserrat" FontWeight="SemiBold"
+                                                       Foreground="#60FFFFFF"/>
+                                        </StackPanel>
+                                    </Border>
+                                    <Border x:Name="Underline" Height="2.5" CornerRadius="2"
+                                            Background="#1E6EBF" Visibility="Collapsed"/>
+                                </StackPanel>
+                                <ControlTemplate.Triggers>
+                                    <DataTrigger Binding="{Binding IsTabTransaccion}" Value="True">
+                                        <Setter TargetName="Lbl" Property="Foreground" Value="White"/>
+                                        <Setter TargetName="Underline" Property="Visibility" Value="Visible"/>
+                                    </DataTrigger>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter TargetName="BtnBg" Property="Background" Value="#10FFFFFF"/>
+                                        <Setter TargetName="Lbl" Property="Foreground" Value="#CCFFFFFF"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+
+                    <!-- TAB: Invertir -->
+                    <Button Command="{Binding TabInvertirCommand}" Style="{StaticResource TabButtonBase}">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <StackPanel>
+                                    <Border x:Name="BtnBg" Background="Transparent" Padding="24,14">
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock Text="📈 " FontSize="13"/>
+                                            <TextBlock x:Name="Lbl" Text="Invertir" FontSize="13"
+                                                       FontFamily="Montserrat" FontWeight="SemiBold"
+                                                       Foreground="#60FFFFFF"/>
+                                        </StackPanel>
+                                    </Border>
+                                    <Border x:Name="Underline" Height="2.5" CornerRadius="2"
+                                            Background="#1E6EBF" Visibility="Collapsed"/>
+                                </StackPanel>
+                                <ControlTemplate.Triggers>
+                                    <DataTrigger Binding="{Binding IsTabInvertir}" Value="True">
+                                        <Setter TargetName="Lbl" Property="Foreground" Value="White"/>
+                                        <Setter TargetName="Underline" Property="Visibility" Value="Visible"/>
+                                    </DataTrigger>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter TargetName="BtnBg" Property="Background" Value="#10FFFFFF"/>
+                                        <Setter TargetName="Lbl" Property="Foreground" Value="#CCFFFFFF"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+
+                    <!-- TAB: Historial -->
+                    <Button Command="{Binding TabHistorialCommand}" Style="{StaticResource TabButtonBase}">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <StackPanel>
+                                    <Border x:Name="BtnBg" Background="Transparent" Padding="24,14">
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock Text="📋 " FontSize="13"/>
+                                            <TextBlock x:Name="Lbl" Text="Historial" FontSize="13"
+                                                       FontFamily="Montserrat" FontWeight="SemiBold"
+                                                       Foreground="#60FFFFFF"/>
+                                        </StackPanel>
+                                    </Border>
+                                    <Border x:Name="Underline" Height="2.5" CornerRadius="2"
+                                            Background="#1E6EBF" Visibility="Collapsed"/>
+                                </StackPanel>
+                                <ControlTemplate.Triggers>
+                                    <DataTrigger Binding="{Binding IsTabHistorial}" Value="True">
+                                        <Setter TargetName="Lbl" Property="Foreground" Value="White"/>
+                                        <Setter TargetName="Underline" Property="Visibility" Value="Visible"/>
+                                    </DataTrigger>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter TargetName="BtnBg" Property="Background" Value="#10FFFFFF"/>
+                                        <Setter TargetName="Lbl" Property="Foreground" Value="#CCFFFFFF"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
 
                 </StackPanel>
+            </Border>
 
-                <!-- FOOTER -->
-                <Border Grid.Row="2" BorderThickness="0,1,0,0" BorderBrush="#30FFFFFF" Padding="20,15,20,0" Margin="0,40,0,0">
-                    <Grid>
-                        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center"
-                                   Foreground="#666666" FontSize="11" FontFamily="Montserrat">
-                            <Run Text="Banco INA  ·  v1.0"/>
-                        </TextBlock>
-                        <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center"
-                                   Foreground="#666666" FontSize="11" FontFamily="Montserrat">
-                            <Run Text="Saldo actualizado"/>
-                        </TextBlock>
+            <!-- ═══════════════════════════════════════════════════════ -->
+            <!-- CONTENT AREA                                             -->
+            <!-- ═══════════════════════════════════════════════════════ -->
+            <Grid Grid.Row="2">
+
+                <!-- ─── TAB: MI CUENTA ─────────────────────────────── -->
+                <ScrollViewer VerticalScrollBarVisibility="Auto"
+                              Visibility="{Binding IsTabMiCuenta, Converter={StaticResource BoolToVis}}">
+                    <StackPanel HorizontalAlignment="Center" MaxWidth="700" Margin="40,40,40,40">
+
+                        <!-- Saldo principal -->
+                        <StackPanel HorizontalAlignment="Center" Margin="0,0,0,40">
+                            <TextBlock Text="Saldo Disponible" FontSize="13" Foreground="#666666"
+                                       FontFamily="Montserrat" HorizontalAlignment="Center"/>
+                            <TextBlock Text="{Binding BancoDatos.Saldo, StringFormat=C2}"
+                                       FontSize="58" FontWeight="Bold" Foreground="White"
+                                       FontFamily="Montserrat" HorizontalAlignment="Center" Margin="0,8,0,0">
+                                <TextBlock.Effect>
+                                    <DropShadowEffect Color="#1E6EBF" ShadowDepth="0" BlurRadius="20" Opacity="0.4"/>
+                                </TextBlock.Effect>
+                            </TextBlock>
+                            <TextBlock Text="Cuenta activa" FontSize="11" Foreground="#1E6EBF"
+                                       FontFamily="Montserrat" HorizontalAlignment="Center" Margin="0,6,0,0"/>
+                        </StackPanel>
+
+                        <!-- Tarjeta de cuenta -->
+                        <Border Padding="35,30" Margin="0,0,0,25"
+                                CornerRadius="18" BorderBrush="#25FFFFFF" BorderThickness="1.5">
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                    <GradientStop Color="#12FFFFFF" Offset="0"/>
+                                    <GradientStop Color="#06FFFFFF" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
+                            <Border.Effect>
+                                <DropShadowEffect Color="Black" BlurRadius="20" ShadowDepth="4" Opacity="0.3"/>
+                            </Border.Effect>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+
+                                <!-- Propietario -->
+                                <StackPanel Grid.Column="0" Grid.Row="0" Margin="0,0,20,25">
+                                    <TextBlock Text="PROPIETARIO" FontSize="10" Foreground="#555555"
+                                               FontFamily="Montserrat" FontWeight="Bold"/>
+                                    <TextBlock Text="{Binding BancoDatos.NombrePropietario}"
+                                               FontSize="16" Foreground="White" FontFamily="Montserrat"
+                                               FontWeight="Bold" Margin="0,6,0,0"/>
+                                </StackPanel>
+
+                                <!-- Tipo cuenta -->
+                                <StackPanel Grid.Column="1" Grid.Row="0" Margin="0,0,0,25">
+                                    <TextBlock Text="TIPO DE CUENTA" FontSize="10" Foreground="#555555"
+                                               FontFamily="Montserrat" FontWeight="Bold"/>
+                                    <TextBlock Text="{Binding BancoDatos.TipoCuenta}"
+                                               FontSize="16" Foreground="White" FontFamily="Montserrat" Margin="0,6,0,0"/>
+                                </StackPanel>
+
+                                <!-- IBAN -->
+                                <StackPanel Grid.Column="0" Grid.Row="1" Margin="0,0,20,0">
+                                    <TextBlock Text="IBAN" FontSize="10" Foreground="#555555"
+                                               FontFamily="Montserrat" FontWeight="Bold"/>
+                                    <TextBlock Text="{Binding BancoDatos.IBAN}"
+                                               FontSize="13" Foreground="#1E6EBF" FontFamily="Courier New"
+                                               FontWeight="Bold" Margin="0,6,0,0"/>
+                                </StackPanel>
+
+                                <!-- Número de cuenta -->
+                                <StackPanel Grid.Column="1" Grid.Row="1">
+                                    <TextBlock Text="NÚMERO DE CUENTA" FontSize="10" Foreground="#555555"
+                                               FontFamily="Montserrat" FontWeight="Bold"/>
+                                    <TextBlock Text="{Binding BancoDatos.NumeroCuenta}"
+                                               FontSize="13" Foreground="#1E6EBF" FontFamily="Courier New"
+                                               FontWeight="Bold" Margin="0,6,0,0"/>
+                                </StackPanel>
+                            </Grid>
+                        </Border>
+
+                        <!-- Acceso rápido a Transferencia -->
+                        <Button Command="{Binding TabTransaccionCommand}" Cursor="Hand" HorizontalAlignment="Stretch">
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border x:Name="Bd" Background="#1E6EBF" CornerRadius="12" Padding="0,16">
+                                        <Border.Effect>
+                                            <DropShadowEffect Color="#1E6EBF" ShadowDepth="0" BlurRadius="15" Opacity="0.4"/>
+                                        </Border.Effect>
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                            <TextBlock Text="💸 " FontSize="15"/>
+                                            <TextBlock Text="Realizar Transferencia" FontSize="14" FontWeight="Bold"
+                                                       Foreground="White" FontFamily="Montserrat" VerticalAlignment="Center"/>
+                                        </StackPanel>
+                                    </Border>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter TargetName="Bd" Property="Background" Value="#155A9E"/>
+                                        </Trigger>
+                                    </ControlTemplate.Triggers>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+
+                    </StackPanel>
+                </ScrollViewer>
+
+                <!-- ─── TAB: REALIZAR TRANSACCIÓN ──────────────────── -->
+                <Grid Visibility="{Binding IsTabTransaccion, Converter={StaticResource BoolToVis}}">
+                    <local:TransferenciaBancariaView DataContext="{Binding TransferenciaVM}"/>
+                </Grid>
+
+                <!-- ─── TAB: INVERTIR ──────────────────────────── -->
+                <Grid Visibility="{Binding IsTabInvertir, Converter={StaticResource BoolToVis}}">
+                    <local:InversionesView DataContext="{Binding InversionesVM}"/>
+                </Grid>
+
+                <!-- ─── TAB: HISTORIAL ─────────────── -->
+                <Grid Visibility="{Binding IsTabHistorial, Converter={StaticResource BoolToVis}}">
+                    
+                    <!-- Si NO hay historial -->
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <StackPanel.Style>
+                            <Style TargetType="StackPanel">
+                                <Setter Property="Visibility" Value="Visible"/>
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding HasHistorial}" Value="True">
+                                        <Setter Property="Visibility" Value="Collapsed"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </StackPanel.Style>
+                        <Border Width="90" Height="90" CornerRadius="45" Background="#12FFFFFF"
+                                BorderBrush="#20FFFFFF" BorderThickness="1.5" Margin="0,0,0,24"
+                                HorizontalAlignment="Center">
+                            <TextBlock Text="📋" FontSize="42" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <TextBlock Text="Historial Vacío" FontSize="26" FontWeight="Bold" Foreground="White"
+                                   FontFamily="Montserrat" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+                        <TextBlock Text="Aún no has realizado ninguna transacción." FontSize="14" Foreground="#AAAAAA"
+                                   FontFamily="Montserrat" HorizontalAlignment="Center" Margin="0,0,0,6"/>
+                    </StackPanel>
+
+                    <!-- Si HAY historial -->
+                    <Grid Visibility="{Binding HasHistorial, Converter={StaticResource BoolToVis}}" Margin="40">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <TextBlock Grid.Row="0" Text="Últimos Movimientos" FontSize="20" FontWeight="Bold" 
+                                   Foreground="White" FontFamily="Montserrat" Margin="0,0,0,20"/>
+
+                        <Border Grid.Row="1" CornerRadius="12" Background="#0AFFFFFF" BorderBrush="#15FFFFFF" BorderThickness="1" Padding="20">
+                            <ListView ItemsSource="{Binding HistorialTransacciones}" Background="Transparent" BorderThickness="0"
+                                      ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                                <ListView.ItemContainerStyle>
+                                    <Style TargetType="ListViewItem">
+                                        <Setter Property="Background" Value="Transparent"/>
+                                        <Setter Property="BorderThickness" Value="0,0,0,1"/>
+                                        <Setter Property="BorderBrush" Value="#15FFFFFF"/>
+                                        <Setter Property="Padding" Value="10,15"/>
+                                        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                                        <Setter Property="Template">
+                                            <Setter.Value>
+                                                <ControlTemplate TargetType="ListViewItem">
+                                                    <Border BorderBrush="{TemplateBinding BorderBrush}" 
+                                                            BorderThickness="{TemplateBinding BorderThickness}"
+                                                            Background="{TemplateBinding Background}"
+                                                            Padding="{TemplateBinding Padding}">
+                                                        <ContentPresenter/>
+                                                    </Border>
+                                                    <ControlTemplate.Triggers>
+                                                        <Trigger Property="IsMouseOver" Value="True">
+                                                            <Setter Property="Background" Value="#10FFFFFF"/>
+                                                        </Trigger>
+                                                    </ControlTemplate.Triggers>
+                                                </ControlTemplate>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Style>
+                                </ListView.ItemContainerStyle>
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="50"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="150"/>
+                                                <ColumnDefinition Width="150"/>
+                                            </Grid.ColumnDefinitions>
+
+                                            <!-- Icono -->
+                                            <Border Grid.Column="0" Width="36" Height="36" CornerRadius="18" 
+                                                    Background="#1A1E6EBF" HorizontalAlignment="Left">
+                                                <TextBlock Text="🔄" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                            </Border>
+
+                                            <!-- Concepto y Tipo -->
+                                            <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="10,0,0,0">
+                                                <TextBlock Text="{Binding Concepto}" FontSize="14" FontWeight="SemiBold" Foreground="White" FontFamily="Montserrat" TextTrimming="CharacterEllipsis"/>
+                                                <TextBlock Text="{Binding Tipo}" FontSize="11" Foreground="#AAAAAA" FontFamily="Montserrat" Margin="0,4,0,0"/>
+                                            </StackPanel>
+
+                                            <!-- Fecha -->
+                                            <TextBlock Grid.Column="2" Text="{Binding Fecha_operacion, StringFormat='dd/MM/yyyy HH:mm'}" 
+                                                       FontSize="12" Foreground="#888888" FontFamily="Montserrat" 
+                                                       VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,20,0"/>
+
+                                            <!-- Monto -->
+                                            <TextBlock Grid.Column="3" Text="{Binding Monto, StringFormat=C2}" 
+                                                       FontSize="15" FontWeight="Bold" FontFamily="Courier New"
+                                                       VerticalAlignment="Center" HorizontalAlignment="Right" Foreground="White"/>
+                                        </Grid>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </Border>
                     </Grid>
-                </Border>
+                </Grid>
 
             </Grid>
+
+            <!-- ═══════════════════════════════════════════════════════ -->
+            <!-- FOOTER                                                   -->
+            <!-- ═══════════════════════════════════════════════════════ -->
+            <Border Grid.Row="3" BorderThickness="0,1,0,0" BorderBrush="#12FFFFFF" Padding="30,12,30,12">
+                <Grid>
+                    <TextBlock HorizontalAlignment="Left" Foreground="#333333"
+                               FontSize="10" FontFamily="Montserrat">
+                        <Run Text="INA Banco  ·  v1.0  ·  Sistema financiero seguro"/>
+                    </TextBlock>
+                    <TextBlock HorizontalAlignment="Right" Foreground="#333333"
+                               FontSize="10" FontFamily="Montserrat">
+                        <Run Text="Datos actualizados en tiempo real"/>
+                    </TextBlock>
+                </Grid>
+            </Border>
 
         </Grid>
     </Border>
