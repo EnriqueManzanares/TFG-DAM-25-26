@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Windows;
 using System.Windows.Input;
 using System.Windows.Media;
 using InaManager.Models;
@@ -79,6 +80,7 @@ namespace InaManager.ViewModel
     public class MercadoViewModel : ViewModelBase
     {
         private readonly IMercadoRepository _repo;
+        private readonly INotificacionRepository _notifRepo;
 
         // ── Lista maestra y paginada ──────────────────────────────────────────
         private List<AnuncioItemVM> _todosLosAnuncios = new List<AnuncioItemVM>();
@@ -88,6 +90,66 @@ namespace InaManager.ViewModel
         {
             get => _anunciosPagina;
             set { _anunciosPagina = value; OnPropertyChanged(nameof(AnunciosPagina)); }
+        }
+
+        // ── Control Visual (Navegación entre lista y detalles) ─────────────────
+        private System.Windows.Visibility _isListVisible = System.Windows.Visibility.Visible;
+        public System.Windows.Visibility IsListVisible
+        {
+            get => _isListVisible;
+            set { _isListVisible = value; OnPropertyChanged(nameof(IsListVisible)); }
+        }
+
+        private System.Windows.Visibility _isDetailVisible = System.Windows.Visibility.Collapsed;
+        public System.Windows.Visibility IsDetailVisible
+        {
+            get => _isDetailVisible;
+            set { _isDetailVisible = value; OnPropertyChanged(nameof(IsDetailVisible)); }
+        }
+
+        private AnuncioItemVM _selectedAnuncio;
+        public AnuncioItemVM SelectedAnuncio
+        {
+            get => _selectedAnuncio;
+            set { _selectedAnuncio = value; OnPropertyChanged(nameof(SelectedAnuncio)); }
+        }
+
+        // ── Control de Diálogo de Confirmación ────────────────────────────────
+        private System.Windows.Visibility _isConfirmDialogVisible = System.Windows.Visibility.Collapsed;
+        public System.Windows.Visibility IsConfirmDialogVisible
+        {
+            get => _isConfirmDialogVisible;
+            set { _isConfirmDialogVisible = value; OnPropertyChanged(nameof(IsConfirmDialogVisible)); }
+        }
+
+        private string _confirmTitle = "";
+        public string ConfirmTitle
+        {
+            get => _confirmTitle;
+            set { _confirmTitle = value; OnPropertyChanged(nameof(ConfirmTitle)); }
+        }
+
+        private string _confirmMessage = "";
+        public string ConfirmMessage
+        {
+            get => _confirmMessage;
+            set { _confirmMessage = value; OnPropertyChanged(nameof(ConfirmMessage)); }
+        }
+
+        private decimal _confirmMonto = 0;
+        public decimal ConfirmMonto
+        {
+            get => _confirmMonto;
+            set { _confirmMonto = value; OnPropertyChanged(nameof(ConfirmMonto)); OnPropertyChanged(nameof(ConfirmMontoFormato)); }
+        }
+
+        public string ConfirmMontoFormato => ConfirmMonto.ToString("N0") + " €";
+
+        private string _confirmTipoCompra = ""; // "precio" o "clausula"
+        public string ConfirmTipoCompra
+        {
+            get => _confirmTipoCompra;
+            set { _confirmTipoCompra = value; OnPropertyChanged(nameof(ConfirmTipoCompra)); }
         }
 
         // ── Paginación ────────────────────────────────────────────────────────
@@ -193,15 +255,30 @@ namespace InaManager.ViewModel
         public ICommand PaginaAnteriorCommand   { get; }
         public ICommand PaginaSiguienteCommand  { get; }
         public ICommand LimpiarFiltrosCommand   { get; }
+        public ICommand ShowDetailsCommand      { get; }
+        public ICommand BackToListCommand       { get; }
+        public ICommand ComprarPorPrecioCommand { get; }
+        public ICommand ComprarPorClausulaCommand { get; }
+        public ICommand AceptarCompraCommand    { get; }
+        public ICommand CancelarCompraCommand   { get; }
+        public ICommand CrearAnuncioCommand     { get; }
 
         // ── Constructor ───────────────────────────────────────────────────────
         public MercadoViewModel()
         {
             _repo = new MysqlMercadoRepository();
+            _notifRepo = new MysqlNotificacionRepository();
 
             PaginaAnteriorCommand  = new ViewModelCommand(_ => CambiarPagina(-1), _ => PuedePaginaAnterior);
             PaginaSiguienteCommand = new ViewModelCommand(_ => CambiarPagina(+1), _ => PuedePaginaSiguiente);
             LimpiarFiltrosCommand  = new ViewModelCommand(_ => LimpiarFiltros());
+            ShowDetailsCommand     = new ViewModelCommand(ExecuteShowDetails);
+            BackToListCommand      = new ViewModelCommand(ExecuteBackToList);
+            ComprarPorPrecioCommand = new ViewModelCommand(ExecuteComprarPorPrecio);
+            ComprarPorClausulaCommand = new ViewModelCommand(ExecuteComprarPorClausula);
+            AceptarCompraCommand   = new ViewModelCommand(ExecuteAceptarCompra);
+            CancelarCompraCommand  = new ViewModelCommand(ExecuteCancelarCompra);
+            CrearAnuncioCommand    = new ViewModelCommand(ExecuteCrearAnuncio);
 
             CargarDatos();
         }
@@ -321,5 +398,204 @@ namespace InaManager.ViewModel
             "Delanteros"               => new HashSet<string> { "EI", "DCI", "DC", "DCD", "ED" },
             _                          => new HashSet<string>()
         };
+
+        // ── Navegación ────────────────────────────────────────────────────────
+        private void ExecuteShowDetails(object obj)
+        {
+            if (obj is AnuncioItemVM anuncio)
+            {
+                SelectedAnuncio = anuncio;
+                IsListVisible = System.Windows.Visibility.Collapsed;
+                IsDetailVisible = System.Windows.Visibility.Visible;
+            }
+        }
+
+        private void ExecuteBackToList(object obj)
+        {
+            IsListVisible = System.Windows.Visibility.Visible;
+            IsDetailVisible = System.Windows.Visibility.Collapsed;
+            SelectedAnuncio = null;
+        }
+
+        private void ExecuteComprarPorPrecio(object obj)
+        {
+            if (SelectedAnuncio == null) return;
+
+            // Mostrar diálogo de confirmación
+            ConfirmTitle = "CONFIRMAR COMPRA POR PRECIO DE CLUB";
+            ConfirmMessage = $"¿Estás seguro de que deseas comprar a {SelectedAnuncio.NombreCompleto} por el precio de club?";
+            ConfirmMonto = SelectedAnuncio.Model.Precio;
+            ConfirmTipoCompra = "precio";
+            IsConfirmDialogVisible = System.Windows.Visibility.Visible;
+        }
+
+        private void ExecuteComprarPorClausula(object obj)
+        {
+            if (SelectedAnuncio == null) return;
+
+            // Mostrar diálogo de confirmación
+            ConfirmTitle = "CONFIRMAR ACTIVACIÓN DE CLÁUSULA";
+            ConfirmMessage = $"¿Estás seguro de que deseas activar la cláusula de rescisión de {SelectedAnuncio.NombreCompleto}?";
+            ConfirmMonto = SelectedAnuncio.Model.Jugador_clausula;
+            ConfirmTipoCompra = "clausula";
+            IsConfirmDialogVisible = System.Windows.Visibility.Visible;
+        }
+
+        private void ExecuteAceptarCompra(object obj)
+        {
+            if (SelectedAnuncio == null) return;
+
+            try
+            {
+                // Validar que hay equipo actual
+                if (UserSession.UsuarioActual == null || UserSession.Id_Equipo <= 0)
+                {
+                    MessageBox.Show("No se pudo detectar tu equipo. Por favor, cierra sesión e intenta de nuevo.", 
+                                    "Error de sesión", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
+                // TODO: Validar presupuesto del equipo
+                // var equipoRepository = new MysqlEquipoRepository();
+                // var equipo = equipoRepository.GetById(UserSession.Id_Equipo);
+                // if (equipo.Presupuesto < ConfirmMonto)
+                // {
+                //     MessageBox.Show($"Presupuesto insuficiente. Necesitas {ConfirmMontoFormato} pero solo tienes {equipo.PresupuestoFormato}", 
+                //                     "Fondos insuficientes", MessageBoxButton.OK, MessageBoxImage.Warning);
+                //     return;
+                // }
+
+                bool exitosa = false;
+
+                if (ConfirmTipoCompra == "precio")
+                {
+                    // Compra por precio de club
+                    exitosa = _repo.ComprarJugadorPorPrecio(
+                        SelectedAnuncio.Model.Id_anuncio,
+                        UserSession.Id_Equipo,
+                        ConfirmMonto);
+                }
+                else if (ConfirmTipoCompra == "clausula")
+                {
+                    // Compra por cláusula de rescisión
+                    exitosa = _repo.ComprarJugadorPorClausula(
+                        SelectedAnuncio.Model.Id_jugador,
+                        UserSession.Id_Equipo,
+                        ConfirmMonto);
+                }
+
+                if (!exitosa)
+                {
+                    MessageBox.Show("La transacción no pudo procesarse. Intenta más tarde.", "Error", 
+                                    MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
+
+                string tipoOperacion = ConfirmTipoCompra == "precio" ? "COMPRA POR PRECIO DE CLUB" : "CLÁUSULA DE RESCISIÓN ACTIVADA";
+
+                // Crear notificaciones para ambos equipos
+                int id_equipo_comprador = UserSession.Id_Equipo;
+                int id_equipo_vendedor = SelectedAnuncio.Model.Id_equipo;
+                string tipoNotif = ConfirmTipoCompra == "precio" ? "Compra" : "ClausuraActivada";
+
+                CrearNotificacionCompra(
+                    id_equipo_comprador,
+                    id_equipo_vendedor,
+                    tipoNotif,
+                    ConfirmMonto,
+                    SelectedAnuncio.Model.Jugador_nombre,
+                    SelectedAnuncio.Model.Jugador_apellido
+                );
+
+                MessageBox.Show(
+                    $"¡Transacción exitosa!\n\n{SelectedAnuncio.NombreCompleto}\n{tipoOperacion}\n\nPrecio: {ConfirmMontoFormato}",
+                    "Compra completada",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Information);
+
+                // Cerrar diálogo y volver a la lista
+                IsConfirmDialogVisible = System.Windows.Visibility.Collapsed;
+                ExecuteBackToList(null);
+                CargarDatos(); // Recargar para actualizar mercado
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Error en ExecuteAceptarCompra: {ex.Message}");
+                MessageBox.Show($"Error: {ex.Message}", "Error de compra", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void ExecuteCancelarCompra(object obj)
+        {
+            IsConfirmDialogVisible = System.Windows.Visibility.Collapsed;
+        }
+
+        private void CrearNotificacionCompra(int id_equipo_comprador, int id_equipo_vendedor, 
+                                             string tipo, decimal monto, string nombreJugador, string apellidoJugador)
+        {
+            try
+            {
+                // Notificación para equipo comprador (confirmación de adquisición)
+                var notifComprador = new NotificacionModel(
+                    id_equipo_comprador,
+                    tipo,
+                    $"JUGADOR ADQUIRIDO: {nombreJugador}",
+                    $"Has adquirido a {nombreJugador} {apellidoJugador}",
+                    nombreJugador,
+                    apellidoJugador,
+                    monto,
+                    DateTime.Now,
+                    false,
+                    "Aceptada"
+                );
+                _notifRepo.CrearNotificacion(notifComprador);
+
+                // Notificación para equipo vendedor (notificación de venta)
+                var notifVendedor = new NotificacionModel(
+                    id_equipo_vendedor,
+                    tipo == "Compra" ? "Venta" : "ClausuraActivada",
+                    $"JUGADOR VENDIDO: {nombreJugador}",
+                    $"Tu jugador {nombreJugador} {apellidoJugador} ha sido adquirido",
+                    nombreJugador,
+                    apellidoJugador,
+                    monto,
+                    DateTime.Now,
+                    false,
+                    "Aceptada"
+                );
+                _notifRepo.CrearNotificacion(notifVendedor);
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Error creando notificaciones: {ex.Message}");
+            }
+        }
+
+        private void ExecuteCrearAnuncio(object obj)
+        {
+            try
+            {
+                if (UserSession.Id_Equipo <= 0)
+                {
+                    MessageBox.Show("No se pudo detectar tu equipo. Por favor, cierra sesión e intenta de nuevo.", 
+                                    "Error de sesión", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
+                var ventanaCrear = new View.CrearAnuncioWindow();
+                ventanaCrear.Owner = System.Windows.Application.Current.MainWindow;
+
+                if (ventanaCrear.ShowDialog() == true)
+                {
+                    // Recargar el mercado después de crear un anuncio
+                    CargarDatos();
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Error abriendo ventana crear anuncio: {ex.Message}");
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
     }
 }

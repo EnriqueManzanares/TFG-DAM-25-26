@@ -324,9 +324,51 @@ namespace InaManager.Repositories
 
         public IEnumerable<JugadorModel> GetByTeam()
         {
-            // Por ahora, como GetAll ya trae toda la info necesaria para la plantilla,
-            // podemos reutilizar la lógica. Si en el futuro filtras por ID de equipo, cámbialo aquí.
-            return GetAll();
+            var jugadores = new List<JugadorModel>();
+            try
+            {
+                using (var connection = GetConnection())
+                using (var command = new MySqlCommand())
+                {
+                    connection.Open();
+                    command.Connection = connection;
+                    command.CommandText = "sp_ObtenerJugadoresPorEquipo";
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@id_equipo", UserSession.Id_Equipo);
+
+                    using (var reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            var jugador = new JugadorModel(
+                                Convert.ToInt32(reader["id_jugador"]),
+                                reader["nombre"].ToString(),
+                                reader["apellido"].ToString(),
+                                reader["apodo"].ToString(),
+                                reader["afinidad"].ToString(),
+                                reader["posicion"].ToString(),
+                                Convert.ToInt32(reader["dorsal"]),
+                                Convert.ToBoolean(reader["es_titular"]),
+                                Convert.ToBoolean(reader["esta_convocado"]),
+                                reader["url_imagen"].ToString(),
+                                Convert.ToInt32(reader["nivel"]),
+                                Convert.ToInt32(reader["id_responsable"]),
+                                reader["url_imagen_responsable"].ToString(),
+                                Convert.ToInt32(reader["id_equipo"]),
+                                Convert.ToDecimal(reader["clausula_rescision"]),
+                                Convert.ToBoolean(reader["esta_disponible"]),
+                                Convert.ToDecimal(reader["sueldo"])
+                            );
+                            jugadores.Add(jugador);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Error en GetByTeam: {ex.Message}");
+            }
+            return jugadores;
         }
 
         public void DeleteJugador(int idJugador)

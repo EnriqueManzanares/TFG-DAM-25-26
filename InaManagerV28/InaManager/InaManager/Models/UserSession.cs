@@ -11,6 +11,9 @@ namespace InaManager.Models
         // Guardamos el objeto completo del modelo
         public static EmpleadoAccountModel UsuarioActual { get; set; }
 
+        // Información del equipo del usuario logueado
+        public static int Id_Equipo { get; set; }
+
         // Atajos para no romper el código que ya escribió tu compañero
         public static int IdUsuario => UsuarioActual?.IdUsuario ?? 0;
         public static string Rol => UsuarioActual?.Rol ?? string.Empty;

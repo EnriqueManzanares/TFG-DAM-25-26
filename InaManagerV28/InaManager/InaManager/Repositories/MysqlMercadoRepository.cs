@@ -49,5 +49,96 @@ namespace InaManager.Repositories
             }
             return lista;
         }
+
+        public bool ComprarJugadorPorPrecio(int id_anuncio, int id_equipo_comprador, decimal precio)
+        {
+            try
+            {
+                using (var connection = GetConnection())
+                using (var command = new MySqlCommand("sp_ComprarJugadorPrecio", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@id_anuncio", id_anuncio);
+                    command.Parameters.AddWithValue("@id_equipo_comprador", id_equipo_comprador);
+                    command.Parameters.AddWithValue("@precio", precio);
+
+                    connection.Open();
+                    int result = command.ExecuteNonQuery();
+                    return result > 0;
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Error en ComprarJugadorPorPrecio: {ex.Message}");
+                return false;
+            }
+        }
+
+        public bool ComprarJugadorPorClausula(int id_jugador, int id_equipo_comprador, decimal clausula)
+        {
+            try
+            {
+                using (var connection = GetConnection())
+                using (var command = new MySqlCommand("sp_ComprarJugadorClausula", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@id_jugador", id_jugador);
+                    command.Parameters.AddWithValue("@id_equipo_comprador", id_equipo_comprador);
+                    command.Parameters.AddWithValue("@clausula", clausula);
+
+                    connection.Open();
+                    int result = command.ExecuteNonQuery();
+                    return result > 0;
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Error en ComprarJugadorPorClausula: {ex.Message}");
+                return false;
+            }
+        }
+
+        public void CrearAnuncio(int id_jugador, int id_equipo, decimal precio, int dias)
+        {
+            try
+            {
+                using (var connection = GetConnection())
+                using (var command = new MySqlCommand("sp_CrearAnuncioMercado", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@id_jugador", id_jugador);
+                    command.Parameters.AddWithValue("@id_equipo", id_equipo);
+                    command.Parameters.AddWithValue("@precio", precio);
+                    command.Parameters.AddWithValue("@dias", dias);
+
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Error en CrearAnuncio: {ex.Message}");
+            }
+        }
+
+        public void EliminarAnuncio(int id_anuncio)
+        {
+            try
+            {
+                using (var connection = GetConnection())
+                using (var command = new MySqlCommand("sp_EliminarAnuncio", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@id_anuncio", id_anuncio);
+
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Error en EliminarAnuncio: {ex.Message}");
+            }
+        }
     }
 }

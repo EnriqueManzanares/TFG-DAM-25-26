@@ -156,6 +156,11 @@ namespace InaManager.ViewModel
                         ProfilePicture = jugData.Url_imagen
                     };
 
+                    // Guardar el equipo del jugador en UserSession
+                    UserSession.Id_Equipo = jugData.Id_equipo;
+                    System.Diagnostics.Debug.WriteLine($"[LoginViewModel] Jugador {jugData.Username} asignado a equipo {UserSession.Id_Equipo}");
+                    System.Diagnostics.Debug.WriteLine($"[LoginViewModel] jugData.Id_equipo = {jugData.Id_equipo}");
+
                     Thread.CurrentPrincipal = new GenericPrincipal(
                         new GenericIdentity(Username),
                         new[] { "Jugador" }

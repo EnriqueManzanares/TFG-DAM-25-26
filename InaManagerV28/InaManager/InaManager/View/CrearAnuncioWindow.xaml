@@ -1,0 +1,63 @@
+<Window x:Class="InaManager.View.CrearAnuncioWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Crear Anuncio de Mercado" Height="500" Width="600"
+        WindowStartupLocation="CenterOwner"
+        Background="#F5F5F5"
+        ResizeMode="NoResize">
+    <Grid>
+        <StackPanel Margin="20" VerticalAlignment="Stretch">
+            <!-- Título -->
+            <TextBlock Text="Crear Anuncio de Mercado" FontSize="20" FontWeight="Bold" 
+                       Foreground="#333" Margin="0,0,0,20"/>
+
+            <!-- Seleccionar Jugador -->
+            <TextBlock Text="Selecciona un jugador:" FontWeight="Bold" Margin="0,0,0,5"/>
+            <ComboBox ItemsSource="{Binding MisJugadores}" 
+                      SelectedItem="{Binding JugadorSeleccionado}"
+                      Height="35" Margin="0,0,0,15">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding Nombre}"/>
+                            <TextBlock Text=" " />
+                            <TextBlock Text="{Binding Apellido}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+
+            <!-- Precio de Club -->
+            <TextBlock Text="Precio de Club (opcional):" FontWeight="Bold" Margin="0,0,0,5"/>
+            <TextBox Text="{Binding PrecioClub, UpdateSourceTrigger=PropertyChanged}" 
+                     Height="35" Padding="10" Margin="0,0,0,15"
+                     Background="White" Foreground="#333"/>
+
+            <!-- Información de Cláusula -->
+            <Border BorderBrush="#DDD" BorderThickness="1" Padding="15" Margin="0,0,0,15" Background="White">
+                <StackPanel>
+                    <TextBlock Text="Cláusula de Rescisión del Jugador" FontWeight="Bold" Margin="0,0,0,10"/>
+                    <TextBlock Text="{Binding ClausulaFormato}" FontSize="14" Foreground="#0066cc"/>
+                    <TextBlock Text="(La cláusula se tomará automáticamente del perfil del jugador)" 
+                               FontSize="12" Foreground="#666" Margin="0,10,0,0"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Duración del Anuncio -->
+            <TextBlock Text="Duración del anuncio (días):" FontWeight="Bold" Margin="0,0,0,5"/>
+            <TextBox Text="{Binding Dias, UpdateSourceTrigger=PropertyChanged}" 
+                     Height="35" Padding="10" Margin="0,0,0,15"
+                     Background="White" Foreground="#333"/>
+
+            <!-- Botones -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,20,0,0">
+                <Button Content="Cancelar" Width="100" Height="40" Margin="0,0,10,0" 
+                        Background="#FF6B6B" Foreground="White" FontWeight="Bold"
+                        Command="{Binding CancelarCommand}"/>
+                <Button Content="Crear Anuncio" Width="150" Height="40" 
+                        Background="#00AA00" Foreground="White" FontWeight="Bold"
+                        Command="{Binding CrearAnuncioCommand}"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

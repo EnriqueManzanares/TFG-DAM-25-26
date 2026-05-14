@@ -1,102 +1,110 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\",
+  "WorkspaceRootPath": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg.2\\inamanagerv28\\inamanager\\inamanager\\view\\transferenciabancariaview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\view\\transferenciabancariaview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg\\inamanagerv28\\inamanager\\inamanager\\view\\mercadoview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\view\\mercadoview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg.2\\inamanagerv28\\inamanager\\inamanager\\view\\bancoview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\view\\bancoview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg\\inamanagerv28\\inamanager\\inamanager\\view\\crearanunciowindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\view\\crearanunciowindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg.2\\inamanagerv28\\inamanager\\inamanager\\view\\apphubview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\view\\apphubview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg\\inamanagerv28\\inamanager\\inamanager\\view\\empleadosview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\view\\empleadosview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg.2\\inamanagerv28\\inamanager\\inamanager\\repositories\\mysqlrepositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\repositories\\mysqlrepositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg\\inamanagerv28\\inamanager\\inamanager\\view\\inversionesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\view\\inversionesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg.2\\inamanagerv28\\inamanager\\inamanager\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg\\inamanagerv28\\inamanager\\inamanager\\view\\homeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\view\\homeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg.2\\inamanagerv28\\inamanager\\inamanager\\helpers\\mapeoposiciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\helpers\\mapeoposiciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg\\inamanagerv28\\inamanager\\inamanager\\view\\formacionesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\view\\formacionesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg.2\\inamanagerv28\\inamanager\\inamanager\\view\\partidosview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\view\\partidosview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg.2\\inamanagerv28\\inamanager\\inamanager\\viewmodel\\equipoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\viewmodel\\equipoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg.2\\inamanagerv28\\inamanager\\inamanager\\view\\equipoview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg\\inamanagerv28\\inamanager\\inamanager\\view\\equipoview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\view\\equipoview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg.2\\inamanagerv28\\inamanager\\inamanager\\view\\plantillaview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\view\\plantillaview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg.2\\inamanagerv28\\inamanager\\inamanager\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg.2\\inamanagerv28\\inamanager\\inamanager\\repositories\\mysqljugadorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\repositories\\mysqljugadorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg.2\\inamanagerv28\\inamanager\\inamanager\\viewmodel\\ejerciciosviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\viewmodel\\ejerciciosviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg.2\\inamanagerv28\\inamanager\\inamanager\\repositories\\ijugadorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\repositories\\ijugadorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg.2\\inamanagerv28\\inamanager\\inamanager\\view\\ejerciciosview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg\\inamanagerv28\\inamanager\\inamanager\\view\\ejerciciosview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\view\\ejerciciosview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg.2\\inamanagerv28\\inamanager\\inamanager\\view\\apphubview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\view\\apphubview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg\\inamanagerv28\\inamanager\\inamanager\\view\\apphubview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\view\\apphubview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg.2\\inamanagerv28\\inamanager\\inamanager\\models\\bancomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\models\\bancomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg\\inamanagerv28\\inamanager\\inamanager\\viewmodel\\ejerciciosviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\viewmodel\\ejerciciosviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg.2\\inamanagerv28\\inamanager\\inamanager\\viewmodel\\bancoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\viewmodel\\bancoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg\\inamanagerv28\\inamanager\\inamanager\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg.2\\inamanagerv28\\inamanager\\inamanager\\view\\bancoview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\view\\bancoview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg\\inamanagerv28\\inamanager\\inamanager\\view\\plantillaview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\view\\plantillaview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg.2\\inamanagerv28\\inamanager\\inamanager\\viewmodel\\apphubviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\viewmodel\\apphubviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg\\inamanagerv28\\inamanager\\inamanager\\view\\partidosview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\view\\partidosview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg.2\\inamanagerv28\\inamanager\\inamanager\\repositories\\mysqlbancorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\repositories\\mysqlbancorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg\\inamanagerv28\\inamanager\\inamanager\\repositories\\mysqlrepositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\repositories\\mysqlrepositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg.2\\inamanagerv28\\inamanager\\inamanager\\repositories\\ibancorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\repositories\\ibancorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg\\inamanagerv28\\inamanager\\inamanager\\viewmodel\\equipoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\viewmodel\\equipoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg.2\\inamanagerv28\\inamanager\\inamanager\\view\\transferenciabancariaview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\view\\transferenciabancariaview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg\\inamanagerv28\\inamanager\\inamanager\\repositories\\mysqljugadorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\repositories\\mysqljugadorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg.2\\inamanagerv28\\inamanager\\inamanager\\viewmodel\\transferenciabancariaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\viewmodel\\transferenciabancariaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg\\inamanagerv28\\inamanager\\inamanager\\repositories\\ijugadorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\repositories\\ijugadorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg\\inamanagerv28\\inamanager\\inamanager\\viewmodel\\mercadoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\viewmodel\\mercadoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg\\inamanagerv28\\inamanager\\inamanager\\models\\notificacionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\models\\notificacionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg\\inamanagerv28\\inamanager\\inamanager\\repositories\\imercadorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\repositories\\imercadorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg\\inamanagerv28\\inamanager\\inamanager\\repositories\\mysqlmercadorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\repositories\\mysqlmercadorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg\\inamanagerv28\\inamanager\\inamanager\\repositories\\inotificacionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\repositories\\inotificacionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg\\inamanagerv28\\inamanager\\inamanager\\repositories\\mysqlnotificacionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\repositories\\mysqlnotificacionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg\\inamanagerv28\\inamanager\\inamanager\\models\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\models\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg\\inamanagerv28\\inamanager\\inamanager\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|c:\\users\\practicas\\documents\\tfg\\inamanagerv28\\inamanager\\inamanager\\viewmodel\\crearanuncioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C29CC22-9D73-454E-B16B-CD64557E8197}|InaManager\\InaManager.csproj|solutionrelative:inamanager\\viewmodel\\crearanuncioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -106,250 +114,303 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "TransferenciaBancariaViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\ViewModel\\TransferenciaBancariaViewModel.cs",
-              "RelativeDocumentMoniker": "InaManager\\ViewModel\\TransferenciaBancariaViewModel.cs",
-              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\ViewModel\\TransferenciaBancariaViewModel.cs",
-              "RelativeToolTip": "InaManager\\ViewModel\\TransferenciaBancariaViewModel.cs",
-              "ViewState": "AgIAAAMBAAAAAAAAAIBZwAgBAAAAAAAAAAAAAA==",
+              "DocumentIndex": 21,
+              "Title": "INotificacionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\Repositories\\INotificacionRepository.cs",
+              "RelativeDocumentMoniker": "InaManager\\Repositories\\INotificacionRepository.cs",
+              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\Repositories\\INotificacionRepository.cs",
+              "RelativeToolTip": "InaManager\\Repositories\\INotificacionRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T14:57:18.47Z"
+              "WhenOpened": "2026-05-14T14:38:32.397Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "TransferenciaBancariaView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\View\\TransferenciaBancariaView.xaml.cs",
-              "RelativeDocumentMoniker": "InaManager\\View\\TransferenciaBancariaView.xaml.cs",
-              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\View\\TransferenciaBancariaView.xaml.cs",
-              "RelativeToolTip": "InaManager\\View\\TransferenciaBancariaView.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 20,
+              "Title": "MysqlMercadoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\Repositories\\MysqlMercadoRepository.cs",
+              "RelativeDocumentMoniker": "InaManager\\Repositories\\MysqlMercadoRepository.cs",
+              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\Repositories\\MysqlMercadoRepository.cs",
+              "RelativeToolTip": "InaManager\\Repositories\\MysqlMercadoRepository.cs",
+              "ViewState": "AgIAAIwAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T14:57:02.464Z"
+              "WhenOpened": "2026-05-14T14:37:58.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IMercadoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\Repositories\\IMercadoRepository.cs",
+              "RelativeDocumentMoniker": "InaManager\\Repositories\\IMercadoRepository.cs",
+              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\Repositories\\IMercadoRepository.cs",
+              "RelativeToolTip": "InaManager\\Repositories\\IMercadoRepository.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAEBTwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T14:37:45.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmpleadosView.xaml",
+              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\View\\EmpleadosView.xaml",
+              "RelativeDocumentMoniker": "InaManager\\View\\EmpleadosView.xaml",
+              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\View\\EmpleadosView.xaml",
+              "RelativeToolTip": "InaManager\\View\\EmpleadosView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-14T13:44:28.32Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TransferenciaBancariaView.xaml",
-              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\View\\TransferenciaBancariaView.xaml",
-              "RelativeDocumentMoniker": "InaManager\\View\\TransferenciaBancariaView.xaml",
-              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\View\\TransferenciaBancariaView.xaml",
-              "RelativeToolTip": "InaManager\\View\\TransferenciaBancariaView.xaml",
+              "Title": "MercadoView.xaml",
+              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\View\\MercadoView.xaml",
+              "RelativeDocumentMoniker": "InaManager\\View\\MercadoView.xaml",
+              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\View\\MercadoView.xaml",
+              "RelativeToolTip": "InaManager\\View\\MercadoView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-04T14:56:52.26Z",
+              "WhenOpened": "2026-05-14T13:33:47.875Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BancoView.xaml",
-              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\View\\BancoView.xaml",
-              "RelativeDocumentMoniker": "InaManager\\View\\BancoView.xaml",
-              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\View\\BancoView.xaml",
-              "RelativeToolTip": "InaManager\\View\\BancoView.xaml",
+              "Title": "CrearAnuncioWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\View\\CrearAnuncioWindow.xaml",
+              "RelativeDocumentMoniker": "InaManager\\View\\CrearAnuncioWindow.xaml",
+              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\View\\CrearAnuncioWindow.xaml",
+              "RelativeToolTip": "InaManager\\View\\CrearAnuncioWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-04T14:02:18.899Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "BancoViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\ViewModel\\BancoViewModel.cs",
-              "RelativeDocumentMoniker": "InaManager\\ViewModel\\BancoViewModel.cs",
-              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\ViewModel\\BancoViewModel.cs",
-              "RelativeToolTip": "InaManager\\ViewModel\\BancoViewModel.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAEBVwGAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T14:01:50.298Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "BancoModel.cs",
-              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\Models\\BancoModel.cs",
-              "RelativeDocumentMoniker": "InaManager\\Models\\BancoModel.cs",
-              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\Models\\BancoModel.cs",
-              "RelativeToolTip": "InaManager\\Models\\BancoModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T14:01:35.199Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AppHubView.xaml",
-              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\View\\AppHubView.xaml",
-              "RelativeDocumentMoniker": "InaManager\\View\\AppHubView.xaml",
-              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\View\\AppHubView.xaml",
-              "RelativeToolTip": "InaManager\\View\\AppHubView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-04T13:36:34.316Z"
+              "WhenOpened": "2026-05-14T14:51:02.178Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "BancoView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\View\\BancoView.xaml.cs",
-              "RelativeDocumentMoniker": "InaManager\\View\\BancoView.xaml.cs",
-              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\View\\BancoView.xaml.cs",
-              "RelativeToolTip": "InaManager\\View\\BancoView.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Title": "NotificacionModel.cs",
+              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\Models\\NotificacionModel.cs",
+              "RelativeDocumentMoniker": "InaManager\\Models\\NotificacionModel.cs",
+              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\Models\\NotificacionModel.cs",
+              "RelativeToolTip": "InaManager\\Models\\NotificacionModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T14:02:36.128Z"
+              "WhenOpened": "2026-05-14T14:35:35.637Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "MysqlBancoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\Repositories\\MysqlBancoRepository.cs",
-              "RelativeDocumentMoniker": "InaManager\\Repositories\\MysqlBancoRepository.cs",
-              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\Repositories\\MysqlBancoRepository.cs",
-              "RelativeToolTip": "InaManager\\Repositories\\MysqlBancoRepository.cs",
-              "ViewState": "AgIAAPkAAAAAAAAAAABRwPwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 25,
+              "Title": "CrearAnuncioViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\ViewModel\\CrearAnuncioViewModel.cs",
+              "RelativeDocumentMoniker": "InaManager\\ViewModel\\CrearAnuncioViewModel.cs",
+              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\ViewModel\\CrearAnuncioViewModel.cs",
+              "RelativeToolTip": "InaManager\\ViewModel\\CrearAnuncioViewModel.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAIBJwKUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T14:35:56.455Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "IBancoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\Repositories\\IBancoRepository.cs",
-              "RelativeDocumentMoniker": "InaManager\\Repositories\\IBancoRepository.cs",
-              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\Repositories\\IBancoRepository.cs",
-              "RelativeToolTip": "InaManager\\Repositories\\IBancoRepository.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAEBUwA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T14:37:28.013Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AppHubView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\View\\AppHubView.xaml.cs",
-              "RelativeDocumentMoniker": "InaManager\\View\\AppHubView.xaml.cs",
-              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\View\\AppHubView.xaml.cs",
-              "RelativeToolTip": "InaManager\\View\\AppHubView.xaml.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAMBdwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T13:44:07.341Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "AppHubViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\ViewModel\\AppHubViewModel.cs",
-              "RelativeDocumentMoniker": "InaManager\\ViewModel\\AppHubViewModel.cs",
-              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\ViewModel\\AppHubViewModel.cs",
-              "RelativeToolTip": "InaManager\\ViewModel\\AppHubViewModel.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAEBVwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T14:02:52.646Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MysqlRepositoryBase.cs",
-              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\Repositories\\MysqlRepositoryBase.cs",
-              "RelativeDocumentMoniker": "InaManager\\Repositories\\MysqlRepositoryBase.cs",
-              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\Repositories\\MysqlRepositoryBase.cs",
-              "RelativeToolTip": "InaManager\\Repositories\\MysqlRepositoryBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T10:33:13.718Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\App.xaml",
-              "RelativeDocumentMoniker": "InaManager\\App.xaml",
-              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\App.xaml",
-              "RelativeToolTip": "InaManager\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-04T10:31:42.052Z",
+              "WhenOpened": "2026-05-14T14:45:54.052Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "MapeoPosiciones.cs",
-              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\Helpers\\MapeoPosiciones.cs",
-              "RelativeDocumentMoniker": "InaManager\\Helpers\\MapeoPosiciones.cs",
-              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\Helpers\\MapeoPosiciones.cs",
-              "RelativeToolTip": "InaManager\\Helpers\\MapeoPosiciones.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "FormacionesView.xaml",
+              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\View\\FormacionesView.xaml",
+              "RelativeDocumentMoniker": "InaManager\\View\\FormacionesView.xaml",
+              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\View\\FormacionesView.xaml",
+              "RelativeToolTip": "InaManager\\View\\FormacionesView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-14T13:44:37.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeView.xaml",
+              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\View\\HomeView.xaml",
+              "RelativeDocumentMoniker": "InaManager\\View\\HomeView.xaml",
+              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\View\\HomeView.xaml",
+              "RelativeToolTip": "InaManager\\View\\HomeView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-14T13:44:40.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InversionesView.xaml",
+              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\View\\InversionesView.xaml",
+              "RelativeDocumentMoniker": "InaManager\\View\\InversionesView.xaml",
+              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\View\\InversionesView.xaml",
+              "RelativeToolTip": "InaManager\\View\\InversionesView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-14T13:44:41.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MercadoViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\ViewModel\\MercadoViewModel.cs",
+              "RelativeDocumentMoniker": "InaManager\\ViewModel\\MercadoViewModel.cs",
+              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\ViewModel\\MercadoViewModel.cs",
+              "RelativeToolTip": "InaManager\\ViewModel\\MercadoViewModel.cs",
+              "ViewState": "AgIAAEQCAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T10:24:02.749Z"
+              "WhenOpened": "2026-05-14T13:48:27.684Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PartidosView.xaml",
-              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\View\\PartidosView.xaml",
-              "RelativeDocumentMoniker": "InaManager\\View\\PartidosView.xaml",
-              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\View\\PartidosView.xaml",
-              "RelativeToolTip": "InaManager\\View\\PartidosView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-04T22:08:33.623Z"
+              "DocumentIndex": 24,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\ViewModel\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "InaManager\\ViewModel\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\ViewModel\\LoginViewModel.cs",
+              "RelativeToolTip": "InaManager\\ViewModel\\LoginViewModel.cs",
+              "ViewState": "AgIAAJ8AAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T14:44:09.183Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PlantillaView.xaml",
-              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\View\\PlantillaView.xaml",
-              "RelativeDocumentMoniker": "InaManager\\View\\PlantillaView.xaml",
-              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\View\\PlantillaView.xaml",
-              "RelativeToolTip": "InaManager\\View\\PlantillaView.xaml",
+              "DocumentIndex": 23,
+              "Title": "UserSession.cs",
+              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\Models\\UserSession.cs",
+              "RelativeDocumentMoniker": "InaManager\\Models\\UserSession.cs",
+              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\Models\\UserSession.cs",
+              "RelativeToolTip": "InaManager\\Models\\UserSession.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAABQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T14:44:01.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MysqlNotificacionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\Repositories\\MysqlNotificacionRepository.cs",
+              "RelativeDocumentMoniker": "InaManager\\Repositories\\MysqlNotificacionRepository.cs",
+              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\Repositories\\MysqlNotificacionRepository.cs",
+              "RelativeToolTip": "InaManager\\Repositories\\MysqlNotificacionRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T14:38:42.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AppHubView.xaml",
+              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\View\\AppHubView.xaml",
+              "RelativeDocumentMoniker": "InaManager\\View\\AppHubView.xaml",
+              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\View\\AppHubView.xaml",
+              "RelativeToolTip": "InaManager\\View\\AppHubView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-04T21:58:34.155Z"
+              "WhenOpened": "2026-05-14T13:33:40.524Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "MainViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\ViewModel\\MainViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\ViewModel\\MainViewModel.cs",
               "RelativeDocumentMoniker": "InaManager\\ViewModel\\MainViewModel.cs",
-              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\ViewModel\\MainViewModel.cs",
+              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\ViewModel\\MainViewModel.cs",
               "RelativeToolTip": "InaManager\\ViewModel\\MainViewModel.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAAAFgAAABgAAAAAAAAAA==",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAFgAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-04T21:44:56.75Z"
+              "WhenOpened": "2026-03-04T21:44:56.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EjerciciosView.xaml",
+              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\View\\EjerciciosView.xaml",
+              "RelativeDocumentMoniker": "InaManager\\View\\EjerciciosView.xaml",
+              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\View\\EjerciciosView.xaml",
+              "RelativeToolTip": "InaManager\\View\\EjerciciosView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-04T21:09:58.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EquipoView.xaml",
+              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\View\\EquipoView.xaml",
+              "RelativeDocumentMoniker": "InaManager\\View\\EquipoView.xaml",
+              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\View\\EquipoView.xaml",
+              "RelativeToolTip": "InaManager\\View\\EquipoView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-04T20:42:19.084Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "EjerciciosViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\ViewModel\\EjerciciosViewModel.cs",
-              "RelativeDocumentMoniker": "InaManager\\ViewModel\\EjerciciosViewModel.cs",
-              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\ViewModel\\EjerciciosViewModel.cs",
-              "RelativeToolTip": "InaManager\\ViewModel\\EjerciciosViewModel.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAYwOQAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-04T21:10:06.884Z"
+              "Title": "PartidosView.xaml",
+              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\View\\PartidosView.xaml",
+              "RelativeDocumentMoniker": "InaManager\\View\\PartidosView.xaml",
+              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\View\\PartidosView.xaml",
+              "RelativeToolTip": "InaManager\\View\\PartidosView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-04T22:08:33.623Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "EjerciciosView.xaml",
-              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\View\\EjerciciosView.xaml",
-              "RelativeDocumentMoniker": "InaManager\\View\\EjerciciosView.xaml",
-              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\View\\EjerciciosView.xaml",
-              "RelativeToolTip": "InaManager\\View\\EjerciciosView.xaml",
+              "DocumentIndex": 11,
+              "Title": "PlantillaView.xaml",
+              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\View\\PlantillaView.xaml",
+              "RelativeDocumentMoniker": "InaManager\\View\\PlantillaView.xaml",
+              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\View\\PlantillaView.xaml",
+              "RelativeToolTip": "InaManager\\View\\PlantillaView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-04T21:09:58.09Z"
+              "WhenOpened": "2026-03-04T21:58:34.155Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
+              "Title": "MysqlRepositoryBase.cs",
+              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\Repositories\\MysqlRepositoryBase.cs",
+              "RelativeDocumentMoniker": "InaManager\\Repositories\\MysqlRepositoryBase.cs",
+              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\Repositories\\MysqlRepositoryBase.cs",
+              "RelativeToolTip": "InaManager\\Repositories\\MysqlRepositoryBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T11:15:31.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EjerciciosViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\ViewModel\\EjerciciosViewModel.cs",
+              "RelativeDocumentMoniker": "InaManager\\ViewModel\\EjerciciosViewModel.cs",
+              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\ViewModel\\EjerciciosViewModel.cs",
+              "RelativeToolTip": "InaManager\\ViewModel\\EjerciciosViewModel.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAYwOQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-04T21:10:06.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "IJugadorRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\Repositories\\IJugadorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\Repositories\\IJugadorRepository.cs",
               "RelativeDocumentMoniker": "InaManager\\Repositories\\IJugadorRepository.cs",
-              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\Repositories\\IJugadorRepository.cs",
+              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\Repositories\\IJugadorRepository.cs",
               "RelativeToolTip": "InaManager\\Repositories\\IJugadorRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -357,34 +418,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "MysqlJugadorRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\Repositories\\MysqlJugadorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\Repositories\\MysqlJugadorRepository.cs",
               "RelativeDocumentMoniker": "InaManager\\Repositories\\MysqlJugadorRepository.cs",
-              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\Repositories\\MysqlJugadorRepository.cs",
+              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\Repositories\\MysqlJugadorRepository.cs",
               "RelativeToolTip": "InaManager\\Repositories\\MysqlJugadorRepository.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwDsAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAHEBAAAAAAAAAIBJwDsAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-04T20:50:51.524Z"
+              "WhenOpened": "2026-03-04T20:50:51.524Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EquipoView.xaml",
-              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\View\\EquipoView.xaml",
-              "RelativeDocumentMoniker": "InaManager\\View\\EquipoView.xaml",
-              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\View\\EquipoView.xaml",
-              "RelativeToolTip": "InaManager\\View\\EquipoView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-04T20:42:19.084Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "EquipoViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\ViewModel\\EquipoViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\ViewModel\\EquipoViewModel.cs",
               "RelativeDocumentMoniker": "InaManager\\ViewModel\\EquipoViewModel.cs",
-              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG.2\\InaManagerV28\\InaManager\\InaManager\\ViewModel\\EquipoViewModel.cs",
+              "ToolTip": "C:\\Users\\Practicas\\Documents\\TFG\\InaManagerV28\\InaManager\\InaManager\\ViewModel\\EquipoViewModel.cs",
               "RelativeToolTip": "InaManager\\ViewModel\\EquipoViewModel.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAewEgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

@@ -87,19 +87,21 @@
     </UserControl.Resources>
 
     <Grid>
-        <Grid.RowDefinitions>
-            <!-- Cabecera / título -->
-            <RowDefinition Height="Auto"/>
-            <!-- Barra de filtros -->
-            <RowDefinition Height="Auto"/>
-            <!-- Grid de tarjetas -->
-            <RowDefinition Height="*"/>
-            <!-- Paginación -->
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
+        <!-- VISTA DE LISTA -->
+        <Grid Visibility="{Binding IsListVisible}">
+            <Grid.RowDefinitions>
+                <!-- Cabecera / título -->
+                <RowDefinition Height="Auto"/>
+                <!-- Barra de filtros -->
+                <RowDefinition Height="Auto"/>
+                <!-- Grid de tarjetas -->
+                <RowDefinition Height="*"/>
+                <!-- Paginación -->
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
 
-        <!-- ══════════════════════ CABECERA ══════════════════════ -->
-        <Grid Grid.Row="0" Margin="0,0,0,18">
+            <!-- ══════════════════════ CABECERA ══════════════════════ -->
+            <Grid Grid.Row="0" Margin="0,0,0,18">
             <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                 <TextBlock Text="⚽" FontSize="28" VerticalAlignment="Center" Margin="0,0,12,0"/>
                 <StackPanel VerticalAlignment="Center">
@@ -111,11 +113,17 @@
                 </StackPanel>
             </StackPanel>
 
-            <Button Content="↺  Actualizar"
-                    HorizontalAlignment="Right" VerticalAlignment="Center"
-                    Style="{StaticResource PaginaBtn}"
-                    Padding="14,7" FontSize="12"
-                    Click="BtnActualizar_Click"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+                <Button Content="➕  Crear Anuncio"
+                        Style="{StaticResource PaginaBtn}"
+                        Padding="14,7" FontSize="12"
+                        Command="{Binding CrearAnuncioCommand}"
+                        Margin="0,0,10,0"/>
+                <Button Content="↺  Actualizar"
+                        Style="{StaticResource PaginaBtn}"
+                        Padding="14,7" FontSize="12"
+                        Click="BtnActualizar_Click"/>
+            </StackPanel>
         </Grid>
 
         <!-- ══════════════════════ FILTROS ══════════════════════ -->
@@ -233,6 +241,11 @@
                                     Background="#1A1A2E"
                                     ClipToBounds="True"
                                     Cursor="Hand">
+                                <Border.InputBindings>
+                                    <MouseBinding MouseAction="LeftClick"
+                                                  Command="{Binding DataContext.ShowDetailsCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
+                                                  CommandParameter="{Binding}"/>
+                                </Border.InputBindings>
                                 <Border.Style>
                                     <Style TargetType="Border">
                                         <Style.Triggers>
@@ -389,5 +402,278 @@
                         HorizontalAlignment="Right"/>
             </Grid>
         </Border>
+        </Grid>
+
+        <!-- ══════════════════════ VISTA DE DETALLES ══════════════════════ -->
+        <Grid Visibility="{Binding IsDetailVisible}" Background="#E6101010">
+            <!-- Botón volver -->
+            <Button HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20"
+                    Command="{Binding BackToListCommand}"
+                    Content="🡠 VOLVER AL MERCADO" Background="Transparent" Foreground="White" 
+                    BorderThickness="0" FontSize="14" FontWeight="Bold" Cursor="Hand"
+                    Panel.ZIndex="10"/>
+
+            <!-- ScrollViewer para contenido largo -->
+            <ScrollViewer VerticalScrollBarVisibility="Hidden" Margin="0,60,0,0">
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="0,0,0,50">
+
+                    <!-- ════════ SECCIÓN PRINCIPAL: IMAGEN + INFO ════════ -->
+                    <Border Width="900" Background="#15FFFFFF" CornerRadius="15" Padding="30" Margin="0,0,0,30" 
+                            BorderBrush="#30FFFFFF" BorderThickness="1">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="300"/>
+                                <ColumnDefinition Width="30"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <!-- COLUMNA IZQUIERDA: Imagen grande -->
+                            <StackPanel Grid.Column="0">
+                                <!-- Foto del jugador -->
+                                <Border Width="280" Height="350" CornerRadius="15"
+                                        BorderBrush="{Binding SelectedAnuncio.ColorBorde}" BorderThickness="3">
+                                    <Border.Effect>
+                                        <DropShadowEffect Color="Black" ShadowDepth="5" BlurRadius="20" Opacity="0.8"/>
+                                    </Border.Effect>
+                                    <Border.Background>
+                                        <ImageBrush ImageSource="{Binding SelectedAnuncio.Model.Jugador_imagen}" Stretch="UniformToFill"/>
+                                    </Border.Background>
+                                </Border>
+
+                                <!-- Info bajo la imagen -->
+                                <Border Background="#20FFFFFF" CornerRadius="10" Padding="20" Margin="0,15,0,0">
+                                    <StackPanel>
+                                        <!-- Equipo -->
+                                        <StackPanel Margin="0,0,0,12">
+                                            <TextBlock Text="EQUIPO" Foreground="#888888" FontSize="11" FontWeight="Bold" Margin="0,0,0,3"/>
+                                            <TextBlock Text="{Binding SelectedAnuncio.Model.Equipo_nombre}" Foreground="White" FontSize="16" FontWeight="Bold"/>
+                                        </StackPanel>
+
+                                        <!-- Posición -->
+                                        <StackPanel Margin="0,0,0,12">
+                                            <TextBlock Text="POSICIÓN" Foreground="#888888" FontSize="11" FontWeight="Bold" Margin="0,0,0,3"/>
+                                            <TextBlock Text="{Binding SelectedAnuncio.Model.Jugador_posicion}" Foreground="White" FontSize="16" FontWeight="Bold"/>
+                                        </StackPanel>
+
+                                        <!-- Afinidad/Elemento -->
+                                        <StackPanel>
+                                            <TextBlock Text="ELEMENTO" Foreground="#888888" FontSize="11" FontWeight="Bold" Margin="0,0,0,3"/>
+                                            <TextBlock Text="{Binding SelectedAnuncio.Model.Jugador_afinidad}" 
+                                                       Foreground="{Binding SelectedAnuncio.ColorBorde}" FontSize="16" FontWeight="Bold"/>
+                                        </StackPanel>
+                                    </StackPanel>
+                                </Border>
+                            </StackPanel>
+
+                            <!-- COLUMNA DERECHA: Información -->
+                            <StackPanel Grid.Column="2" VerticalAlignment="Top">
+                                <!-- Nombre y Apellido -->
+                                <StackPanel Margin="0,0,0,10">
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="{Binding SelectedAnuncio.Model.Jugador_nombre}" 
+                                                   Foreground="White" FontSize="48" FontWeight="Bold" 
+                                                   FontFamily="Montserrat" Margin="0,0,10,0"/>
+                                        <TextBlock Text="{Binding SelectedAnuncio.Model.Jugador_apellido}" 
+                                                   Foreground="#CCCCCC" FontSize="48" FontWeight="Light" 
+                                                   FontFamily="Montserrat"/>
+                                    </StackPanel>
+                                </StackPanel>
+
+                                <!-- Descripción / Datos principales -->
+                                <Border Background="#20FFFFFF" CornerRadius="10" Padding="20" Margin="0,15,0,20">
+                                    <StackPanel>
+                                        <!-- Precio y Cláusula lado a lado -->
+                                        <Grid Margin="0,0,0,15">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="15"/>
+                                                <ColumnDefinition Width="*"/>
+                                            </Grid.ColumnDefinitions>
+
+                                            <!-- Precio de Club -->
+                                            <StackPanel Grid.Column="0">
+                                                <TextBlock Text="PRECIO DE CLUB" Foreground="#888888" FontSize="10" FontWeight="Bold" Margin="0,0,0,5"/>
+                                                <Border Background="#30FFD700" CornerRadius="6" Padding="10">
+                                                    <TextBlock Text="{Binding SelectedAnuncio.PrecioFormato}" 
+                                                               Foreground="#FFD700" FontSize="20" FontWeight="Bold"/>
+                                                </Border>
+                                            </StackPanel>
+
+                                            <!-- Cláusula de Rescisión -->
+                                            <StackPanel Grid.Column="2">
+                                                <TextBlock Text="CLÁUSULA DE RESCISIÓN" Foreground="#888888" FontSize="10" FontWeight="Bold" Margin="0,0,0,5"/>
+                                                <Border Background="#30CCCCCC" CornerRadius="6" Padding="10">
+                                                    <TextBlock Text="{Binding SelectedAnuncio.ClausulaFormato}" 
+                                                               Foreground="#CCCCCC" FontSize="20" FontWeight="Bold"/>
+                                                </Border>
+                                            </StackPanel>
+                                        </Grid>
+
+                                        <!-- Tiempo restante -->
+                                        <StackPanel Margin="0,0,0,15">
+                                            <TextBlock Text="TIEMPO RESTANTE" Foreground="#888888" FontSize="10" FontWeight="Bold" Margin="0,0,0,5"/>
+                                            <Border Background="#30FF6B35" CornerRadius="6" Padding="10">
+                                                <TextBlock Text="{Binding SelectedAnuncio.DiasTexto}" 
+                                                           Foreground="#FF6B35" FontSize="16" FontWeight="Bold"/>
+                                            </Border>
+                                        </StackPanel>
+
+                                        <!-- Fecha fin -->
+                                        <StackPanel>
+                                            <TextBlock Text="FECHA FIN DEL ANUNCIO" Foreground="#888888" FontSize="10" FontWeight="Bold" Margin="0,0,0,5"/>
+                                            <TextBlock Text="{Binding SelectedAnuncio.Model.Fecha_fin, StringFormat='dd/MM/yyyy'}" 
+                                                       Foreground="White" FontSize="14"/>
+                                        </StackPanel>
+                                    </StackPanel>
+                                </Border>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+
+                    <!-- ════════ SECCIÓN NEGOCIACIÓN: OPCIONES DE COMPRA ════════ -->
+                    <Border Width="900" Background="#25000000" CornerRadius="15" Padding="30" Margin="0,0,0,30" 
+                            BorderBrush="#80FF6B35" BorderThickness="2">
+                        <StackPanel>
+                            <TextBlock Text="NEGOCIACIÓN" Foreground="#FF6B35" FontSize="24" 
+                                       FontWeight="Bold" FontFamily="Montserrat" Margin="0,0,0,20"/>
+
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="20"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <!-- Opción 1: Precio de Club -->
+                                <Border Grid.Column="0" Background="#15FFFFFF" CornerRadius="12" 
+                                        BorderBrush="#80FFD700" BorderThickness="2" Padding="20">
+                                    <StackPanel>
+                                        <TextBlock Text="💰 PRECIO DE CLUB" Foreground="#FFD700" 
+                                                   FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,15"/>
+                                        <TextBlock Text="{Binding SelectedAnuncio.PrecioFormato}" 
+                                                   Foreground="White" FontSize="32" FontWeight="Bold" 
+                                                   HorizontalAlignment="Center" Margin="0,0,0,15"/>
+                                        <Button Command="{Binding ComprarPorPrecioCommand}"
+                                                Content="COMPRAR AHORA" 
+                                                Background="#FFD700" Foreground="Black" FontWeight="Bold"
+                                                Padding="15,12" Height="45" Cursor="Hand" FontSize="14">
+                                            <Button.Resources>
+                                                <Style TargetType="Border">
+                                                    <Setter Property="CornerRadius" Value="6"/>
+                                                </Style>
+                                            </Button.Resources>
+                                        </Button>
+                                        <TextBlock Text="Precio establecido por el club propietario" 
+                                                   Foreground="#AAAAAA" FontSize="11" 
+                                                   TextAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap"/>
+                                    </StackPanel>
+                                </Border>
+
+                                <!-- Opción 2: Cláusula de Rescisión -->
+                                <Border Grid.Column="2" Background="#15FFFFFF" CornerRadius="12" 
+                                        BorderBrush="#805C8C6A" BorderThickness="2" Padding="20">
+                                    <StackPanel>
+                                        <TextBlock Text="⚖️ CLÁUSULA DE RESCISIÓN" Foreground="#5C8C6A" 
+                                                   FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,15"/>
+                                        <TextBlock Text="{Binding SelectedAnuncio.ClausulaFormato}" 
+                                                   Foreground="White" FontSize="32" FontWeight="Bold" 
+                                                   HorizontalAlignment="Center" Margin="0,0,0,15"/>
+                                        <Button Command="{Binding ComprarPorClausulaCommand}"
+                                                Content="ACTIVAR CLÁUSULA" 
+                                                Background="#5C8C6A" Foreground="White" FontWeight="Bold"
+                                                Padding="15,12" Height="45" Cursor="Hand" FontSize="14">
+                                            <Button.Resources>
+                                                <Style TargetType="Border">
+                                                    <Setter Property="CornerRadius" Value="6"/>
+                                                </Style>
+                                            </Button.Resources>
+                                        </Button>
+                                        <TextBlock Text="Derecho contractual siempre disponible" 
+                                                   Foreground="#AAAAAA" FontSize="11" 
+                                                   TextAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap"/>
+                                    </StackPanel>
+                                </Border>
+                            </Grid>
+                        </StackPanel>
+                    </Border>
+
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+
+        <!-- ══════════════════════ DIÁLOGO DE CONFIRMACIÓN ══════════════════════ -->
+        <Grid Visibility="{Binding IsConfirmDialogVisible}" Panel.ZIndex="999">
+            <!-- Overlay oscuro -->
+            <Border Background="#AA000000">
+                <Border.InputBindings>
+                    <MouseBinding MouseAction="LeftClick" Command="{Binding CancelarCompraCommand}"/>
+                </Border.InputBindings>
+            </Border>
+
+            <!-- Diálogo -->
+            <Border Width="500" Height="Auto" Background="#1E1E1E" 
+                    BorderBrush="#FF6B35" BorderThickness="3" CornerRadius="16"
+                    VerticalAlignment="Center" HorizontalAlignment="Center"
+                    Padding="30">
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="30" ShadowDepth="10" Opacity="0.8" Color="Black"/>
+                </Border.Effect>
+
+                <StackPanel>
+                    <!-- Título -->
+                    <TextBlock Text="{Binding ConfirmTitle}" Foreground="#FF6B35" FontSize="22" 
+                               FontWeight="Bold" Margin="0,0,0,15" TextAlignment="Center" 
+                               FontFamily="Montserrat" TextWrapping="Wrap"/>
+
+                    <!-- Mensaje -->
+                    <TextBlock Text="{Binding ConfirmMessage}" Foreground="White" FontSize="14" 
+                               TextAlignment="Center" Margin="0,0,0,25" TextWrapping="Wrap" LineHeight="22"/>
+
+                    <!-- Información de monto -->
+                    <Border Background="#30FFD700" CornerRadius="10" Padding="15" Margin="0,0,0,25" 
+                            BorderBrush="#60FFD700" BorderThickness="1">
+                        <StackPanel HorizontalAlignment="Center">
+                            <TextBlock Text="MONTO A TRANSFERIR" Foreground="#FFD700" FontSize="12" 
+                                       FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,8"/>
+                            <TextBlock Text="{Binding ConfirmMontoFormato}" Foreground="White" FontSize="28" 
+                                       FontWeight="Bold" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                    </Border>
+
+                    <!-- Botones -->
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="15"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <!-- Botón Cancelar -->
+                        <Button Grid.Column="0" Command="{Binding CancelarCompraCommand}"
+                                Content="CANCELAR" 
+                                Background="#30FFFFFF" Foreground="White" FontWeight="Bold"
+                                Padding="15,12" Height="45" BorderThickness="0" Cursor="Hand" FontSize="14">
+                            <Button.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="8"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+
+                        <!-- Botón Aceptar -->
+                        <Button Grid.Column="2" Command="{Binding AceptarCompraCommand}"
+                                Content="CONFIRMAR COMPRA" 
+                                Background="#FF6B35" Foreground="White" FontWeight="Bold"
+                                Padding="15,12" Height="45" BorderThickness="0" Cursor="Hand" FontSize="14">
+                            <Button.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="8"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+                    </Grid>
+                </StackPanel>
+            </Border>
+        </Grid>
     </Grid>
 </UserControl>
