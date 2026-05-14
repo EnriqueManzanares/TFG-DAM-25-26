@@ -4,67 +4,53 @@ namespace InaManager.Models
 {
     public class AnuncioModel
     {
-        // --- CAMPOS PRIVADOS ---
-        private int _id_anuncio;
-        private int _id_jugador;
-        private int _id_equipo;
-        private decimal _precio;
-        private DateTime _fecha_fin;
-        private string _estado;
+        // --- CAMPOS TABLA Mercado ---
+        public int      Id_anuncio  { get; set; }
+        public int      Id_jugador  { get; set; }
+        public int      Id_equipo   { get; set; }
+        public decimal  Precio      { get; set; }
+        public DateTime Fecha_fin   { get; set; }
+        public string   Estado      { get; set; }
 
-        // --- PROPIEDADES PÚBLICAS ---
-        public int Id_anuncio
-        {
-            get { return _id_anuncio; }
-            set { _id_anuncio = value; }
-        }
+        // --- DATOS DEL JOIN (Jugadores) ---
+        public string   Jugador_nombre   { get; set; }
+        public string   Jugador_apellido { get; set; }
+        public string   Jugador_posicion { get; set; }
+        public string   Jugador_afinidad { get; set; }
+        public int      Jugador_nivel    { get; set; }
+        public decimal  Jugador_clausula { get; set; }
+        public string   Jugador_imagen   { get; set; }
 
-        public int Id_jugador
-        {
-            get { return _id_jugador; }
-            set { _id_jugador = value; }
-        }
-
-        public int Id_equipo
-        {
-            get { return _id_equipo; }
-            set { _id_equipo = value; }
-        }
-
-        public decimal Precio
-        {
-            get { return _precio; }
-            set { _precio = value; }
-        }
-
-        public DateTime Fecha_fin
-        {
-            get { return _fecha_fin; }
-            set { _fecha_fin = value; }
-        }
-
-        public string Estado
-        {
-            get { return _estado; }
-            set { _estado = value; }
-        }
+        // --- DATOS DEL JOIN (Equipos) ---
+        public string   Equipo_nombre    { get; set; }
+        public string   Equipo_escudo    { get; set; }
 
         // --- CONSTRUCTORES ---
+        public AnuncioModel() { }
 
-        // Constructor vacío
-        public AnuncioModel()
+        public AnuncioModel(
+            int id_anuncio, int id_jugador, int id_equipo,
+            decimal precio, DateTime fecha_fin, string estado,
+            string jugador_nombre, string jugador_apellido,
+            string jugador_posicion, string jugador_afinidad,
+            int jugador_nivel, decimal jugador_clausula, string jugador_imagen,
+            string equipo_nombre, string equipo_escudo)
         {
-        }
-
-        // Constructor parametrizado
-        public AnuncioModel(int id_anuncio, int id_jugador, int id_equipo, decimal precio, DateTime fecha_fin, string estado)
-        {
-            this.Id_anuncio = id_anuncio;
-            this.Id_jugador = id_jugador;
-            this.Id_equipo = id_equipo;
-            this.Precio = precio;
-            this.Fecha_fin = fecha_fin;
-            this.Estado = estado;
+            Id_anuncio       = id_anuncio;
+            Id_jugador       = id_jugador;
+            Id_equipo        = id_equipo;
+            Precio           = precio;
+            Fecha_fin        = fecha_fin;
+            Estado           = estado;
+            Jugador_nombre   = jugador_nombre;
+            Jugador_apellido = jugador_apellido;
+            Jugador_posicion = jugador_posicion;
+            Jugador_afinidad = jugador_afinidad;
+            Jugador_nivel    = jugador_nivel;
+            Jugador_clausula = jugador_clausula;
+            Jugador_imagen   = jugador_imagen;
+            Equipo_nombre    = equipo_nombre;
+            Equipo_escudo    = equipo_escudo;
         }
     }
 }

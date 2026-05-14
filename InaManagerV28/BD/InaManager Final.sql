@@ -215,6 +215,7 @@ CREATE TABLE Inversiones (
 CREATE TABLE Jugador_Tecnicas (
     id_jugador INT NOT NULL,
     id_tecnica INT NOT NULL,
+    nivel_tecnica INT DEFAULT 1,
     PRIMARY KEY (id_jugador, id_tecnica),
     FOREIGN KEY (id_jugador) REFERENCES Jugadores(id_jugador) ON DELETE CASCADE,
     FOREIGN KEY (id_tecnica) REFERENCES Supertecnicas(id_tecnica) ON DELETE CASCADE
@@ -1205,6 +1206,57 @@ BEGIN
                 CONCAT('Venta de ', p_cantidad_vender, ' ', v_nombre_activo));
         COMMIT;
     END IF;
+END$$
+
+-- ==========================================
+-- MERCADO DE FICHAJES
+-- ==========================================
+
+DROP PROCEDURE IF EXISTS sp_ObtenerAnunciosMercado$$
+CREATE PROCEDURE sp_ObtenerAnunciosMercado()
+BEGIN
+    SELECT
+        m.id_anuncio,
+        m.id_jugador,
+        m.id_equipo,
+        m.precio,
+        m.fecha_fin,
+        m.estado,
+        j.nombre             AS jugador_nombre,
+        j.apellido           AS jugador_apellido,
+        j.posicion           AS jugador_posicion,
+        j.afinidad           AS jugador_afinidad,
+        j.nivel              AS jugador_nivel,
+        j.clausula_rescision AS jugador_clausula,
+        j.url_imagen         AS jugador_imagen,
+        e.nombre_equipo      AS equipo_nombre,
+        e.url_escudo         AS equipo_escudo
+    FROM Mercado m
+    INNER JOIN Jugadores j ON m.id_jugador = j.id_jugador
+    INNER JOIN Equipos   e ON m.id_equipo  = e.id_equipo
+    WHERE m.estado = 'disponible'
+    ORDER BY m.fecha_fin ASC;
+END$$
+
+DROP PROCEDURE IF EXISTS sp_InsertarAnuncioMercado$$
+CREATE PROCEDURE sp_InsertarAnuncioMercado(
+    IN p_id_jugador INT,
+    IN p_id_equipo  INT,
+    IN p_precio     DECIMAL(20,2),
+    IN p_fecha_fin  DATE
+)
+BEGIN
+    INSERT INTO Mercado (id_jugador, id_equipo, precio, fecha_fin, estado)
+    VALUES (p_id_jugador, p_id_equipo, p_precio, p_fecha_fin, 'disponible');
+END$$
+
+DROP PROCEDURE IF EXISTS sp_CerrarAnuncioMercado$$
+CREATE PROCEDURE sp_CerrarAnuncioMercado(
+    IN p_id_anuncio INT,
+    IN p_estado     ENUM('acabado','comprado')
+)
+BEGIN
+    UPDATE Mercado SET estado = p_estado WHERE id_anuncio = p_id_anuncio;
 END$$
 
 DELIMITER ;

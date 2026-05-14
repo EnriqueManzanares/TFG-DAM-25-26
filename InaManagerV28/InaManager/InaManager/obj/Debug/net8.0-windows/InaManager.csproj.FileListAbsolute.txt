@@ -848,3 +848,7 @@ C:\Users\Emilio\Desktop\INAMANAGER TFG\TFG-DAM-25-26\InaManagerV28\InaManager\In
 C:\Users\Emilio\Desktop\INAMANAGER TFG\TFG-DAM-25-26\InaManagerV28\InaManager\InaManager\obj\Debug\net8.0-windows\View\TransferenciaBancariaView.baml
 C:\Users\Emilio\Desktop\INAMANAGER TFG\TFG-DAM-25-26\InaManagerV28\InaManager\InaManager\obj\Debug\net8.0-windows\View\InversionesView.baml
 C:\Users\Emilio\Desktop\INAMANAGER TFG\TFG-DAM-25-26\InaManagerV28\InaManager\InaManager\obj\Debug\net8.0-windows\View\InversionesView.g.cs
+C:\Users\Emilio\Desktop\INAMANAGER TFG\TFG-DAM-25-26\InaManagerV28\InaManager\InaManager\obj\Debug\net8.0-windows\View\MercadoView.g.cs
+C:\Users\Emilio\Desktop\INAMANAGER TFG\TFG-DAM-25-26\InaManagerV28\InaManager\InaManager\obj\Debug\net8.0-windows\View\MercadoWindow.g.cs
+C:\Users\Emilio\Desktop\INAMANAGER TFG\TFG-DAM-25-26\InaManagerV28\InaManager\InaManager\obj\Debug\net8.0-windows\View\MercadoView.baml
+C:\Users\Emilio\Desktop\INAMANAGER TFG\TFG-DAM-25-26\InaManagerV28\InaManager\InaManager\obj\Debug\net8.0-windows\View\MercadoWindow.baml

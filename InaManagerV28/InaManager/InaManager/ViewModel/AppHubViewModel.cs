@@ -33,7 +33,7 @@ namespace InaManager.ViewModel
         {
             AbrirInaManagerCommand = new ViewModelCommand(ExecuteAbrirInaManager);
             AbrirBancoCommand = new ViewModelCommand(ExecuteAbrirBanco);
-            AbrirMercadoCommand = new ViewModelCommand(o => MostrarEnDesarrollo("Mercado de Fichajes"));
+            AbrirMercadoCommand = new ViewModelCommand(ExecuteAbrirMercado);
             CloseAlertCommand = new ViewModelCommand(o => IsAlertVisible = false);
             VolverAlLoginCommand = new ViewModelCommand(ExecuteVolverAlLogin);
         }
@@ -58,6 +58,22 @@ namespace InaManager.ViewModel
         {
             var bancoView = new View.BancoView();
             bancoView.Show();
+
+            // Cerramos la ventana actual del Hub
+            foreach (System.Windows.Window w in System.Windows.Application.Current.Windows)
+            {
+                if (w is AppHubView)
+                {
+                    w.Close();
+                    break;
+                }
+            }
+        }
+
+        private void ExecuteAbrirMercado(object obj)
+        {
+            var mercadoWindow = new View.MercadoWindow();
+            mercadoWindow.Show();
 
             // Cerramos la ventana actual del Hub
             foreach (System.Windows.Window w in System.Windows.Application.Current.Windows)

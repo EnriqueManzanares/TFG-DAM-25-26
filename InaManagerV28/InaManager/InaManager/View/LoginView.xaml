@@ -231,7 +231,8 @@
                             FontFamily="Montserrat"
                             Cursor="Hand"
                             Grid.Column="2"
-                            Margin="0,20,0,0">
+                            Margin="0,20,0,0"
+                            IsDefault="True">
                         
                         <Button.Style>
                             <Style TargetType="Button">

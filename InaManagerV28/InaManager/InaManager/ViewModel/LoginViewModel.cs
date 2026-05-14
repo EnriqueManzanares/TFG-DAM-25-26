@@ -80,6 +80,12 @@ namespace InaManager.ViewModel
 
             LoginCommand = new ViewModelCommand(ExecuteLoginCommand, CanExecuteLoginCommand);
             RecoverPasswordCommand = new ViewModelCommand(p => ExecuteRecoverPassCommand("", ""));
+
+            // Valores por defecto para desarrollo
+            Username = "DARK";
+            var securePassword = new SecureString();
+            foreach (char c in "DarkPass") securePassword.AppendChar(c);
+            Password = securePassword;
         }
 
         private bool CanExecuteLoginCommand(object obj)
